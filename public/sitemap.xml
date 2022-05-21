@@ -2,31 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://devcows.github.io/hugo-universal-theme/blog/2022/05/20/2022-05-20-another-restart/</loc>
+    <loc>https://github.com/dsollberger/blogdown/blog/2022/05/20/2022-05-20-another-restart/</loc>
     <lastmod>2022-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://devcows.github.io/hugo-universal-theme/blog/</loc>
+    <loc>https://github.com/dsollberger/blogdown/blog/</loc>
     <lastmod>2022-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://devcows.github.io/hugo-universal-theme/categories/</loc>
+    <loc>https://github.com/dsollberger/blogdown/categories/</loc>
     <lastmod>2022-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://devcows.github.io/hugo-universal-theme/tags/hugo/</loc>
+    <loc>https://github.com/dsollberger/blogdown/tags/hugo/</loc>
     <lastmod>2022-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://devcows.github.io/hugo-universal-theme/tags/</loc>
+    <loc>https://github.com/dsollberger/blogdown/tags/</loc>
     <lastmod>2022-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://devcows.github.io/hugo-universal-theme/</loc>
+    <loc>https://github.com/dsollberger/blogdown/</loc>
     <lastmod>2022-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://devcows.github.io/hugo-universal-theme/categories/web-development/</loc>
+    <loc>https://github.com/dsollberger/blogdown/categories/web-development/</loc>
     <lastmod>2022-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://devcows.github.io/hugo-universal-theme/authors/</loc>
+    <loc>https://github.com/dsollberger/blogdown/authors/</loc>
   </url><url>
-    <loc>https://devcows.github.io/hugo-universal-theme/contact/</loc>
+    <loc>https://github.com/dsollberger/blogdown/contact/</loc>
   </url><url>
-    <loc>https://devcows.github.io/hugo-universal-theme/faq/</loc>
+    <loc>https://github.com/dsollberger/blogdown/faq/</loc>
   </url>
 </urlset>

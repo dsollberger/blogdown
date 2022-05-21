@@ -200,8 +200,8 @@ pluralizelisttitles = false
 
 [params.recent_posts]
     enable = true
-    title = "From our blog"
-    subtitle = "musings"
+    title = "Notes on Programming or Whatever"
+    subtitle = "R, sports, and maybe cooking"
     hide_summary = false
 
 [params.footer.recent_posts]

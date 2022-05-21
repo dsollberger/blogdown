@@ -2,31 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://github.com/dsollberger/blogdown/blog/2022/05/20/2022-05-20-another-restart/</loc>
+    <loc>https://github.com/dsollberger/blogdown/tree/main/themes/hugo-universal-theme/static/blog/2022/05/20/2022-05-20-another-restart/</loc>
     <lastmod>2022-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/dsollberger/blogdown/blog/</loc>
+    <loc>https://github.com/dsollberger/blogdown/tree/main/themes/hugo-universal-theme/static/blog/</loc>
     <lastmod>2022-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/dsollberger/blogdown/categories/</loc>
+    <loc>https://github.com/dsollberger/blogdown/tree/main/themes/hugo-universal-theme/static/categories/</loc>
     <lastmod>2022-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/dsollberger/blogdown/tags/hugo/</loc>
+    <loc>https://github.com/dsollberger/blogdown/tree/main/themes/hugo-universal-theme/static/tags/hugo/</loc>
     <lastmod>2022-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/dsollberger/blogdown/tags/</loc>
+    <loc>https://github.com/dsollberger/blogdown/tree/main/themes/hugo-universal-theme/static/tags/</loc>
     <lastmod>2022-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/dsollberger/blogdown/</loc>
+    <loc>https://github.com/dsollberger/blogdown/tree/main/themes/hugo-universal-theme/static/</loc>
     <lastmod>2022-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/dsollberger/blogdown/categories/web-development/</loc>
+    <loc>https://github.com/dsollberger/blogdown/tree/main/themes/hugo-universal-theme/static/categories/web-development/</loc>
     <lastmod>2022-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/dsollberger/blogdown/authors/</loc>
+    <loc>https://github.com/dsollberger/blogdown/tree/main/themes/hugo-universal-theme/static/authors/</loc>
   </url><url>
-    <loc>https://github.com/dsollberger/blogdown/contact/</loc>
+    <loc>https://github.com/dsollberger/blogdown/tree/main/themes/hugo-universal-theme/static/contact/</loc>
   </url><url>
-    <loc>https://github.com/dsollberger/blogdown/faq/</loc>
+    <loc>https://github.com/dsollberger/blogdown/tree/main/themes/hugo-universal-theme/static/faq/</loc>
   </url>
 </urlset>

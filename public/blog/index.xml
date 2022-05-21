@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Derek Sollberger</title>
-    <link>https://dsollberger2022.netlify.com/blog/</link>
+    <link>https://devcows.github.io/hugo-universal-theme/blog/</link>
     <description>Recent content in Blog on Derek Sollberger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://devcows.github.io/hugo-universal-theme/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Another Restart</title>
-      <link>https://dsollberger2022.netlify.com/blog/2022/05/20/2022-05-20-another-restart/</link>
+      <link>https://devcows.github.io/hugo-universal-theme/blog/2022/05/20/2022-05-20-another-restart/</link>
       <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://dsollberger2022.netlify.com/blog/2022/05/20/2022-05-20-another-restart/</guid>
+      <guid>https://devcows.github.io/hugo-universal-theme/blog/2022/05/20/2022-05-20-another-restart/</guid>
       <description>Today I finally got around to trying to make another blogdown site. In the web searches, I found that I was not alone in having trouble using the academic theme, so I switched over to universal. I still wanted a complex theme where I could customize colors and widgets.</description>
     </item>
     

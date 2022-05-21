@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Derek Sollberger</title>
-    <link>https://dsollberger2022.netlify.com/</link>
+    <link>https://devcows.github.io/hugo-universal-theme/</link>
     <description>Recent content on Derek Sollberger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://devcows.github.io/hugo-universal-theme/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Another Restart</title>
-      <link>https://dsollberger2022.netlify.com/blog/2022/05/20/2022-05-20-another-restart/</link>
+      <link>https://devcows.github.io/hugo-universal-theme/blog/2022/05/20/2022-05-20-another-restart/</link>
       <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://dsollberger2022.netlify.com/blog/2022/05/20/2022-05-20-another-restart/</guid>
+      <guid>https://devcows.github.io/hugo-universal-theme/blog/2022/05/20/2022-05-20-another-restart/</guid>
       <description>Today I finally got around to trying to make another blogdown site. In the web searches, I found that I was not alone in having trouble using the academic theme, so I switched over to universal. I still wanted a complex theme where I could customize colors and widgets.</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>https://dsollberger2022.netlify.com/contact/</link>
+      <link>https://devcows.github.io/hugo-universal-theme/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dsollberger2022.netlify.com/contact/</guid>
+      <guid>https://devcows.github.io/hugo-universal-theme/contact/</guid>
       <description>I am here to help you Data analysis?</description>
     </item>
     
     <item>
       <title>FAQ</title>
-      <link>https://dsollberger2022.netlify.com/faq/</link>
+      <link>https://devcows.github.io/hugo-universal-theme/faq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dsollberger2022.netlify.com/faq/</guid>
+      <guid>https://devcows.github.io/hugo-universal-theme/faq/</guid>
       <description>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
 1. WHAT TO DO IF I HAVE STILL NOT RECEIVED THE ORDER? Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</description>
     </item>

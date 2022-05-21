@@ -2,31 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dsollberger2022.netlify.com/blog/2022/05/20/2022-05-20-another-restart/</loc>
+    <loc>https://devcows.github.io/hugo-universal-theme/blog/2022/05/20/2022-05-20-another-restart/</loc>
     <lastmod>2022-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsollberger2022.netlify.com/blog/</loc>
+    <loc>https://devcows.github.io/hugo-universal-theme/blog/</loc>
     <lastmod>2022-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsollberger2022.netlify.com/categories/</loc>
+    <loc>https://devcows.github.io/hugo-universal-theme/categories/</loc>
     <lastmod>2022-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsollberger2022.netlify.com/</loc>
+    <loc>https://devcows.github.io/hugo-universal-theme/</loc>
     <lastmod>2022-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsollberger2022.netlify.com/tags/hugo/</loc>
+    <loc>https://devcows.github.io/hugo-universal-theme/tags/hugo/</loc>
     <lastmod>2022-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsollberger2022.netlify.com/tags/</loc>
+    <loc>https://devcows.github.io/hugo-universal-theme/tags/</loc>
     <lastmod>2022-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsollberger2022.netlify.com/categories/web-development/</loc>
+    <loc>https://devcows.github.io/hugo-universal-theme/categories/web-development/</loc>
     <lastmod>2022-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsollberger2022.netlify.com/authors/</loc>
+    <loc>https://devcows.github.io/hugo-universal-theme/authors/</loc>
   </url><url>
-    <loc>https://dsollberger2022.netlify.com/contact/</loc>
+    <loc>https://devcows.github.io/hugo-universal-theme/contact/</loc>
   </url><url>
-    <loc>https://dsollberger2022.netlify.com/faq/</loc>
+    <loc>https://devcows.github.io/hugo-universal-theme/faq/</loc>
   </url>
 </urlset>

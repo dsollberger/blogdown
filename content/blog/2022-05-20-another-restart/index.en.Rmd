@@ -3,6 +3,7 @@ title: Another Restart
 author: Derek Sollberger
 date: '2022-05-20'
 slug: another-restart
+banner: "img/banners/banner-2.jpg"
 categories:
   - web development
 tags:

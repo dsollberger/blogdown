@@ -1,13 +1,13 @@
 /* Themed colors */
 :root {
-  --primary-accent: #6aae7a;
-  --navbar-border-top: #3f734b;
+  --primary-accent: #1dad20;
+  --navbar-border-top: #ad411d;
   --button-border: #4d8e5c;
   --link-focus: #488456;
   --form-shadow: rgba(106, 174, 122, 0.6);
   --pagination-bg: #cde4d2;
   --link-hover-bg: #519461;
-  --navbar-focus: #acd2b5;
+  --navbar-focus: #ad1d63;
 }
 
 .clearfix:before,
@@ -243,7 +243,7 @@ ul.list-style-none {
   }
 }
 #top {
-  background: #555555;
+  background: #1dad20;
   color: #eeeeee;
   padding: 10px 0;
 }
@@ -256,7 +256,7 @@ ul.list-style-none {
   text-align: right;
 }
 #top .social a {
-  color: #999999;
+  color: #222222;
   display: inline-block;
   width: 24px;
   height: 24px;

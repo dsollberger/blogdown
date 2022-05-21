@@ -1,4 +1,4 @@
-baseurl = "https://github.com/dsollberger/blogdown/tree/main/themes/hugo-universal-theme/static" # Configure URL. if using gh-pages https://github.com/<username>/hugo-universal-theme URL: https://<username>.github.io/hugo-universal-theme/
+baseurl = "https://dsollberger2022.netlify.app/" # Configure URL. if using gh-pages https://github.com/<username>/hugo-universal-theme URL: https://<username>.github.io/hugo-universal-theme/
 title = "The Median Data Scientist"
 theme = "hugo-universal-theme"
 themesDir = "themes"
@@ -110,7 +110,7 @@ pluralizelisttitles = false
     enableRecaptchaInContactForm = false
     googleRecaptchaKey = "site_key_for_google_recaptcha"
 
-    about_us = "<p>Derek is a person who can somewhat customize a Hugo theme.</p>"
+    about_me = "<p>Derek is a person who can somewhat customize a Hugo theme.</p>"
     copyright = "Copyright (c) 2022, Derek Sollberger; GNU Public License."
 
     # Format dates with Go's time formatting

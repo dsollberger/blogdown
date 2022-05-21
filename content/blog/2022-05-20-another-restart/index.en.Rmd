@@ -1,0 +1,13 @@
+---
+title: Another Restart
+author: Derek Sollberger
+date: '2022-05-20'
+slug: another-restart
+categories:
+  - web development
+tags:
+  - hugo
+---
+
+Today I finally got around to trying to make another `blogdown` site.  In the web searches, I found that I was not alone in having trouble using the `academic` theme, so I switched over to [universal](https://github.com/devcows/hugo-universal-theme).  I still wanted a complex theme where I could customize colors and widgets.
+

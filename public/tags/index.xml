@@ -6,7 +6,16 @@
     <description>Recent content in Tags on The Median Data Scientist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>blastula</title>
+      <link>https://dsollberger2022.netlify.app/tags/blastula/</link>
+      <pubDate>Sun, 22 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/tags/blastula/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>hugo</title>
       <link>https://dsollberger2022.netlify.app/tags/hugo/</link>

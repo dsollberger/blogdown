@@ -6,7 +6,16 @@
     <description>Recent content in Blog on The Median Data Scientist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trying out blastula</title>
+      <link>https://dsollberger2022.netlify.app/blog/2022/05/22/2022-05-22-trying-out-blastula/</link>
+      <pubDate>Sun, 22 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/blog/2022/05/22/2022-05-22-trying-out-blastula/</guid>
+      <description># vignette: https://github.com/rstudio/blastula# Get a nicely formatted date/time stringcurrent_date_time &amp;lt;- add_readable_time()image_string &amp;lt;- blastula::add_image(&amp;quot;20220402_160706.jpg&amp;quot;)newsletter &amp;lt;- blastula::compose_email(body = md(glue::glue(&amp;quot;Good Afternoon,This is a very early draft of a newsletter format that has been created with the R programming language using the `blastula` package.For now, here is a picture from my garden:{image_string}&amp;quot;)),footer = md(glue::glue(&amp;quot;Newsletter compiled on {current_date_time}&amp;quot;)))#print(newsletter)</description>
+    </item>
+    
     <item>
       <title>Another Restart</title>
       <link>https://dsollberger2022.netlify.app/blog/2022/05/20/2022-05-20-another-restart/</link>

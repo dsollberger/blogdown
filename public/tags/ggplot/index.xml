@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ggplot on The Median Data Scientist</title>
+    <link>https://dsollberger2022.netlify.app/tags/ggplot/</link>
+    <description>Recent content in ggplot on The Median Data Scientist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/tags/ggplot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Counting Political Mail</title>
+      <link>https://dsollberger2022.netlify.app/blog/2022/06/04/2022-06-04-counting-political-mail/</link>
+      <pubDate>Sat, 04 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/blog/2022/06/04/2022-06-04-counting-political-mail/</guid>
+      <description>sender &amp;lt;- c(&amp;quot;Steve Glaser&amp;quot;, &amp;quot;Anna Caballero&amp;quot;, &amp;quot;Esmeralda Soria&amp;quot;, &amp;quot;Mike Karbassi&amp;quot;, &amp;quot;Adam Gray&amp;quot;, &amp;quot;CA Real Estate&amp;quot;, &amp;quot;CFT&amp;quot;, &amp;quot;misc&amp;quot;)counts &amp;lt;- c(3, 3, 10, 6, 4, 4, 3, 1)df &amp;lt;- data.frame(sender, counts)df &amp;lt;- df |&amp;gt;mutate(for_label = paste0(sender, &amp;quot;: &amp;quot;, counts)) |&amp;gt;mutate(sender_ranked = forcats::fct_reorder(sender, counts))df |&amp;gt;ggplot() +geom_bar(aes(x = counts, y = sender_ranked, fill = sender_ranked),stat = &amp;quot;identity&amp;quot;) +geom_text(aes(x = counts, y = sender_ranked, label = for_label),hjust = &amp;quot;right&amp;quot;, nudge_x = -0.</description>
+    </item>
+    
+  </channel>
+</rss>

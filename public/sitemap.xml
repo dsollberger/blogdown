@@ -2,22 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://dsollberger2022.netlify.app/blog/</loc>
+    <lastmod>2022-06-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/categories/</loc>
+    <lastmod>2022-06-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/blog/2022/06/04/2022-06-04-counting-political-mail/</loc>
+    <lastmod>2022-06-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/categories/data-visualization/</loc>
+    <lastmod>2022-06-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/tags/ggplot/</loc>
+    <lastmod>2022-06-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/tags/</loc>
+    <lastmod>2022-06-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/</loc>
+    <lastmod>2022-06-04T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://dsollberger2022.netlify.app/tags/blastula/</loc>
     <lastmod>2022-05-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsollberger2022.netlify.app/blog/</loc>
-    <lastmod>2022-05-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsollberger2022.netlify.app/categories/</loc>
-    <lastmod>2022-05-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://dsollberger2022.netlify.app/categories/r-markdown/</loc>
-    <lastmod>2022-05-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsollberger2022.netlify.app/tags/</loc>
-    <lastmod>2022-05-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsollberger2022.netlify.app/</loc>
     <lastmod>2022-05-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsollberger2022.netlify.app/blog/2022/05/22/2022-05-22-trying-out-blastula/</loc>

@@ -1,0 +1,49 @@
+---
+title: Counting Political Mail
+author: Derek Sollberger
+date: '2022-06-04'
+slug: counting-political-mail
+banner: "img/junkmail.jpg"
+categories:
+  - data visualization
+tags:
+  - ggplot
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library("tidyverse")
+```
+
+```{r}
+sender <- c("Steve Glaser", "Anna Caballero", "Esmeralda Soria", "Mike Karbassi", "Adam Gray", "CA Real Estate", "CFT", "misc")
+counts <- c(3, 3, 10, 6, 4, 4, 3, 1)
+df <- data.frame(sender, counts)
+```
+
+```{r}
+df <- df |>
+  mutate(for_label = paste0(sender, ": ", counts)) |>
+  mutate(sender_ranked = forcats::fct_reorder(sender, counts))
+```
+
+```{r}
+df |>
+  ggplot() +
+  geom_bar(aes(x = counts, y = sender_ranked, fill = sender_ranked),
+           stat = "identity") +
+  geom_text(aes(x = counts, y = sender_ranked, label = for_label),
+             hjust = "right", nudge_x = -0.2) +
+  labs(title = "Political Mail Received",
+       subtitle = "May 2022",
+       caption = "Merced, CA",
+       x = "mailer count",
+       y = "campaign") +
+  theme(axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        legend.position = "none",
+        panel.background = element_blank(),
+        plot.title = element_text(size = 25, hjust = 0.5),
+        plot.subtitle = element_text(size = 20, hjust = 0.5),
+        plot.caption = element_text(size = 15, hjust = 1.0))
+```

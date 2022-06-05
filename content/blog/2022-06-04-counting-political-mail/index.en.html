@@ -1,0 +1,38 @@
+---
+title: Counting Political Mail
+author: Derek Sollberger
+date: '2022-06-04'
+slug: counting-political-mail
+categories:
+  - data visualization
+tags:
+  - ggplot
+---
+
+
+
+<pre class="r"><code>sender &lt;- c(&quot;Steve Glaser&quot;, &quot;Anna Caballero&quot;, &quot;Esmeralda Soria&quot;, &quot;Mike Karbassi&quot;, &quot;Adam Gray&quot;, &quot;CA Real Estate&quot;, &quot;CFT&quot;, &quot;misc&quot;)
+counts &lt;- c(3, 3, 10, 6, 4, 4, 3, 1)
+df &lt;- data.frame(sender, counts)</code></pre>
+<pre class="r"><code>df &lt;- df |&gt;
+  mutate(for_label = paste0(sender, &quot;: &quot;, counts)) |&gt;
+  mutate(sender_ranked = forcats::fct_reorder(sender, counts))</code></pre>
+<pre class="r"><code>df |&gt;
+  ggplot() +
+  geom_bar(aes(x = counts, y = sender_ranked, fill = sender_ranked),
+           stat = &quot;identity&quot;) +
+  geom_text(aes(x = counts, y = sender_ranked, label = for_label),
+             hjust = &quot;right&quot;, nudge_x = -0.2) +
+  labs(title = &quot;Political Mail Received&quot;,
+       subtitle = &quot;May 2022&quot;,
+       caption = &quot;Merced, CA&quot;,
+       x = &quot;mailer count&quot;,
+       y = &quot;campaign&quot;) +
+  theme(axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        legend.position = &quot;none&quot;,
+        panel.background = element_blank(),
+        plot.title = element_text(size = 25, hjust = 0.5),
+        plot.subtitle = element_text(size = 20, hjust = 0.5),
+        plot.caption = element_text(size = 15, hjust = 1.0))</code></pre>
+<p><img src="{{< blogdown/postref >}}index.en_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>

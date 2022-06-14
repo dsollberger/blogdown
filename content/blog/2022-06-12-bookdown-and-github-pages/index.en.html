@@ -1,0 +1,23 @@
+---
+title: Bookdown and GitHub Pages
+author: Derek Sollberger
+date: '2022-06-12'
+slug: bookdown-and-github-pages
+categories:
+  - publishing
+tags:
+  - bookdown
+---
+
+
+
+<p>Today I finally got a <code>bookdown</code> book to appear properly in GitHub pages (well, perhaps I did this in the past, but I do not recall).</p>
+<p>The main gap was that I needed to add the following line</p>
+<pre><code>output_dir: docs</code></pre>
+<p>to the <code>_bookdown.yml</code> file. Of course, the GitHub repository and Pages needed to be set up as well to point to the <code>docs</code> subdirectory.</p>
+<p>Here were the helpful websites</p>
+<ul>
+<li><a href="https://bookdown.org/yihui/bookdown/github.html" class="uri">https://bookdown.org/yihui/bookdown/github.html</a></li>
+<li><a href="https://rachaellappan.github.io/bookdown/" class="uri">https://rachaellappan.github.io/bookdown/</a></li>
+<li><a href="https://seankross.com/2016/11/17/How-to-Start-a-Bookdown-Book.html" class="uri">https://seankross.com/2016/11/17/How-to-Start-a-Bookdown-Book.html</a></li>
+</ul>

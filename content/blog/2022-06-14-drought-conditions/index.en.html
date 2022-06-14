@@ -1,0 +1,79 @@
+---
+title: Drought Conditions
+author: Derek Sollberger
+date: '2022-06-14'
+slug: drought-conditions
+banner: "img/TidyTuesday_-_20220614.jpg"
+categories:
+  - TidyTuesday
+tags:
+  - ggplot
+---
+
+
+
+<p>“The data this week comes from the National Integrated Drought Information System.”</p>
+<pre class="r"><code># load raw data
+# drought &lt;- readr::read_csv(&#39;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-06-14/drought.csv&#39;)
+# drought_fips &lt;- readr::read_csv(&#39;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-06-14/drought-fips.csv&#39;)</code></pre>
+<pre class="r"><code># focus on subset of data
+# https://www.weather.gov/hnx/cafips
+# merced_df &lt;- drought_fips |&gt;
+  # filter(FIPS == &quot;06047&quot;)</code></pre>
+<pre class="r"><code># since original data was a fairly large data file, let&#39;s
+# save a copy here to ease work
+# write_csv(merced_df, &quot;merced_drought.csv&quot;)</code></pre>
+<pre class="r"><code>df_raw &lt;- read_csv(&quot;merced_drought.csv&quot;)</code></pre>
+<pre><code>## Rows: 1171 Columns: 4
+## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: &quot;,&quot;
+## chr  (2): State, FIPS
+## dbl  (1): DSCI
+## date (1): date
+## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre class="r"><code># data wrangling
+df &lt;- df_raw |&gt;
+  separate(date, into = c(&quot;year&quot;, &quot;month&quot;, &quot;day&quot;), sep = &quot;-&quot;) |&gt;
+  group_by(year, month) |&gt;
+  mutate(avg_dsci = mean(DSCI, na.rm = TRUE)) |&gt;
+  ungroup() |&gt;
+  select(month, year, avg_dsci) |&gt;
+  mutate_if(is.character, as.numeric)</code></pre>
+<pre class="r"><code># data visualization
+# ideas from https://mobile.twitter.com/XuehuaiH/status/1536623842310795265
+my_plot &lt;- df |&gt;
+  ggplot(aes(x = month, y = year)) +
+  geom_tile(aes(fill = avg_dsci),
+            color = &quot;white&quot;) +
+  coord_equal() + # for square tiles
+  geom_text(aes(x = month, y = year, label = round(avg_dsci)),
+            color = &quot;white&quot;,
+            size = 3) +
+  guides(fill = guide_legend(title.position = &quot;top&quot;)) +
+  labs(title = &quot;Merced Drought Conditions&quot;,
+       subtitle = &quot;Sources: National Integrated Drought\nInformation Systems, Tidy Tuesday&quot;,
+       caption = &quot;0 = no drought,\n500 = entire county is in exceptional drought&quot;,
+       x = &quot;&quot;, y = &quot;&quot;) +
+  scale_fill_gradient(low = &quot;blue&quot;, high = &quot;red&quot;,
+                      name = &quot;Drought Score&quot;) +
+  scale_x_continuous(breaks = 1:12,
+                   labels = c(&quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;,
+                              &quot;May&quot;, &quot;Jun&quot;, &quot;Jul&quot;, &quot;Aug&quot;,
+                              &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot;),
+                   position = &quot;top&quot;) +
+  scale_y_continuous(breaks = 2000:2022,
+                   labels = as.character(2000:2022)) +
+  theme(axis.text.x = element_text(angle = 90),
+        axis.text.y = element_text(hjust = 2),
+        axis.ticks = element_blank(),
+        legend.position = &quot;bottom&quot;,
+        legend.title.align = 0.5,
+        panel.background = element_blank(),
+        plot.title = element_text(face = &quot;bold&quot;, size = 16, color = &quot;red&quot;),
+        plot.subtitle = element_text(size = 12, color = &quot;blue&quot;),
+        plot.caption = element_text(size = 10, color = &quot;purple&quot;, hjust = 0.5))</code></pre>
+<pre class="r"><code># plot
+my_plot</code></pre>
+<p><img src="{{< blogdown/postref >}}index.en_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>

@@ -1,0 +1,53 @@
+---
+title: Gauges
+author: Derek Sollberger
+date: '2022-06-15'
+slug: gauges
+banner: "img/gauge_practice.png"
+categories:
+  - data visualization
+tags:
+  - plotly
+---
+
+Gauges are useful when wanting to display a quantity along with its range (minimum and maximum).  Here, we will try out the `plotly` package's functionality to build a gauge plot.
+
+```{r setup, message = FALSE, warning = FALSE}
+library("plotly")
+library("tidyverse")
+```
+
+```{r}
+# https://plotly.com/r/gauge-charts/
+# https://marketing.ucmerced.edu/resources/brand-guidelines/colors
+my_gauge <- plot_ly(
+  domain = list(x = c(0, 1), y = c(0, 1)),
+  value = 6.35,
+  title = list(text = "Overall Teaching Evaluation Score",
+               color = "#002856",
+               font = list(size = 24)),
+  type = "indicator",
+  mode = "gauge+number",
+  gauge = list(
+    axis = list(range = list(NULL, 7.0),
+                tickcolor = "#64A43A",
+                tickfont = list(color = "#002856",
+                                family = "Arial",
+                                size = 18),
+                tickwidth = 10),
+    bar = list(color = "#002856"),
+    bgcolor = "#FFBF3C",
+    bordercolor = "#F18A00",
+    borderwidth = 5
+  )
+  ) %>%
+  layout(margin = list(l=20,r=30),
+         font = list(color = "#002856", family = "Arial"),
+         paper_bgcolor = "#E5E5E5")
+```
+
+```{r}
+my_gauge #print
+```
+
+Originally, I wanted to also describe a confidence interval too for more information, but alas a confidence interval here probably be ambiguous with how people normally see gauges.

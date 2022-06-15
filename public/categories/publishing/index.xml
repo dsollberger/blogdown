@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>publishing on The Median Data Scientist</title>
+    <link>https://dsollberger2022.netlify.app/categories/publishing/</link>
+    <description>Recent content in publishing on The Median Data Scientist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/categories/publishing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bookdown and GitHub Pages</title>
+      <link>https://dsollberger2022.netlify.app/blog/2022/06/12/2022-06-12-bookdown-and-github-pages/</link>
+      <pubDate>Sun, 12 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/blog/2022/06/12/2022-06-12-bookdown-and-github-pages/</guid>
+      <description>Today I finally got a bookdown book to appear properly in GitHub pages (well, perhaps I did this in the past, but I do not recall).
+The main gap was that I needed to add the following line
+output_dir: docsto the _bookdown.yml file. Of course, the GitHub repository and Pages needed to be set up as well to point to the docs subdirectory.
+Here were the helpful websites</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>plotly on The Median Data Scientist</title>
+    <link>https://dsollberger2022.netlify.app/tags/plotly/</link>
+    <description>Recent content in plotly on The Median Data Scientist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/tags/plotly/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gauges</title>
+      <link>https://dsollberger2022.netlify.app/blog/2022/06/15/2022-06-15-gauges/</link>
+      <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/blog/2022/06/15/2022-06-15-gauges/</guid>
+      <description>Gauges are useful when wanting to display a quantity along with its range (minimum and maximum). Here, we will try out the plotly package’s functionality to build a gauge plot.
+library(&amp;quot;plotly&amp;quot;)library(&amp;quot;tidyverse&amp;quot;)# https://plotly.com/r/gauge-charts/# https://marketing.ucmerced.edu/resources/brand-guidelines/colorsmy_gauge &amp;lt;- plot_ly(domain = list(x = c(0, 1), y = c(0, 1)),value = 6.35,title = list(text = &amp;quot;Overall Teaching Evaluation Score&amp;quot;,color = &amp;quot;#002856&amp;quot;,font = list(size = 24)),type = &amp;quot;indicator&amp;quot;,mode = &amp;quot;gauge+number&amp;quot;,gauge = list(axis = list(range = list(NULL, 7.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,55 @@
+---
+title: Gauges
+author: Derek Sollberger
+date: '2022-06-15'
+slug: gauges
+banner: "img/gauge_practice.png"
+categories:
+  - data visualization
+tags:
+  - plotly
+---
+
+<script src="{{< blogdown/postref >}}index.en_files/htmlwidgets/htmlwidgets.js"></script>
+<script src="{{< blogdown/postref >}}index.en_files/plotly-binding/plotly.js"></script>
+<script src="{{< blogdown/postref >}}index.en_files/typedarray/typedarray.min.js"></script>
+<script src="{{< blogdown/postref >}}index.en_files/jquery/jquery.min.js"></script>
+<link href="{{< blogdown/postref >}}index.en_files/crosstalk/css/crosstalk.min.css" rel="stylesheet" />
+<script src="{{< blogdown/postref >}}index.en_files/crosstalk/js/crosstalk.min.js"></script>
+<link href="{{< blogdown/postref >}}index.en_files/plotly-htmlwidgets-css/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="{{< blogdown/postref >}}index.en_files/plotly-main/plotly-latest.min.js"></script>
+
+
+<p>Gauges are useful when wanting to display a quantity along with its range (minimum and maximum). Here, we will try out the <code>plotly</code> package’s functionality to build a gauge plot.</p>
+<pre class="r"><code>library(&quot;plotly&quot;)
+library(&quot;tidyverse&quot;)</code></pre>
+<pre class="r"><code># https://plotly.com/r/gauge-charts/
+# https://marketing.ucmerced.edu/resources/brand-guidelines/colors
+my_gauge &lt;- plot_ly(
+  domain = list(x = c(0, 1), y = c(0, 1)),
+  value = 6.35,
+  title = list(text = &quot;Overall Teaching Evaluation Score&quot;,
+               color = &quot;#002856&quot;,
+               font = list(size = 24)),
+  type = &quot;indicator&quot;,
+  mode = &quot;gauge+number&quot;,
+  gauge = list(
+    axis = list(range = list(NULL, 7.0),
+                tickcolor = &quot;#64A43A&quot;,
+                tickfont = list(color = &quot;#002856&quot;,
+                                family = &quot;Arial&quot;,
+                                size = 18),
+                tickwidth = 10),
+    bar = list(color = &quot;#002856&quot;),
+    bgcolor = &quot;#FFBF3C&quot;,
+    bordercolor = &quot;#F18A00&quot;,
+    borderwidth = 5
+  )
+  ) %&gt;%
+  layout(margin = list(l=20,r=30),
+         font = list(color = &quot;#002856&quot;, family = &quot;Arial&quot;),
+         paper_bgcolor = &quot;#E5E5E5&quot;)</code></pre>
+<pre class="r"><code>my_gauge #print</code></pre>
+<div id="htmlwidget-1" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"visdat":{"164c766ce0e":["function () ","plotlyVisDat"]},"cur_data":"164c766ce0e","attrs":{"164c766ce0e":{"domain":{"x":[0,1],"y":[0,1]},"value":6.35,"title":{"text":"Overall Teaching Evaluation Score","color":"#002856","font":{"size":24}},"mode":"gauge+number","gauge":{"axis":{"range":[null,7],"tickcolor":"#64A43A","tickfont":{"color":"#002856","family":"Arial","size":18},"tickwidth":10},"bar":{"color":"#002856"},"bgcolor":"#FFBF3C","bordercolor":"#F18A00","borderwidth":5},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"indicator"}},"layout":{"margin":{"b":40,"l":20,"t":25,"r":30},"font":{"color":"#002856","family":"Arial"},"paper_bgcolor":"#E5E5E5","hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"domain":{"x":[0,1],"y":[0,1]},"value":6.35,"title":{"text":"Overall Teaching Evaluation Score","color":"#002856","font":{"size":24}},"mode":"gauge+number","gauge":{"axis":{"range":[[],7],"tickcolor":"#64A43A","tickfont":{"color":"#002856","family":"Arial","size":18},"tickwidth":10},"bar":{"color":"#002856"},"bgcolor":"#FFBF3C","bordercolor":"#F18A00","borderwidth":5},"type":"indicator","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<p>Originally, I wanted to also describe a confidence interval too for more information, but alas a confidence interval here probably be ambiguous with how people normally see gauges.</p>

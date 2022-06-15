@@ -3,24 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dsollberger2022.netlify.app/blog/</loc>
-    <lastmod>2022-06-04T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsollberger2022.netlify.app/categories/</loc>
-    <lastmod>2022-06-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsollberger2022.netlify.app/blog/2022/06/04/2022-06-04-counting-political-mail/</loc>
-    <lastmod>2022-06-04T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsollberger2022.netlify.app/categories/data-visualization/</loc>
-    <lastmod>2022-06-04T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsollberger2022.netlify.app/tags/ggplot/</loc>
-    <lastmod>2022-06-04T00:00:00+00:00</lastmod>
+    <loc>https://dsollberger2022.netlify.app/blog/2022/06/15/2022-06-15-gauges/</loc>
+    <lastmod>2022-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/tags/plotly/</loc>
+    <lastmod>2022-06-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsollberger2022.netlify.app/tags/</loc>
-    <lastmod>2022-06-04T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsollberger2022.netlify.app/</loc>
+    <lastmod>2022-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/blog/2022/06/14/2022-06-14-drought-conditions/</loc>
+    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/tags/ggplot/</loc>
+    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/categories/tidytuesday/</loc>
+    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/tags/bookdown/</loc>
+    <lastmod>2022-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/blog/2022/06/12/2022-06-12-bookdown-and-github-pages/</loc>
+    <lastmod>2022-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/categories/publishing/</loc>
+    <lastmod>2022-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/blog/2022/06/07/2022-06-07-tidytuesday-20220607/</loc>
+    <lastmod>2022-06-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/blog/2022/06/04/2022-06-04-counting-political-mail/</loc>
     <lastmod>2022-06-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsollberger2022.netlify.app/tags/blastula/</loc>

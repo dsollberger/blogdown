@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TidyTuesday on The Median Data Scientist</title>
+    <link>https://dsollberger2022.netlify.app/categories/tidytuesday/</link>
+    <description>Recent content in TidyTuesday on The Median Data Scientist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/categories/tidytuesday/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drought Conditions</title>
+      <link>https://dsollberger2022.netlify.app/blog/2022/06/14/2022-06-14-drought-conditions/</link>
+      <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/blog/2022/06/14/2022-06-14-drought-conditions/</guid>
+      <description>“The data this week comes from the National Integrated Drought Information System.”
+# load raw data# drought &amp;lt;- readr::read_csv(&amp;#39;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-06-14/drought.csv&amp;#39;)# drought_fips &amp;lt;- readr::read_csv(&amp;#39;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-06-14/drought-fips.csv&amp;#39;)# focus on subset of data# https://www.weather.gov/hnx/cafips# merced_df &amp;lt;- drought_fips |&amp;gt;# filter(FIPS == &amp;quot;06047&amp;quot;)# since original data was a fairly large data file, let&amp;#39;s# save a copy here to ease work# write_csv(merced_df, &amp;quot;merced_drought.csv&amp;quot;)df_raw &amp;lt;- read_csv(&amp;quot;merced_drought.csv&amp;quot;)## Rows: 1171 Columns: 4## ── Column specification ────────────────────────────────────────────────────────## Delimiter: &amp;quot;,&amp;quot;## chr (2): State, FIPS## dbl (1): DSCI## date (1): date## ## ℹ Use `spec()` to retrieve the full column specification for this data.</description>
+    </item>
+    
+    <item>
+      <title>TidyTuesday 20220607</title>
+      <link>https://dsollberger2022.netlify.app/blog/2022/06/07/2022-06-07-tidytuesday-20220607/</link>
+      <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/blog/2022/06/07/2022-06-07-tidytuesday-20220607/</guid>
+      <description>“The data this week comes from Data For Progress.
+“Each year, hundreds of corporations around the country participate in Pride, an annual celebration of the LGBTQ+ community’s history and progress. They present themselves as LGBTQ+ allies, but new research from Data for Progress finds that in between their yearly parade appearances, dozens of these corporations are giving to state politicians behind some of the most bigoted and harmful policies in over a decade.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -3,10 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dsollberger2022.netlify.app/blog/</loc>
-    <lastmod>2022-06-15T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsollberger2022.netlify.app/categories/</loc>
-    <lastmod>2022-06-15T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/tags/ggplot/</loc>
+    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/tags/latex/</loc>
+    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/categories/math/</loc>
+    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/categories/r-markdown/</loc>
+    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-radically-infinite/</loc>
+    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/tags/</loc>
+    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/</loc>
+    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-trying-out-the-flow-package/</loc>
+    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/blog/2022/06/26/2022-06-26-abortion-trigger-bans/</loc>
+    <lastmod>2022-06-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/tags/geospatial/</loc>
+    <lastmod>2022-06-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/categories/politics/</loc>
+    <lastmod>2022-06-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsollberger2022.netlify.app/categories/data-visualization/</loc>
     <lastmod>2022-06-15T00:00:00+00:00</lastmod>
@@ -17,16 +50,7 @@
     <loc>https://dsollberger2022.netlify.app/tags/plotly/</loc>
     <lastmod>2022-06-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsollberger2022.netlify.app/tags/</loc>
-    <lastmod>2022-06-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsollberger2022.netlify.app/</loc>
-    <lastmod>2022-06-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://dsollberger2022.netlify.app/blog/2022/06/14/2022-06-14-drought-conditions/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsollberger2022.netlify.app/tags/ggplot/</loc>
     <lastmod>2022-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsollberger2022.netlify.app/categories/tidytuesday/</loc>
@@ -48,9 +72,6 @@
     <lastmod>2022-06-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsollberger2022.netlify.app/tags/blastula/</loc>
-    <lastmod>2022-05-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsollberger2022.netlify.app/categories/r-markdown/</loc>
     <lastmod>2022-05-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsollberger2022.netlify.app/blog/2022/05/22/2022-05-22-trying-out-blastula/</loc>

@@ -1,0 +1,82 @@
+---
+title: Trying out the Flow package
+author: Derek Sollberger
+date: '2022-07-06'
+banner: 'img/20220706.png'
+slug: trying-out-the-flow-package
+categories:
+  - R Markdown
+tags:
+  - ggplot
+---
+
+<script src="{{< blogdown/postref >}}index.en_files/htmlwidgets/htmlwidgets.js"></script>
+<script src="{{< blogdown/postref >}}index.en_files/es6shim/es6shim.js"></script>
+<script src="{{< blogdown/postref >}}index.en_files/es7shim/es7shim.js"></script>
+<script src="{{< blogdown/postref >}}index.en_files/graphre/graphre.js"></script>
+<script src="{{< blogdown/postref >}}index.en_files/nomnoml/nomnoml.js"></script>
+<script src="{{< blogdown/postref >}}index.en_files/nomnoml-binding/nomnoml.js"></script>
+
+
+<p>I have been meaning to try out the <code>flow</code> package as it appears to help people visualize loops and conditional statements.</p>
+<p>Here is some code that I made to help someone over in the R4DS Slack channel. The task was to check if the change in temperature was over 0.5, and then to set the next 30 days of data to <code>NA</code>.</p>
+<pre class="r"><code>temp_data &lt;- rnorm(100, 20, 1) #fake data about temperatures
+N &lt;- length(temp_data)
+
+#initialization
+buffer &lt;- 0
+day &lt;- 2
+previous_temp &lt;- temp_data[1]
+
+# loop
+while(day &lt;= N){
+  current_temp &lt;- temp_data[day]
+  
+  if(buffer == 0){
+    if(!is.na(current_temp) &amp; !is.na(previous_temp)){
+      #perform check
+      if(abs(current_temp - previous_temp) &gt; 0.5){
+      buffer &lt;- 30
+    }}
+  } else {
+    temp_data[day] &lt;- NA
+    buffer &lt;- buffer - 1
+  }
+  
+  # iterate
+  previous_temp &lt;- current_temp
+  day &lt;- day + 1
+}</code></pre>
+<p>For the <code>flow</code> package capabilities, I think I need to wrap this code chunk into a function.</p>
+<pre class="r"><code>prune_data &lt;- function(temp_data){
+  N &lt;- length(temp_data)
+  
+  #initialization
+  buffer &lt;- 0
+  day &lt;- 2
+  previous_temp &lt;- temp_data[1]
+  
+  # loop
+  while(day &lt;= N){
+    current_temp &lt;- temp_data[day]
+    
+    if(buffer == 0){
+      if(!is.na(current_temp) &amp; !is.na(previous_temp)){
+        #perform check
+        if(abs(current_temp - previous_temp) &gt; 0.5){
+          buffer &lt;- 30
+        }}
+    } else {
+      temp_data[day] &lt;- NA
+      buffer &lt;- buffer - 1
+    }
+    
+    # iterate
+    previous_temp &lt;- current_temp
+    day &lt;- day + 1
+  }
+}</code></pre>
+<p>Now let us see if the <code>flow</code> package can visualize the <code>prune_data</code> function.</p>
+<pre class="r"><code>flow::flow_view(prune_data)</code></pre>
+<div id="htmlwidget-1" style="width:672px;height:480px;" class="nomnoml html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"code":"#.if: visual=rhomb fill=#e2efda align=center\n#.for: visual=rhomb fill=#ddebf7 align=center\n#.repeat: visual=rhomb fill=#fce4d6 align=center\n#.while: visual=rhomb fill=#fff2cc align=center\n#.standard: visual=class fill=#ededed align=left\n#.commented: visual=class fill=#ededed\n#.header: visual=roundrect fill=#d9e1f2 align=left\n#.return: visual=end fill=#70ad47  empty\n#.stop: visual=end fill=#ed7d31  empty\n#.break: visual=receiver fill=#ffc000 empty\n#.next: visual=transceiver fill=#5b9bd5  empty\n#arrowSize: 1\n#bendSize: 0.3\n#direction: down\n#gutter: 5\n#edgeMargin: 0\n#edges: hard\n#fill: #eee8d5\n#fillArrows: false\n#font: Courier\n#fontSize: 12\n#leading: 1.25\n#lineWidth: 3\n#padding: 16\n#spacing: 40\n#stroke: #33322E\n#title: filename\n#zoom: 1\n#acyclicer: greedy\n#ranker: network-simplex\n\n[<header>prune_data(temp_data)]  -> [<standard> 1: ;N <- length(temp_data)\nbuffer <- 0\nday <- 2\nprevious_temp <- temp_data\\[1\\]]\n[<standard> 1: ;N <- length(temp_data)\nbuffer <- 0\nday <- 2\nprevious_temp <- temp_data\\[1\\]]  -> [<while> 2: ;⠀ while (day <= N) ⠀\n⠀ ⠀ ⠀]\n[<while> 2: ;⠀ while (day <= N) ⠀\n⠀ ⠀ ⠀]  -> [<standard> 3: ;current_temp <- temp_data\\[day\\]]\n[<standard> 3: ;current_temp <- temp_data\\[day\\]]  -> [<if> 4: ;⠀ if (buffer == 0) ⠀\n⠀ ⠀ ⠀]\n[<if> 4: ;⠀ if (buffer == 0) ⠀\n⠀ ⠀ ⠀] y -> [<if> 5: ;⠀ if (!is.na(current_temp) & !is.na(previous_temp)) ⠀\n⠀ ⠀ ⠀]\n[<if> 5: ;⠀ if (!is.na(current_temp) & !is.na(previous_temp)) ⠀\n⠀ ⠀ ⠀] y -> [<if> 6: ;⠀ if (abs(current_temp - previous_temp) > 0.5) ⠀\n⠀ ⠀ ⠀]\n[<if> 6: ;⠀ if (abs(current_temp - previous_temp) > 0.5) ⠀\n⠀ ⠀ ⠀] y -> [<standard> 7: ;buffer <- 30]\n[<standard> 7: ;buffer <- 30]  -> [<end> -6:]\n[<if> 6: ;⠀ if (abs(current_temp - previous_temp) > 0.5) ⠀\n⠀ ⠀ ⠀] n -> [<end> -6:]\n[<end> -6:]  -> [<end> -5:]\n[<if> 5: ;⠀ if (!is.na(current_temp) & !is.na(previous_temp)) ⠀\n⠀ ⠀ ⠀] n -> [<end> -5:]\n[<end> -5:]  -> [<end> -4:]\n[<if> 4: ;⠀ if (buffer == 0) ⠀\n⠀ ⠀ ⠀] n -> [<standard> 8: ;temp_data\\[day\\] <- NA\nbuffer <- buffer - 1]\n[<standard> 8: ;temp_data\\[day\\] <- NA\nbuffer <- buffer - 1]  -> [<end> -4:]\n[<end> -4:]  -> [<standard> 9: ;previous_temp <- current_temp\nday <- day + 1]\n[<standard> 9: ;previous_temp <- current_temp\nday <- day + 1]  -> [<start> -2:]\n[<while> 2: ;⠀ while (day <= N) ⠀\n⠀ ⠀ ⠀] next <- [<start> -2:]\n[<start> -2:]  -> [<return> 10:]","svg":true},"evals":[],"jsHooks":[]}</script>

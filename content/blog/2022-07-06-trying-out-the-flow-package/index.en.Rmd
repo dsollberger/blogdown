@@ -1,0 +1,84 @@
+---
+title: Trying out the Flow package
+author: Derek Sollberger
+date: '2022-07-06'
+banner: 'img/20220706.png'
+slug: trying-out-the-flow-package
+categories:
+  - R Markdown
+tags:
+  - ggplot
+---
+
+I have been meaning to try out the `flow` package as it appears to help people visualize loops and conditional statements.
+
+Here is some code that I made to help someone over in the R4DS Slack channel. The task was to check if the change in temperature was over 0.5, and then to set the next 30 days of data to `NA`.
+
+```{r}
+temp_data <- rnorm(100, 20, 1) #fake data about temperatures
+N <- length(temp_data)
+
+#initialization
+buffer <- 0
+day <- 2
+previous_temp <- temp_data[1]
+
+# loop
+while(day <= N){
+  current_temp <- temp_data[day]
+  
+  if(buffer == 0){
+    if(!is.na(current_temp) & !is.na(previous_temp)){
+      #perform check
+      if(abs(current_temp - previous_temp) > 0.5){
+      buffer <- 30
+    }}
+  } else {
+    temp_data[day] <- NA
+    buffer <- buffer - 1
+  }
+  
+  # iterate
+  previous_temp <- current_temp
+  day <- day + 1
+}
+```
+
+For the `flow` package capabilities, I think I need to wrap this code chunk into a function.
+
+```{r}
+prune_data <- function(temp_data){
+  N <- length(temp_data)
+  
+  #initialization
+  buffer <- 0
+  day <- 2
+  previous_temp <- temp_data[1]
+  
+  # loop
+  while(day <= N){
+    current_temp <- temp_data[day]
+    
+    if(buffer == 0){
+      if(!is.na(current_temp) & !is.na(previous_temp)){
+        #perform check
+        if(abs(current_temp - previous_temp) > 0.5){
+          buffer <- 30
+        }}
+    } else {
+      temp_data[day] <- NA
+      buffer <- buffer - 1
+    }
+    
+    # iterate
+    previous_temp <- current_temp
+    day <- day + 1
+  }
+}
+```
+
+Now let us see if the `flow` package can visualize the `prune_data` function.
+
+```{r}
+flow::flow_view(prune_data)
+```

@@ -29,7 +29,7 @@ my_gauge <- plot_ly(
   type = "indicator",
   mode = "gauge+number",
   gauge = list(
-    axis = list(range = list(NULL, 7.0),
+    axis = list(range = list(1.0, 7.0),
                 tickcolor = "#64A43A",
                 tickfont = list(color = "#002856",
                                 family = "Arial",

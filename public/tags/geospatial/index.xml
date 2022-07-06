@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>geospatial on The Median Data Scientist</title>
+    <link>https://dsollberger2022.netlify.app/tags/geospatial/</link>
+    <description>Recent content in geospatial on The Median Data Scientist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 26 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/tags/geospatial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Abortion Trigger Bans</title>
+      <link>https://dsollberger2022.netlify.app/blog/2022/06/26/2022-06-26-abortion-trigger-bans/</link>
+      <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/blog/2022/06/26/2022-06-26-abortion-trigger-bans/</guid>
+      <description>A colleague asked me about making an overlay map, and we discussed staring with the following information:
+US states where conference funding may be inhibited by AB 1887US states where trigger bans took (or are in process) effect when Roe v Wade was overturned# load shape filesstates_shp &amp;lt;- st_read(&amp;quot;cb_2018_us_state_5m/cb_2018_us_state_5m.shp&amp;quot;)## Reading layer `cb_2018_us_state_5m&amp;#39; from data source ## `C:\Users\freex\Documents\GitHub\blogdown\content\blog\2022-06-26-abortion-trigger-bans\cb_2018_us_state_5m\cb_2018_us_state_5m.shp&amp;#39; ## using driver `ESRI Shapefile&amp;#39;## Simple feature collection with 56 features and 9 fields## Geometry type: MULTIPOLYGON## Dimension: XY## Bounding box: xmin: -179.</description>
+    </item>
+    
+  </channel>
+</rss>

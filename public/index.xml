@@ -6,7 +6,40 @@
     <description>Recent content on The Median Data Scientist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Radically Infinite</title>
+      <link>https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-radically-infinite/</link>
+      <pubDate>Wed, 06 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-radically-infinite/</guid>
+      <description>In today’s procrastination effort, I want to generate the LaTeX code to produce an infinite radical expansion for the number 3, and generate the code using R.
+… inspired by math teacher Chris Smith
+tweetFirst, let me see if I can simply generate the pattern of integers. I will use the letter capital “S” and later replace it with the square root symbol.
+stem &amp;lt;- &amp;quot;S 1 + &amp;quot;print(paste(stem, &amp;quot;8&amp;quot;))## [1] &amp;quot;S 1 + 8&amp;quot;for(a in 2:5){b &amp;lt;- (a+1)^2-1print(paste(stem, a, &amp;quot;*&amp;quot;, b/a))print(paste(stem, a, &amp;quot;S&amp;quot;, (b/a)^2))print(paste(stem, a, &amp;quot;S&amp;quot;, 1, &amp;quot;+&amp;quot;, (b/a)^2- 1))stem &amp;lt;- paste(stem, a, &amp;quot;S&amp;quot;, 1, &amp;quot;+&amp;quot;)}## [1] &amp;quot;S 1 + 2 * 4&amp;quot;## [1] &amp;quot;S 1 + 2 S 16&amp;quot;## [1] &amp;quot;S 1 + 2 S 1 + 15&amp;quot;## [1] &amp;quot;S 1 + 2 S 1 + 3 * 5&amp;quot;## [1] &amp;quot;S 1 + 2 S 1 + 3 S 25&amp;quot;## [1] &amp;quot;S 1 + 2 S 1 + 3 S 1 + 24&amp;quot;## [1] &amp;quot;S 1 + 2 S 1 + 3 S 1 + 4 * 6&amp;quot;## [1] &amp;quot;S 1 + 2 S 1 + 3 S 1 + 4 S 36&amp;quot;## [1] &amp;quot;S 1 + 2 S 1 + 3 S 1 + 4 S 1 + 35&amp;quot;## [1] &amp;quot;S 1 + 2 S 1 + 3 S 1 + 4 S 1 + 5 * 7&amp;quot;## [1] &amp;quot;S 1 + 2 S 1 + 3 S 1 + 4 S 1 + 5 S 49&amp;quot;## [1] &amp;quot;S 1 + 2 S 1 + 3 S 1 + 4 S 1 + 5 S 1 + 48&amp;quot;Not only do I need to now insert the square root symbol, but I would also need to close the parentheses.</description>
+    </item>
+    
+    <item>
+      <title>Trying out the Flow package</title>
+      <link>https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-trying-out-the-flow-package/</link>
+      <pubDate>Wed, 06 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-trying-out-the-flow-package/</guid>
+      <description>I have been meaning to try out the flow package as it appears to help people visualize loops and conditional statements.
+Here is some code that I made to help someone over in the R4DS Slack channel. The task was to check if the change in temperature was over 0.5, and then to set the next 30 days of data to NA.
+temp_data &amp;lt;- rnorm(100, 20, 1) #fake data about temperaturesN &amp;lt;- length(temp_data)#initializationbuffer &amp;lt;- 0day &amp;lt;- 2previous_temp &amp;lt;- temp_data[1]# loopwhile(day &amp;lt;= N){current_temp &amp;lt;- temp_data[day]if(buffer == 0){if(!</description>
+    </item>
+    
+    <item>
+      <title>Abortion Trigger Bans</title>
+      <link>https://dsollberger2022.netlify.app/blog/2022/06/26/2022-06-26-abortion-trigger-bans/</link>
+      <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/blog/2022/06/26/2022-06-26-abortion-trigger-bans/</guid>
+      <description>A colleague asked me about making an overlay map, and we discussed staring with the following information:
+US states where conference funding may be inhibited by AB 1887US states where trigger bans took (or are in process) effect when Roe v Wade was overturned# load shape filesstates_shp &amp;lt;- st_read(&amp;quot;cb_2018_us_state_5m/cb_2018_us_state_5m.shp&amp;quot;)## Reading layer `cb_2018_us_state_5m&amp;#39; from data source ## `C:\Users\freex\Documents\GitHub\blogdown\content\blog\2022-06-26-abortion-trigger-bans\cb_2018_us_state_5m\cb_2018_us_state_5m.shp&amp;#39; ## using driver `ESRI Shapefile&amp;#39;## Simple feature collection with 56 features and 9 fields## Geometry type: MULTIPOLYGON## Dimension: XY## Bounding box: xmin: -179.</description>
+    </item>
+    
     <item>
       <title>Gauges</title>
       <link>https://dsollberger2022.netlify.app/blog/2022/06/15/2022-06-15-gauges/</link>

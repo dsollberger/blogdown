@@ -36,7 +36,7 @@
 
 
 
-<link href="/css/custom.css?1655328802" rel="stylesheet">
+<link href="/css/custom.css?1657149338" rel="stylesheet">
 
 
 
@@ -79,7 +79,7 @@
   <meta property="og:image:height" content="420">
 
 
-<meta property="og:updated_time" content="2022-06-15T00:00:00Z">
+<meta property="og:updated_time" content="2022-07-06T00:00:00Z">
 
 
 
@@ -242,6 +242,198 @@
                         <div class="top">
                             <div class="image" style="overflow:hidden">
                                 
+                                <img src="/img/radically_infinite.png" class="img-responsive" alt="" >
+                                
+                            </div>
+                            <div class="bg"></div>
+                            <div class="text">
+                                <p class="buttons">
+                                    <a href="https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-radically-infinite/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> Read more</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <h4><a href="https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-radically-infinite/">Radically Infinite</a></h4>
+                            <p class="author-category">
+			    
+                            
+                                
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                on July 6, 2022
+                            
+                            </p>
+                            
+                            <p class="intro">In today’s procrastination effort, I want to generate the LaTeX code to produce an infinite radical expansion for the number 3, and generate the code using R.
+… inspired by math teacher Chris Smith
+tweetFirst, let me see if I can simply generate the pattern of integers. I will use the letter capital “S” and later replace it with the square root symbol.
+stem &lt;- &quot;S 1 + &quot;print(paste(stem, &quot;8&quot;))## [1] &quot;S 1 + 8&quot;for(a in 2:5){b &lt;- (a+1)^2-1print(paste(stem, a, &quot;*&quot;, b/a))print(paste(stem, a, &quot;S&quot;, (b/a)^2))print(paste(stem, a, &quot;S&quot;, 1, &quot;+&quot;, (b/a)^2- 1))stem &lt;- paste(stem, a, &quot;S&quot;, 1, &quot;+&quot;)}## [1] &quot;S 1 + 2 * 4&quot;## [1] &quot;S 1 + 2 S 16&quot;## [1] &quot;S 1 + 2 S 1 + 15&quot;## [1] &quot;S 1 + 2 S 1 + 3 * 5&quot;## [1] &quot;S 1 + 2 S 1 + 3 S 25&quot;## [1] &quot;S 1 + 2 S 1 + 3 S 1 + 24&quot;## [1] &quot;S 1 + 2 S 1 + 3 S 1 + 4 * 6&quot;## [1] &quot;S 1 + 2 S 1 + 3 S 1 + 4 S 36&quot;## [1] &quot;S 1 + 2 S 1 + 3 S 1 + 4 S 1 + 35&quot;## [1] &quot;S 1 + 2 S 1 + 3 S 1 + 4 S 1 + 5 * 7&quot;## [1] &quot;S 1 + 2 S 1 + 3 S 1 + 4 S 1 + 5 S 49&quot;## [1] &quot;S 1 + 2 S 1 + 3 S 1 + 4 S 1 + 5 S 1 + 48&quot;Not only do I need to now insert the square root symbol, but I would also need to close the parentheses.</p>
+                            <p class="read-more">
+                              <a href="https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-radically-infinite/" class="btn btn-template-main">Continue reading</a>
+                            </p>
+                            
+                        </div>
+                    </div>
+                    
+
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="box-image-text blog">
+                        <div class="top">
+                            <div class="image" style="overflow:hidden">
+                                
+                                <img src="/img/20220706.png" class="img-responsive" alt="" >
+                                
+                            </div>
+                            <div class="bg"></div>
+                            <div class="text">
+                                <p class="buttons">
+                                    <a href="https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-trying-out-the-flow-package/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> Read more</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <h4><a href="https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-trying-out-the-flow-package/">Trying out the Flow package</a></h4>
+                            <p class="author-category">
+			    
+                            
+                                
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                on July 6, 2022
+                            
+                            </p>
+                            
+                            <p class="intro">I have been meaning to try out the flow package as it appears to help people visualize loops and conditional statements.
+Here is some code that I made to help someone over in the R4DS Slack channel. The task was to check if the change in temperature was over 0.5, and then to set the next 30 days of data to NA.
+temp_data &lt;- rnorm(100, 20, 1) #fake data about temperaturesN &lt;- length(temp_data)#initializationbuffer &lt;- 0day &lt;- 2previous_temp &lt;- temp_data[1]# loopwhile(day &lt;= N){current_temp &lt;- temp_data[day]if(buffer == 0){if(!</p>
+                            <p class="read-more">
+                              <a href="https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-trying-out-the-flow-package/" class="btn btn-template-main">Continue reading</a>
+                            </p>
+                            
+                        </div>
+                    </div>
+                    
+
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="box-image-text blog">
+                        <div class="top">
+                            <div class="image" style="overflow:hidden">
+                                
+                                <img src="/img/20220626.png" class="img-responsive" alt="" >
+                                
+                            </div>
+                            <div class="bg"></div>
+                            <div class="text">
+                                <p class="buttons">
+                                    <a href="https://dsollberger2022.netlify.app/blog/2022/06/26/2022-06-26-abortion-trigger-bans/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> Read more</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <h4><a href="https://dsollberger2022.netlify.app/blog/2022/06/26/2022-06-26-abortion-trigger-bans/">Abortion Trigger Bans</a></h4>
+                            <p class="author-category">
+			    
+                            
+                                
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                on June 26, 2022
+                            
+                            </p>
+                            
+                            <p class="intro">A colleague asked me about making an overlay map, and we discussed staring with the following information:
+US states where conference funding may be inhibited by AB 1887US states where trigger bans took (or are in process) effect when Roe v Wade was overturned# load shape filesstates_shp &lt;- st_read(&quot;cb_2018_us_state_5m/cb_2018_us_state_5m.shp&quot;)## Reading layer `cb_2018_us_state_5m&#39; from data source ## `C:\Users\freex\Documents\GitHub\blogdown\content\blog\2022-06-26-abortion-trigger-bans\cb_2018_us_state_5m\cb_2018_us_state_5m.shp&#39; ## using driver `ESRI Shapefile&#39;## Simple feature collection with 56 features and 9 fields## Geometry type: MULTIPOLYGON## Dimension: XY## Bounding box: xmin: -179.</p>
+                            <p class="read-more">
+                              <a href="https://dsollberger2022.netlify.app/blog/2022/06/26/2022-06-26-abortion-trigger-bans/" class="btn btn-template-main">Continue reading</a>
+                            </p>
+                            
+                        </div>
+                    </div>
+                    
+
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="box-image-text blog">
+                        <div class="top">
+                            <div class="image" style="overflow:hidden">
+                                
                                 <img src="/img/gauge_practice.png" class="img-responsive" alt="" >
                                 
                             </div>
@@ -300,197 +492,6 @@ library(&quot;plotly&quot;)library(&quot;tidyverse&quot;)# https://plotly.com/
 
                 </div>
                 
-                <div class="col-md-3 col-sm-6">
-                    <div class="box-image-text blog">
-                        <div class="top">
-                            <div class="image" style="overflow:hidden">
-                                
-                                <img src="/img/TidyTuesday_-_20220614.jpg" class="img-responsive" alt="" >
-                                
-                            </div>
-                            <div class="bg"></div>
-                            <div class="text">
-                                <p class="buttons">
-                                    <a href="https://dsollberger2022.netlify.app/blog/2022/06/14/2022-06-14-drought-conditions/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> Read more</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            <h4><a href="https://dsollberger2022.netlify.app/blog/2022/06/14/2022-06-14-drought-conditions/">Drought Conditions</a></h4>
-                            <p class="author-category">
-			    
-                            
-                                
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                on June 14, 2022
-                            
-                            </p>
-                            
-                            <p class="intro">“The data this week comes from the National Integrated Drought Information System.”
-# load raw data# drought &lt;- readr::read_csv(&#39;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-06-14/drought.csv&#39;)# drought_fips &lt;- readr::read_csv(&#39;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-06-14/drought-fips.csv&#39;)# focus on subset of data# https://www.weather.gov/hnx/cafips# merced_df &lt;- drought_fips |&gt;# filter(FIPS == &quot;06047&quot;)# since original data was a fairly large data file, let&#39;s# save a copy here to ease work# write_csv(merced_df, &quot;merced_drought.csv&quot;)df_raw &lt;- read_csv(&quot;merced_drought.csv&quot;)## Rows: 1171 Columns: 4## ── Column specification ────────────────────────────────────────────────────────## Delimiter: &quot;,&quot;## chr (2): State, FIPS## dbl (1): DSCI## date (1): date## ## ℹ Use `spec()` to retrieve the full column specification for this data.</p>
-                            <p class="read-more">
-                              <a href="https://dsollberger2022.netlify.app/blog/2022/06/14/2022-06-14-drought-conditions/" class="btn btn-template-main">Continue reading</a>
-                            </p>
-                            
-                        </div>
-                    </div>
-                    
-
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                    <div class="box-image-text blog">
-                        <div class="top">
-                            <div class="image" style="overflow:hidden">
-                                
-                                <img src="/img/placeholder.png" class="img-responsive" alt="">
-                                
-                            </div>
-                            <div class="bg"></div>
-                            <div class="text">
-                                <p class="buttons">
-                                    <a href="https://dsollberger2022.netlify.app/blog/2022/06/12/2022-06-12-bookdown-and-github-pages/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> Read more</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            <h4><a href="https://dsollberger2022.netlify.app/blog/2022/06/12/2022-06-12-bookdown-and-github-pages/">Bookdown and GitHub Pages</a></h4>
-                            <p class="author-category">
-			    
-                            
-                                
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                on June 12, 2022
-                            
-                            </p>
-                            
-                            <p class="intro">Today I finally got a bookdown book to appear properly in GitHub pages (well, perhaps I did this in the past, but I do not recall).
-The main gap was that I needed to add the following line
-output_dir: docsto the _bookdown.yml file. Of course, the GitHub repository and Pages needed to be set up as well to point to the docs subdirectory.
-Here were the helpful websites</p>
-                            <p class="read-more">
-                              <a href="https://dsollberger2022.netlify.app/blog/2022/06/12/2022-06-12-bookdown-and-github-pages/" class="btn btn-template-main">Continue reading</a>
-                            </p>
-                            
-                        </div>
-                    </div>
-                    
-
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                    <div class="box-image-text blog">
-                        <div class="top">
-                            <div class="image" style="overflow:hidden">
-                                
-                                <img src="/img/TidyTuesday20220607.jpeg" class="img-responsive" alt="" >
-                                
-                            </div>
-                            <div class="bg"></div>
-                            <div class="text">
-                                <p class="buttons">
-                                    <a href="https://dsollberger2022.netlify.app/blog/2022/06/07/2022-06-07-tidytuesday-20220607/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> Read more</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            <h4><a href="https://dsollberger2022.netlify.app/blog/2022/06/07/2022-06-07-tidytuesday-20220607/">TidyTuesday 20220607</a></h4>
-                            <p class="author-category">
-			    
-                            
-                                
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                on June 7, 2022
-                            
-                            </p>
-                            
-                            <p class="intro">“The data this week comes from Data For Progress.
-“Each year, hundreds of corporations around the country participate in Pride, an annual celebration of the LGBTQ+ community’s history and progress. They present themselves as LGBTQ+ allies, but new research from Data for Progress finds that in between their yearly parade appearances, dozens of these corporations are giving to state politicians behind some of the most bigoted and harmful policies in over a decade.</p>
-                            <p class="read-more">
-                              <a href="https://dsollberger2022.netlify.app/blog/2022/06/07/2022-06-07-tidytuesday-20220607/" class="btn btn-template-main">Continue reading</a>
-                            </p>
-                            
-                        </div>
-                    </div>
-                    
-
-                </div>
-                
 
             </div>
             
@@ -535,40 +536,40 @@ Here were the helpful websites</p>
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <a href="https://dsollberger2022.netlify.app/blog/2022/06/15/2022-06-15-gauges/">
+                        <a href="https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-radically-infinite/">
                           
-                            <img src="/img/gauge_practice.png" class="img-responsive" alt="Gauges">
+                            <img src="/img/radically_infinite.png" class="img-responsive" alt="Radically Infinite">
                           
                         </a>
                     </div>
                     <div class="name same-height-always">
-                        <h5><a href="https://dsollberger2022.netlify.app/blog/2022/06/15/2022-06-15-gauges/">Gauges</a></h5>
+                        <h5><a href="https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-radically-infinite/">Radically Infinite</a></h5>
                     </div>
                 </div>
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <a href="https://dsollberger2022.netlify.app/blog/2022/06/14/2022-06-14-drought-conditions/">
+                        <a href="https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-trying-out-the-flow-package/">
                           
-                            <img src="/img/TidyTuesday_-_20220614.jpg" class="img-responsive" alt="Drought Conditions">
+                            <img src="/img/20220706.png" class="img-responsive" alt="Trying out the Flow package">
                           
                         </a>
                     </div>
                     <div class="name same-height-always">
-                        <h5><a href="https://dsollberger2022.netlify.app/blog/2022/06/14/2022-06-14-drought-conditions/">Drought Conditions</a></h5>
+                        <h5><a href="https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-trying-out-the-flow-package/">Trying out the Flow package</a></h5>
                     </div>
                 </div>
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <a href="https://dsollberger2022.netlify.app/blog/2022/06/12/2022-06-12-bookdown-and-github-pages/">
+                        <a href="https://dsollberger2022.netlify.app/blog/2022/06/26/2022-06-26-abortion-trigger-bans/">
                           
-                            <img src="/img/placeholder.png" class="img-responsive" alt="Bookdown and GitHub Pages">
+                            <img src="/img/20220626.png" class="img-responsive" alt="Abortion Trigger Bans">
                           
                         </a>
                     </div>
                     <div class="name same-height-always">
-                        <h5><a href="https://dsollberger2022.netlify.app/blog/2022/06/12/2022-06-12-bookdown-and-github-pages/">Bookdown and GitHub Pages</a></h5>
+                        <h5><a href="https://dsollberger2022.netlify.app/blog/2022/06/26/2022-06-26-abortion-trigger-bans/">Abortion Trigger Bans</a></h5>
                     </div>
                 </div>
                 

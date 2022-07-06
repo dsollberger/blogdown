@@ -6,22 +6,40 @@
     <description>Recent content in Tags on The Median Data Scientist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ggplot</title>
+      <link>https://dsollberger2022.netlify.app/tags/ggplot/</link>
+      <pubDate>Wed, 06 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/tags/ggplot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>latex</title>
+      <link>https://dsollberger2022.netlify.app/tags/latex/</link>
+      <pubDate>Wed, 06 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/tags/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>geospatial</title>
+      <link>https://dsollberger2022.netlify.app/tags/geospatial/</link>
+      <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/tags/geospatial/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>plotly</title>
       <link>https://dsollberger2022.netlify.app/tags/plotly/</link>
       <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://dsollberger2022.netlify.app/tags/plotly/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ggplot</title>
-      <link>https://dsollberger2022.netlify.app/tags/ggplot/</link>
-      <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://dsollberger2022.netlify.app/tags/ggplot/</guid>
       <description></description>
     </item>
     

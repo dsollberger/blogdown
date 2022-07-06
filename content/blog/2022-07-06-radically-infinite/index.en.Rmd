@@ -1,0 +1,134 @@
+---
+title: Radically Infinite
+author: Derek Sollberger
+date: '2022-07-06'
+banner: "img/radically_infinte.png"
+slug: radically-infinite
+categories:
+  - math
+tags:
+  - latex
+---
+
+In today's procrastination effort, I want to generate the `LaTeX` code to produce an infinite radical expansion for the number 3, and generate the code using `R`.
+
+... inspired by math teacher Chris Smith
+
+* [tweet](https://mobile.twitter.com/aap03102/status/1544265133735690242)
+
+First, let me see if I can simply generate the pattern of integers.  I will use the letter capital "S" and later replace it with the square root symbol.
+
+```{r}
+stem <- "S 1 + "
+print(paste(stem, "8"))
+for(a in 2:5){
+  b <- (a+1)^2-1
+  print(paste(stem, a, "*", b/a))
+  print(paste(stem, a, "S", (b/a)^2))
+  print(paste(stem, a, "S", 1, "+", (b/a)^2- 1))
+  stem <- paste(stem, a, "S", 1, "+")
+}
+```
+
+Not only do I need to now insert the square root symbol, but I would also need to close the parentheses.  I think I an literally count the number of times "S" appears and work with that.
+
+```{r}
+stem <- "S1 + "
+print("\\sqrt(9)")
+print("\\sqrt(1 + 8)")
+for(a in 2:5){
+  b <- (a+1)^2-1
+  
+  line1 <- paste(stem, a, "*", b/a)
+  n1 <- stringr::str_count(line1, "S")
+  line1 <- stringr::str_replace_all(line1, "S", "\\\\sqrt(")
+  line1 <- paste(line1, paste0(rep(")", n1), collapse = ""), "\\\\")
+  print(line1)
+  
+  line2 <- paste(stem, a, "S", (b/a)^2)
+  n2 <- stringr::str_count(line2, "S")
+  line2 <- stringr::str_replace_all(line2, "S", "\\\\sqrt(")
+  line2 <- paste(line2, paste0(rep(")", n2), collapse = ""), "\\\\")
+  print(line2)
+  
+  line3 <- paste(stem, a, "S", 1, "+", (b/a)^2- 1)
+  n3 <- stringr::str_count(line3, "S")
+  line3 <- stringr::str_replace_all(line3, "S", "\\\\sqrt(")
+  line3 <- paste(line3, paste0(rep(")", n3), collapse = ""), "\\\\")
+  print(line3)
+  
+  stem <- paste0(stem, a, "S", 1, "+")
+}
+```
+
+Now, I want to move toward a LaTeX `array` environment.
+
+```{r}
+print("\\begin{array}{rcl}")
+stem <- "S1 + "
+print("3 & = & \\sqrt(9)")
+print("3 & = & \\sqrt(1 + 8)")
+for(a in 2:5){
+  b <- (a+1)^2-1
+  
+  line1 <- paste(stem, a, "*", b/a)
+  n1 <- stringr::str_count(line1, "S")
+  line1 <- stringr::str_replace_all(line1, "S", "\\\\sqrt(")
+  line1 <- paste(line1, paste0(rep(")", n1), collapse = ""), "\\\\")
+  print(paste("3 & = &", line1))
+  
+  line2 <- paste(stem, a, "S", (b/a)^2)
+  n2 <- stringr::str_count(line2, "S")
+  line2 <- stringr::str_replace_all(line2, "S", "\\\\sqrt(")
+  line2 <- paste(line2, paste0(rep(")", n2), collapse = ""), "\\\\")
+  print(paste("3 & = &", line2))
+  
+  line3 <- paste(stem, a, "S", 1, "+", (b/a)^2- 1)
+  n3 <- stringr::str_count(line3, "S")
+  line3 <- stringr::str_replace_all(line3, "S", "\\\\sqrt(")
+  line3 <- paste(line3, paste0(rep(")", n3), collapse = ""), "\\\\")
+  print(paste("3 & = &", line3))
+  
+  stem <- paste0(stem, a, "S", 1, "+")
+}
+print("\\end{array}")
+```
+
+Now let's see if we can collect everything into just one string (of LaTeX code)
+
+```{r}
+main_string <- "\\$\\begin{array}{rcl}"
+stem <- "S1 + "
+main_string <- paste(main_string, "3 & = & \\sqrt{9} \\\\")
+main_string <- paste(main_string, "3 & = & \\sqrt{1 + 8} \\\\")
+for(a in 2:7){
+  b <- (a+1)^2-1
+  
+  line1 <- paste(stem, a, "*", b/a)
+  n1 <- stringr::str_count(line1, "S")
+  line1 <- stringr::str_replace_all(line1, "S", "\\\\sqrt{")
+  line1 <- paste(line1, paste0(rep("}", n1), collapse = ""), "\\\\")
+  main_string <- paste(main_string, "3 & = &", line1)
+  
+  line2 <- paste(stem, a, "S", (b/a)^2)
+  n2 <- stringr::str_count(line2, "S")
+  line2 <- stringr::str_replace_all(line2, "S", "\\\\sqrt{")
+  line2 <- paste(line2, paste0(rep("}", n2), collapse = ""), "\\\\")
+  main_string <- paste(main_string, "3 & = &", line2)
+  
+  line3 <- paste(stem, a, "S", 1, "+", (b/a)^2- 1)
+  n3 <- stringr::str_count(line3, "S")
+  line3 <- stringr::str_replace_all(line3, "S", "\\\\sqrt{")
+  line3 <- paste(line3, paste0(rep("}", n3), collapse = ""), "\\\\")
+  main_string <- paste(main_string, "3 & = &", line3)
+  
+  stem <- paste0(stem, a, "S", 1, "+")
+}
+main_string <- paste(main_string, "\\end{array}\\$")
+```
+
+Finally, does this print in inline LaTeX handling here in RStudio??
+
+`r main_string`
+
+Oh well.  At least I did generate replicable code that can be ported over to a LaTeX editor!

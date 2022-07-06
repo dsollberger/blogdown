@@ -2,7 +2,7 @@
 title: Radically Infinite
 author: Derek Sollberger
 date: '2022-07-06'
-banner: "img/radically_infinte.png"
+banner: "img/radically_infinite.png"
 slug: radically-infinite
 categories:
   - math

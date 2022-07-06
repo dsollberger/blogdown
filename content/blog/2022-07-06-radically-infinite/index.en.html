@@ -2,6 +2,7 @@
 title: Radically Infinite
 author: Derek Sollberger
 date: '2022-07-06'
+banner: "img/radically_infinite.png"
 slug: radically-infinite
 categories:
   - math
@@ -12,6 +13,10 @@ tags:
 
 
 <p>In today’s procrastination effort, I want to generate the <code>LaTeX</code> code to produce an infinite radical expansion for the number 3, and generate the code using <code>R</code>.</p>
+<p>… inspired by math teacher Chris Smith</p>
+<ul>
+<li><a href="https://mobile.twitter.com/aap03102/status/1544265133735690242">tweet</a></li>
+</ul>
 <p>First, let me see if I can simply generate the pattern of integers. I will use the letter capital “S” and later replace it with the square root symbol.</p>
 <pre class="r"><code>stem &lt;- &quot;S 1 + &quot;
 print(paste(stem, &quot;8&quot;))</code></pre>

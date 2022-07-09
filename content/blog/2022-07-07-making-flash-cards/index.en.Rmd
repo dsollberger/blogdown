@@ -2,7 +2,7 @@
 title: Making Flash Cards
 author: Derek Sollberger
 date: '2022-07-07'
-banner: "Day11b.jpg"
+banner: "img/Day11b.jpg"
 slug: making-flash-cards
 categories:
   - publishing

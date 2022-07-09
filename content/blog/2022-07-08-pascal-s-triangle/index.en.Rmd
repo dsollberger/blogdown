@@ -2,7 +2,7 @@
 title: Pascal's Triangle
 author: Derek Sollberger
 date: '2022-07-08'
-banner: "pascal_plot.gif"
+banner: "img/pascal_plot.gif"
 slug: pascal-s-triangle
 categories:
   - data visualization

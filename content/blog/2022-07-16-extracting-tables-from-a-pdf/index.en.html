@@ -1,0 +1,47 @@
+---
+title: Extracting Tables from a PDF
+author: Derek Sollberger
+date: '2022-07-16'
+slug: extracting-tables-from-a-pdf
+categories:
+  - data mining
+tags:
+  - tabulizer
+---
+
+
+
+<p>Today I finally find myself needing to extract information from files delivered in the PDF format. I have heard good things about the <code>tabulizer</code> package, so we will try that out today.</p>
+<p>Whelp, it turned out that I needed to ensure a 64-bit installation of <code>Java</code> before I could install <code>tabulizer</code>. Also, I used <code>remotes::install_github(...)</code> command from [the package’s GitHub page[(<a href="https://github.com/ropensci/tabulizer" class="uri">https://github.com/ropensci/tabulizer</a>)] to force the installation (as there appears to be issues with installing a package through CRAN where there are concerns of Java dependency).</p>
+<pre class="r"><code># load packages
+library(&quot;tabulizer&quot;)
+library(&quot;tidyverse&quot;)</code></pre>
+<p>Now let’s try to load the data. Today, I am using anonymized aggregate data from my classroom, but I am still not going to provide a public version of the data file for the blog post.</p>
+<pre class="r"><code># https://cran.r-hub.io/web/packages/tabulizer/vignettes/tabulizer.html
+raw_data &lt;- tabulizer::extract_tables(&quot;report-UCMerc-Fall2021Pre-2022-02-07.pdf&quot;)</code></pre>
+<p>So far, the algorithm (subroutine: <code>Tabula</code>) is finding some of the information, but perhaps we need to be more specific. It looks like I will need to tell the algorithm where on the pages the tables are. Fortunately, the <code>locate_areas()</code> function in the <code>tabulizer</code> package runs an interactive app inside RStudio to quickly extract the bounding-box pixel values that we need.</p>
+<pre class="r"><code># https://medium.com/@ketanrd.009/how-to-extract-pdf-tables-in-r-e994c0fe4e28
+
+areas_list &lt;- list(
+  c(597, 139, 658, 477),
+  c(616, 76, 735, 539),
+  c(67, 76, 127, 539),
+  c(170, 73, 301, 542),
+  c(414, 73, 588, 539)
+)
+
+raw_data &lt;- tabulizer::extract_tables(
+  &quot;report-UCMerc-Fall2021Pre-2022-02-07.pdf&quot;,
+  pages = c(1, 2, 3, 4, 4), #there were two tables on page 4
+  area = areas_list, guess = FALSE,
+  output = &quot;data.frame&quot;)</code></pre>
+<p>Success! Now the tables I want are in the following variables</p>
+<ul>
+<li><code>raw_data[[1]]</code></li>
+<li><code>raw_data[[2]]</code></li>
+<li><code>raw_data[[3]]</code></li>
+<li><code>raw_data[[4]]</code></li>
+<li><code>raw_data[[5]]</code></li>
+</ul>
+<p>and are in the <code>data.frame</code> format that I like.</p>
+<p>In my next blog post, I shall recombine the data and start performing some calculations.</p>

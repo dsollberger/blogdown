@@ -1,0 +1,59 @@
+---
+title: Extracting Tables from a PDF
+author: Derek Sollberger
+date: '2022-07-16'
+slug: extracting-tables-from-a-pdf
+categories:
+  - data mining
+tags:
+  - tabulizer
+---
+
+Today I finally find myself needing to extract information from files delivered in the PDF format.  I have heard good things about the `tabulizer` package, so we will try that out today.
+
+Whelp, it turned out that I needed to ensure a 64-bit installation of `Java` before I could install `tabulizer`.  Also, I used `remotes::install_github(...)` command from [the package's GitHub page[(https://github.com/ropensci/tabulizer)] to force the installation (as there appears to be issues with installing a package through CRAN where there are concerns of Java dependency).
+
+```{r, eval = FALSE, message = FALSE, warning = FALSE}
+# load packages
+library("tabulizer")
+library("tidyverse")
+```
+
+Now let's try to load the data.  Today, I am using anonymized aggregate data from my classroom, but I am still not going to provide a public version of the data file for the blog post.
+
+```{r, eval = FALSE}
+# https://cran.r-hub.io/web/packages/tabulizer/vignettes/tabulizer.html
+raw_data <- tabulizer::extract_tables("report-UCMerc-Fall2021Pre-2022-02-07.pdf")
+```
+
+So far, the algorithm (subroutine: `Tabula`) is finding some of the information, but perhaps we need to be more specific.  It looks like I will need to tell the algorithm where on the pages the tables are.  Fortunately, the `locate_areas()` function in the `tabulizer` package runs an interactive app inside RStudio to quickly extract the bounding-box pixel values that we need.
+
+```{r, eval = FALSE}
+# https://medium.com/@ketanrd.009/how-to-extract-pdf-tables-in-r-e994c0fe4e28
+
+areas_list <- list(
+  c(597, 139, 658, 477),
+  c(616, 76, 735, 539),
+  c(67, 76, 127, 539),
+  c(170, 73, 301, 542),
+  c(414, 73, 588, 539)
+)
+
+raw_data <- tabulizer::extract_tables(
+  "report-UCMerc-Fall2021Pre-2022-02-07.pdf",
+  pages = c(1, 2, 3, 4, 4), #there were two tables on page 4
+  area = areas_list, guess = FALSE,
+  output = "data.frame")
+```
+
+Success!  Now the tables I want are in the following variables
+
+* `raw_data[[1]]`
+* `raw_data[[2]]`
+* `raw_data[[3]]`
+* `raw_data[[4]]`
+* `raw_data[[5]]`
+
+and are in the `data.frame` format that I like.
+
+In my next blog post, I shall recombine the data and start performing some calculations.

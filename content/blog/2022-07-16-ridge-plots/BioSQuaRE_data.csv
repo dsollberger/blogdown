@@ -1,0 +1,233 @@
+Item,Content,UCMer,Other,term,iter,n,s
+1,Compute probability from a two-way table,0.83,0.86,Summer 2020,pre-test,178,0.77
+3,Understanding variation in log-transformed measurements,0.55,0.61,Summer 2020,pre-test,178,0.77
+10,Translating content to tabular summaries,0.37,0.46,Summer 2020,pre-test,178,0.77
+13,Translating between two graphs of data,0.34,0.35,Summer 2020,pre-test,178,0.77
+14,Interpeting plots of logarithms,0.34,0.4,Summer 2020,pre-test,178,0.77
+15,Interpeting plots of logarithms,0.26,0.32,Summer 2020,pre-test,178,0.77
+16,Predicting from a recursive model of population growth,0.46,0.37,Summer 2020,pre-test,178,0.77
+24,Predicting from a genetic model,0.42,0.59,Summer 2020,pre-test,178,0.77
+25,Graphing a non-linear function,0.25,0.27,Summer 2020,pre-test,178,0.77
+2,Understanding variation in measurements,0.75,0.85,Summer 2020,pre-test,178,0.77
+4,Relating sample size to uncertainty,0.71,0.8,Summer 2020,pre-test,178,0.77
+5,Translating summary statistics to a distribution,0.75,0.78,Summer 2020,pre-test,178,0.77
+6,Translating content to a statistical hypothesis,0.37,0.58,Summer 2020,pre-test,178,0.77
+7,Understanding p-value,0.16,0.31,Summer 2020,pre-test,178,0.77
+8,Understanding p-value,0.56,0.65,Summer 2020,pre-test,178,0.77
+9,Understanding relationship between p-value and effect,0.4,0.48,Summer 2020,pre-test,178,0.77
+23,Relationship between summary statistics and statistical significance,0.53,0.59,Summer 2020,pre-test,178,0.77
+11,Interpreting variation in a heatmap,0.71,0.76,Summer 2020,pre-test,178,0.77
+12,Interpreting trend in a heatmap,0.62,0.68,Summer 2020,pre-test,178,0.77
+17,Interpeting interaction effects from a plot,0.57,0.56,Summer 2020,pre-test,178,0.77
+18,Interpeting interaction effects from a plot,0.6,0.65,Summer 2020,pre-test,178,0.77
+19,Interpreting relationships between variables from a lineplot,0.62,0.7,Summer 2020,pre-test,178,0.77
+20,Interpreting relationships between variables from a lineplot,0.69,0.82,Summer 2020,pre-test,178,0.77
+21,Interpreting trend in a choropleth map,0.36,0.5,Summer 2020,pre-test,178,0.77
+22,Interpreting variation in a choropleth map,0.45,0.64,Summer 2020,pre-test,178,0.77
+26,"Understanding relationship between data, RQ, and plot",0.42,0.47,Summer 2020,pre-test,178,0.77
+27,"Understanding relationship between data, RQ, and plot",0.28,0.36,Summer 2020,pre-test,178,0.77
+28,"Understanding relationship between data, RQ, and plot",0.47,0.64,Summer 2020,pre-test,178,0.77
+29,"Understanding relationship between data, RQ, and plot",0.25,0.31,Summer 2020,pre-test,178,0.77
+1,Compute probability from a two-way table,0.7,0.86,Summer 2020,post-test,129,0.86
+3,Understanding variation in log-transformed measurements,0.51,0.61,Summer 2020,post-test,129,0.86
+10,Translating content to tabular summaries,0.4,0.46,Summer 2020,post-test,129,0.86
+13,Translating between two graphs of data,0.38,0.35,Summer 2020,post-test,129,0.86
+14,Interpeting plots of logarithms,0.33,0.4,Summer 2020,post-test,129,0.86
+15,Interpeting plots of logarithms,0.26,0.32,Summer 2020,post-test,129,0.86
+16,Predicting from a recursive model of population growth,0.43,0.37,Summer 2020,post-test,129,0.86
+24,Predicting from a genetic model,0.53,0.59,Summer 2020,post-test,129,0.86
+25,Graphing a non-linear function,0.28,0.27,Summer 2020,post-test,129,0.86
+2,Understanding variation in measurements,0.71,0.85,Summer 2020,post-test,129,0.86
+4,Relating sample size to uncertainty,0.74,0.8,Summer 2020,post-test,129,0.86
+5,Translating summary statistics to a distribution,0.72,0.78,Summer 2020,post-test,129,0.86
+6,Translating content to a statistical hypothesis,0.39,0.58,Summer 2020,post-test,129,0.86
+7,Understanding p-value,0.21,0.31,Summer 2020,post-test,129,0.86
+8,Understanding p-value,0.5,0.65,Summer 2020,post-test,129,0.86
+9,Understanding relationship between p-value and effect,0.43,0.48,Summer 2020,post-test,129,0.86
+23,Relationship between summary statistics and statistical significance,0.47,0.59,Summer 2020,post-test,129,0.86
+11,Interpreting variation in a heatmap,0.53,0.76,Summer 2020,post-test,129,0.86
+12,Interpreting trend in a heatmap,0.53,0.68,Summer 2020,post-test,129,0.86
+17,Interpeting interaction effects from a plot,0.5,0.56,Summer 2020,post-test,129,0.86
+18,Interpeting interaction effects from a plot,0.56,0.65,Summer 2020,post-test,129,0.86
+19,Interpreting relationships between variables from a lineplot,0.55,0.7,Summer 2020,post-test,129,0.86
+20,Interpreting relationships between variables from a lineplot,0.62,0.82,Summer 2020,post-test,129,0.86
+21,Interpreting trend in a choropleth map,0.39,0.5,Summer 2020,post-test,129,0.86
+22,Interpreting variation in a choropleth map,0.49,0.64,Summer 2020,post-test,129,0.86
+26,"Understanding relationship between data, RQ, and plot",0.49,0.47,Summer 2020,post-test,129,0.86
+27,"Understanding relationship between data, RQ, and plot",0.22,0.36,Summer 2020,post-test,129,0.86
+28,"Understanding relationship between data, RQ, and plot",0.51,0.64,Summer 2020,post-test,129,0.86
+29,"Understanding relationship between data, RQ, and plot",0.29,0.31,Summer 2020,post-test,129,0.86
+1,Compute probability from a two-way table,0.81,0.86,Fall 2020,pre-test,69,0.81
+3,Understanding variation in log-transformed measurements,0.54,0.61,Fall 2020,pre-test,69,0.81
+10,Translating content to tabular summaries,0.39,0.46,Fall 2020,pre-test,69,0.81
+13,Translating between two graphs of data,0.25,0.35,Fall 2020,pre-test,69,0.81
+14,Interpeting plots of logarithms,0.33,0.4,Fall 2020,pre-test,69,0.81
+15,Interpeting plots of logarithms,0.23,0.32,Fall 2020,pre-test,69,0.81
+16,Predicting from a recursive model of population growth,0.41,0.37,Fall 2020,pre-test,69,0.81
+24,Predicting from a genetic model,0.46,0.59,Fall 2020,pre-test,69,0.81
+25,Graphing a non-linear function,0.2,0.27,Fall 2020,pre-test,69,0.81
+2,Understanding variation in measurements,0.83,0.85,Fall 2020,pre-test,69,0.81
+4,Relating sample size to uncertainty,0.68,0.8,Fall 2020,pre-test,69,0.81
+5,Translating summary statistics to a distribution,0.72,0.78,Fall 2020,pre-test,69,0.81
+6,Translating content to a statistical hypothesis,0.45,0.58,Fall 2020,pre-test,69,0.81
+7,Understanding p-value,0.1,0.31,Fall 2020,pre-test,69,0.81
+8,Understanding p-value,0.55,0.65,Fall 2020,pre-test,69,0.81
+9,Understanding relationship between p-value and effect,0.46,0.48,Fall 2020,pre-test,69,0.81
+23,Relationship between summary statistics and statistical significance,0.41,0.59,Fall 2020,pre-test,69,0.81
+11,Interpreting variation in a heatmap,0.75,0.76,Fall 2020,pre-test,69,0.81
+12,Interpreting trend in a heatmap,0.58,0.68,Fall 2020,pre-test,69,0.81
+17,Interpeting interaction effects from a plot,0.54,0.56,Fall 2020,pre-test,69,0.81
+18,Interpeting interaction effects from a plot,0.45,0.65,Fall 2020,pre-test,69,0.81
+19,Interpreting relationships between variables from a lineplot,0.57,0.7,Fall 2020,pre-test,69,0.81
+20,Interpreting relationships between variables from a lineplot,0.8,0.82,Fall 2020,pre-test,69,0.81
+21,Interpreting trend in a choropleth map,0.35,0.5,Fall 2020,pre-test,69,0.81
+22,Interpreting variation in a choropleth map,0.45,0.64,Fall 2020,pre-test,69,0.81
+26,"Understanding relationship between data, RQ, and plot",0.41,0.47,Fall 2020,pre-test,69,0.81
+27,"Understanding relationship between data, RQ, and plot",0.39,0.36,Fall 2020,pre-test,69,0.81
+28,"Understanding relationship between data, RQ, and plot",0.46,0.64,Fall 2020,pre-test,69,0.81
+29,"Understanding relationship between data, RQ, and plot",0.22,0.31,Fall 2020,pre-test,69,0.81
+1,Compute probability from a two-way table,0.77,0.86,Fall 2020,post-test,47,0.85
+3,Understanding variation in log-transformed measurements,0.51,0.61,Fall 2020,post-test,47,0.85
+10,Translating content to tabular summaries,0.36,0.46,Fall 2020,post-test,47,0.85
+13,Translating between two graphs of data,0.13,0.35,Fall 2020,post-test,47,0.85
+14,Interpeting plots of logarithms,0.34,0.4,Fall 2020,post-test,47,0.85
+15,Interpeting plots of logarithms,0.26,0.32,Fall 2020,post-test,47,0.85
+16,Predicting from a recursive model of population growth,0.32,0.37,Fall 2020,post-test,47,0.85
+24,Predicting from a genetic model,0.62,0.59,Fall 2020,post-test,47,0.85
+25,Graphing a non-linear function,0.15,0.27,Fall 2020,post-test,47,0.85
+2,Understanding variation in measurements,0.68,0.85,Fall 2020,post-test,47,0.85
+4,Relating sample size to uncertainty,0.7,0.8,Fall 2020,post-test,47,0.85
+5,Translating summary statistics to a distribution,0.74,0.78,Fall 2020,post-test,47,0.85
+6,Translating content to a statistical hypothesis,0.4,0.58,Fall 2020,post-test,47,0.85
+7,Understanding p-value,0.17,0.31,Fall 2020,post-test,47,0.85
+8,Understanding p-value,0.57,0.65,Fall 2020,post-test,47,0.85
+9,Understanding relationship between p-value and effect,0.45,0.48,Fall 2020,post-test,47,0.85
+23,Relationship between summary statistics and statistical significance,0.43,0.59,Fall 2020,post-test,47,0.85
+11,Interpreting variation in a heatmap,0.53,0.76,Fall 2020,post-test,47,0.85
+12,Interpreting trend in a heatmap,0.55,0.68,Fall 2020,post-test,47,0.85
+17,Interpeting interaction effects from a plot,0.57,0.56,Fall 2020,post-test,47,0.85
+18,Interpeting interaction effects from a plot,0.55,0.65,Fall 2020,post-test,47,0.85
+19,Interpreting relationships between variables from a lineplot,0.57,0.7,Fall 2020,post-test,47,0.85
+20,Interpreting relationships between variables from a lineplot,0.7,0.82,Fall 2020,post-test,47,0.85
+21,Interpreting trend in a choropleth map,0.47,0.5,Fall 2020,post-test,47,0.85
+22,Interpreting variation in a choropleth map,0.34,0.64,Fall 2020,post-test,47,0.85
+26,"Understanding relationship between data, RQ, and plot",0.53,0.47,Fall 2020,post-test,47,0.85
+27,"Understanding relationship between data, RQ, and plot",0.34,0.36,Fall 2020,post-test,47,0.85
+28,"Understanding relationship between data, RQ, and plot",0.55,0.64,Fall 2020,post-test,47,0.85
+29,"Understanding relationship between data, RQ, and plot",0.23,0.31,Fall 2020,post-test,47,0.85
+1,Compute probability from a two-way table,0.82,0.85,Spring 2021,pre-test,50,0.74
+3,Understanding variation in log-transformed measurements,0.6,0.6,Spring 2021,pre-test,50,0.74
+10,Translating content to tabular summaries,0.38,0.46,Spring 2021,pre-test,50,0.74
+13,Translating between two graphs of data,0.3,0.34,Spring 2021,pre-test,50,0.74
+14,Interpeting plots of logarithms,0.28,0.4,Spring 2021,pre-test,50,0.74
+15,Interpeting plots of logarithms,0.22,0.31,Spring 2021,pre-test,50,0.74
+16,Predicting from a recursive model of population growth,0.24,0.37,Spring 2021,pre-test,50,0.74
+24,Predicting from a genetic model,0.54,0.58,Spring 2021,pre-test,50,0.74
+25,Graphing a non-linear function,0.18,0.27,Spring 2021,pre-test,50,0.74
+2,Understanding variation in measurements,0.8,0.84,Spring 2021,pre-test,50,0.74
+4,Relating sample size to uncertainty,0.68,0.79,Spring 2021,pre-test,50,0.74
+5,Translating summary statistics to a distribution,0.74,0.77,Spring 2021,pre-test,50,0.74
+6,Translating content to a statistical hypothesis,0.36,0.56,Spring 2021,pre-test,50,0.74
+7,Understanding p-value,0.16,0.31,Spring 2021,pre-test,50,0.74
+8,Understanding p-value,0.62,0.64,Spring 2021,pre-test,50,0.74
+9,Understanding relationship between p-value and effect,0.42,0.47,Spring 2021,pre-test,50,0.74
+23,Relationship between summary statistics and statistical significance,0.4,0.59,Spring 2021,pre-test,50,0.74
+11,Interpreting variation in a heatmap,0.64,0.76,Spring 2021,pre-test,50,0.74
+12,Interpreting trend in a heatmap,0.66,0.67,Spring 2021,pre-test,50,0.74
+17,Interpeting interaction effects from a plot,0.5,0.55,Spring 2021,pre-test,50,0.74
+18,Interpeting interaction effects from a plot,0.68,0.65,Spring 2021,pre-test,50,0.74
+19,Interpreting relationships between variables from a lineplot,0.5,0.69,Spring 2021,pre-test,50,0.74
+20,Interpreting relationships between variables from a lineplot,0.76,0.81,Spring 2021,pre-test,50,0.74
+21,Interpreting trend in a choropleth map,0.3,0.49,Spring 2021,pre-test,50,0.74
+22,Interpreting variation in a choropleth map,0.48,0.63,Spring 2021,pre-test,50,0.74
+26,"Understanding relationship between data, RQ, and plot",0.52,0.47,Spring 2021,pre-test,50,0.74
+27,"Understanding relationship between data, RQ, and plot",0.32,0.36,Spring 2021,pre-test,50,0.74
+28,"Understanding relationship between data, RQ, and plot",0.58,0.64,Spring 2021,pre-test,50,0.74
+29,"Understanding relationship between data, RQ, and plot",0.16,0.3,Spring 2021,pre-test,50,0.74
+1,Compute probability from a two-way table,0.81,0.85,Spring 2021,post-test,42,0.74
+3,Understanding variation in log-transformed measurements,0.48,0.6,Spring 2021,post-test,42,0.74
+10,Translating content to tabular summaries,0.4,0.46,Spring 2021,post-test,42,0.74
+13,Translating between two graphs of data,0.4,0.34,Spring 2021,post-test,42,0.74
+14,Interpeting plots of logarithms,0.38,0.4,Spring 2021,post-test,42,0.74
+15,Interpeting plots of logarithms,0.26,0.31,Spring 2021,post-test,42,0.74
+16,Predicting from a recursive model of population growth,0.36,0.37,Spring 2021,post-test,42,0.74
+24,Predicting from a genetic model,0.5,0.58,Spring 2021,post-test,42,0.74
+25,Graphing a non-linear function,0.17,0.27,Spring 2021,post-test,42,0.74
+2,Understanding variation in measurements,0.76,0.84,Spring 2021,post-test,42,0.74
+4,Relating sample size to uncertainty,0.74,0.79,Spring 2021,post-test,42,0.74
+5,Translating summary statistics to a distribution,0.83,0.77,Spring 2021,post-test,42,0.74
+6,Translating content to a statistical hypothesis,0.36,0.56,Spring 2021,post-test,42,0.74
+7,Understanding p-value,0.19,0.31,Spring 2021,post-test,42,0.74
+8,Understanding p-value,0.6,0.64,Spring 2021,post-test,42,0.74
+9,Understanding relationship between p-value and effect,0.4,0.47,Spring 2021,post-test,42,0.74
+23,Relationship between summary statistics and statistical significance,0.43,0.59,Spring 2021,post-test,42,0.74
+11,Interpreting variation in a heatmap,0.57,0.76,Spring 2021,post-test,42,0.74
+12,Interpreting trend in a heatmap,0.57,0.67,Spring 2021,post-test,42,0.74
+17,Interpeting interaction effects from a plot,0.5,0.55,Spring 2021,post-test,42,0.74
+18,Interpeting interaction effects from a plot,0.5,0.65,Spring 2021,post-test,42,0.74
+19,Interpreting relationships between variables from a lineplot,0.55,0.69,Spring 2021,post-test,42,0.74
+20,Interpreting relationships between variables from a lineplot,0.86,0.81,Spring 2021,post-test,42,0.74
+21,Interpreting trend in a choropleth map,0.45,0.49,Spring 2021,post-test,42,0.74
+22,Interpreting variation in a choropleth map,0.48,0.63,Spring 2021,post-test,42,0.74
+26,"Understanding relationship between data, RQ, and plot",0.67,0.47,Spring 2021,post-test,42,0.74
+27,"Understanding relationship between data, RQ, and plot",0.31,0.36,Spring 2021,post-test,42,0.74
+28,"Understanding relationship between data, RQ, and plot",0.6,0.64,Spring 2021,post-test,42,0.74
+29,"Understanding relationship between data, RQ, and plot",0.26,0.3,Spring 2021,post-test,42,0.74
+1,Compute probability from a two-way table,0.72,0.85,Fall 2021,pre-test,46,0.54
+3,Understanding variation in log-transformed measurements,0.28,0.6,Fall 2021,pre-test,46,0.54
+10,Translating content to tabular summaries,0.24,0.46,Fall 2021,pre-test,46,0.54
+13,Translating between two graphs of data,0.28,0.34,Fall 2021,pre-test,46,0.54
+14,Interpeting plots of logarithms,0.17,0.4,Fall 2021,pre-test,46,0.54
+15,Interpeting plots of logarithms,0.15,0.31,Fall 2021,pre-test,46,0.54
+16,Predicting from a recursive model of population growth,0.17,0.37,Fall 2021,pre-test,46,0.54
+24,Predicting from a genetic model,0.48,0.58,Fall 2021,pre-test,46,0.54
+25,Graphing a non-linear function,0.17,0.27,Fall 2021,pre-test,46,0.54
+2,Understanding variation in measurements,0.78,0.84,Fall 2021,pre-test,46,0.54
+4,Relating sample size to uncertainty,0.65,0.79,Fall 2021,pre-test,46,0.54
+5,Translating summary statistics to a distribution,0.7,0.77,Fall 2021,pre-test,46,0.54
+6,Translating content to a statistical hypothesis,0.24,0.56,Fall 2021,pre-test,46,0.54
+7,Understanding p-value,0.15,0.31,Fall 2021,pre-test,46,0.54
+8,Understanding p-value,0.54,0.64,Fall 2021,pre-test,46,0.54
+9,Understanding relationship between p-value and effect,0.43,0.47,Fall 2021,pre-test,46,0.54
+23,Relationship between summary statistics and statistical significance,0.41,0.59,Fall 2021,pre-test,46,0.54
+11,Interpreting variation in a heatmap,0.67,0.76,Fall 2021,pre-test,46,0.54
+12,Interpreting trend in a heatmap,0.52,0.67,Fall 2021,pre-test,46,0.54
+17,Interpeting interaction effects from a plot,0.54,0.55,Fall 2021,pre-test,46,0.54
+18,Interpeting interaction effects from a plot,0.57,0.65,Fall 2021,pre-test,46,0.54
+19,Interpreting relationships between variables from a lineplot,0.5,0.69,Fall 2021,pre-test,46,0.54
+20,Interpreting relationships between variables from a lineplot,0.8,0.81,Fall 2021,pre-test,46,0.54
+21,Interpreting trend in a choropleth map,0.2,0.49,Fall 2021,pre-test,46,0.54
+22,Interpreting variation in a choropleth map,0.24,0.63,Fall 2021,pre-test,46,0.54
+26,"Understanding relationship between data, RQ, and plot",0.35,0.47,Fall 2021,pre-test,46,0.54
+27,"Understanding relationship between data, RQ, and plot",0.15,0.36,Fall 2021,pre-test,46,0.54
+28,"Understanding relationship between data, RQ, and plot",0.46,0.64,Fall 2021,pre-test,46,0.54
+29,"Understanding relationship between data, RQ, and plot",0.17,0.3,Fall 2021,pre-test,46,0.54
+1,Compute probability from a two-way table,0.58,0.85,Fall 2021,post-test,33,0.58
+3,Understanding variation in log-transformed measurements,0.58,0.6,Fall 2021,post-test,33,0.58
+10,Translating content to tabular summaries,0.21,0.46,Fall 2021,post-test,33,0.58
+13,Translating between two graphs of data,0.33,0.34,Fall 2021,post-test,33,0.58
+14,Interpeting plots of logarithms,0.09,0.4,Fall 2021,post-test,33,0.58
+15,Interpeting plots of logarithms,0.15,0.31,Fall 2021,post-test,33,0.58
+16,Predicting from a recursive model of population growth,0.12,0.37,Fall 2021,post-test,33,0.58
+24,Predicting from a genetic model,0.45,0.58,Fall 2021,post-test,33,0.58
+25,Graphing a non-linear function,0.18,0.27,Fall 2021,post-test,33,0.58
+2,Understanding variation in measurements,0.64,0.84,Fall 2021,post-test,33,0.58
+4,Relating sample size to uncertainty,0.45,0.79,Fall 2021,post-test,33,0.58
+5,Translating summary statistics to a distribution,0.55,0.77,Fall 2021,post-test,33,0.58
+6,Translating content to a statistical hypothesis,0.36,0.56,Fall 2021,post-test,33,0.58
+7,Understanding p-value,0.21,0.31,Fall 2021,post-test,33,0.58
+8,Understanding p-value,0.58,0.64,Fall 2021,post-test,33,0.58
+9,Understanding relationship between p-value and effect,0.3,0.47,Fall 2021,post-test,33,0.58
+23,Relationship between summary statistics and statistical significance,0.48,0.59,Fall 2021,post-test,33,0.58
+11,Interpreting variation in a heatmap,0.52,0.76,Fall 2021,post-test,33,0.58
+12,Interpreting trend in a heatmap,0.42,0.67,Fall 2021,post-test,33,0.58
+17,Interpeting interaction effects from a plot,0.42,0.55,Fall 2021,post-test,33,0.58
+18,Interpeting interaction effects from a plot,0.48,0.65,Fall 2021,post-test,33,0.58
+19,Interpreting relationships between variables from a lineplot,0.39,0.69,Fall 2021,post-test,33,0.58
+20,Interpreting relationships between variables from a lineplot,0.82,0.81,Fall 2021,post-test,33,0.58
+21,Interpreting trend in a choropleth map,0.24,0.49,Fall 2021,post-test,33,0.58
+22,Interpreting variation in a choropleth map,0.24,0.63,Fall 2021,post-test,33,0.58
+26,"Understanding relationship between data, RQ, and plot",0.45,0.47,Fall 2021,post-test,33,0.58
+27,"Understanding relationship between data, RQ, and plot",0.15,0.36,Fall 2021,post-test,33,0.58
+28,"Understanding relationship between data, RQ, and plot",0.39,0.64,Fall 2021,post-test,33,0.58
+29,"Understanding relationship between data, RQ, and plot",0.06,0.3,Fall 2021,post-test,33,0.58

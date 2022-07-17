@@ -1,0 +1,77 @@
+---
+title: Ridge Plots
+author: Derek Sollberger
+date: '2022-07-16'
+banner: 'img/ridges_post.png'
+slug: ridge-plots
+categories:
+  - data visualization
+tags:
+  - ggplot
+---
+
+
+
+<pre class="r"><code>library(&quot;ggridges&quot;)
+library(&quot;patchwork&quot;)
+library(&quot;tidyverse&quot;)</code></pre>
+<pre class="r"><code># load data
+df &lt;- readr::read_csv(&quot;BioSQuaRE_data.csv&quot;)</code></pre>
+<pre class="r"><code># wrangling
+df$term &lt;- factor(df$term,
+                  levels = c(&quot;Summer 2020&quot;,&quot;Fall 2020&quot;,
+                             &quot;Spring 2021&quot;, &quot;Fall 2021&quot;))
+
+df_pre &lt;- df |&gt; filter(iter == &quot;pre-test&quot;)
+df_post &lt;- df |&gt; filter(iter == &quot;post-test&quot;)</code></pre>
+<pre class="r"><code>plot_pre &lt;- df_pre |&gt;
+  ggplot(aes(x = Item, y = term, height = UCMer, group = term)) +
+  geom_ridgeline(color = &quot;#DAA900&quot;, fill = &quot;#002856&quot;) +
+  labs(title = &quot;BioSQuaRE Results&quot;,
+       subtitle = &quot;pre-test&quot;,
+       caption = &quot;&quot;,
+       x = &quot;Test Question&quot;,
+       y = &quot;&quot;) +
+  theme(
+    axis.title.x = element_text(size = 20, color = &quot;#DAA900&quot;,
+                               vjust = -1.25),
+    axis.text.x = element_blank(),
+    axis.text.y = element_text(size = 20, color = &quot;#DAA900&quot;,
+                               vjust = -1.25),
+    axis.ticks = element_blank(),
+    panel.background = element_rect(fill = &quot;#002856&quot;),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    plot.background = element_rect(fill = &quot;#002856&quot;),
+    plot.title = element_text(face = &quot;bold&quot;, size = 30,
+                              color = &quot;#DAA900&quot;, hjust = 0.5),
+    plot.subtitle = element_text(size = 20,
+                              color = &quot;#DAA900&quot;, hjust = 0.5)
+  )</code></pre>
+<pre class="r"><code>plot_post &lt;- df_post |&gt;
+  ggplot(aes(x = Item, y = term, height = UCMer, group = term)) +
+  geom_ridgeline(color = &quot;#DAA900&quot;, fill = &quot;#002856&quot;) +
+  labs(title = &quot;&quot;,
+       subtitle = &quot;post-test&quot;,
+       caption = &quot;UC Merced&quot;,
+       x = &quot;Test Question&quot;,
+       y = &quot;&quot;) +
+  scale_y_discrete(position = &quot;right&quot;) +
+  theme(
+    axis.title.x = element_text(size = 20, color = &quot;#DAA900&quot;,
+                               vjust = -1.25),
+    axis.text.x = element_blank(),
+    axis.text.y = element_text(size = 20, color = &quot;#DAA900&quot;,
+                               vjust = -1.25),
+    axis.ticks = element_blank(),
+    panel.background = element_rect(fill = &quot;#002856&quot;),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    plot.background = element_rect(fill = &quot;#002856&quot;),
+    plot.title = element_text(face = &quot;bold&quot;, size = 30,
+                              color = &quot;#DAA900&quot;, hjust = 0.5),
+    plot.subtitle = element_text(size = 20,
+                              color = &quot;#DAA900&quot;, hjust = 0.5),
+    plot.caption = element_text(size = 15,
+                              color = &quot;#DAA900&quot;, hjust = 1.0)
+  )</code></pre>

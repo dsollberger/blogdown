@@ -2,6 +2,7 @@
 title: Stardew Valley Expanded
 author: Derek Sollberger
 date: '2022-07-17'
+banner: "img/Stardew_Valley_Expanded.png"
 slug: stardew-valley-expanded
 categories:
   - data visualization
@@ -13,3 +14,44 @@ tags:
 
 <p>Now that I finally have some free time, I want to play the Stardew Valley Expanded mod. But first, let us make a flow chart of the mods and their dependencies.</p>
 <pre class="r"><code>library(&quot;DiagrammeR&quot;)</code></pre>
+<pre class="r"><code>my_plot &lt;- DiagrammeR::mermaid(&quot;
+  graph LR
+  SMAPI[SMAPI]
+  
+  Content_Patcher[Content Patcher]
+  Custom_NPC_Exclusions[Custom NPC Exclusions]
+  Expanded_Preconditions_Utility[Expanded Preconditions Utility]
+  Extra_Map_Layers[Extra Map Layers]
+  Farm_Type_Manager[Farm Type Manager]
+  JSON_Assets[JSON Assets]
+  SAAT[SAAT]
+  Shop_Tile_Framework[Shop Tile Framework]
+  Spacecore[Spacecore]
+  
+  Stardew_Valley_Expanded{Stardew Valley Expanded}
+  
+  SMAPI --&gt; Content_Patcher
+  SMAPI --&gt; Custom_NPC_Exclusions
+  SMAPI --&gt; Expanded_Preconditions_Utility
+  SMAPI --&gt; Extra_Map_Layers
+  SMAPI --&gt; Farm_Type_Manager
+  SMAPI --&gt; JSON_Assets
+  SMAPI --&gt; Shop_Tile_Framework
+  SMAPI --&gt; Spacecore
+  
+  Content_Patcher --&gt; Farm_Type_Manager
+  Expanded_Preconditions_Utility --&gt; JSON_Assets
+  Expanded_Preconditions_Utility --&gt; Shop_Tile_Framework
+  Spacecore --&gt; JSON_Assets
+  
+  SMAPI --&gt; Stardew_Valley_Expanded
+  Content_Patcher --&gt; Stardew_Valley_Expanded
+  Custom_NPC_Exclusions --&gt; Stardew_Valley_Expanded
+  Expanded_Preconditions_Utility --&gt; Stardew_Valley_Expanded
+  Extra_Map_Layers --&gt; Stardew_Valley_Expanded
+  Farm_Type_Manager --&gt; Stardew_Valley_Expanded
+  JSON_Assets --&gt; Stardew_Valley_Expanded
+  SAAT --&gt; Stardew_Valley_Expanded
+  Shop_Tile_Framework --&gt; Stardew_Valley_Expanded
+  Spacecore --&gt; Stardew_Valley_Expanded
+&quot;)</code></pre>

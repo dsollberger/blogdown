@@ -1,0 +1,39 @@
+---
+title: Return to Mermaid Diagrams
+author: Derek Sollberger
+date: '2022-07-17'
+slug: return-to-mermaid-diagrams
+categories:
+  - workflow
+tags:
+  - diagrammer
+---
+
+I have been meaning to get back into making flow charts for a while.  Over the years, I have tried different code packages, but I think that `mermaid` graphs make the most sense for my simple goals.
+
+```{r, message = FALSE, warning = FALSE}
+library("DiagrammeR")
+```
+
+For today's practice, let us try to make a 2-by-2 decision tree.
+
+```{r}
+DiagrammeR::mermaid("
+  graph LR
+  node1(start)
+  node2{A}
+  node3{not A}
+  node4[B given A]
+  node5[not B given A]
+  node6[B given not A]
+  node7[not B given not A]
+  
+  node1 --> node2
+  node1 --> node3
+  node2 --> node4
+  node2 --> node5
+  node3 --> node6
+  node3 --> node7
+")
+```
+

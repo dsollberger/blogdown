@@ -1,0 +1,43 @@
+---
+title: Return to Mermaid Diagrams
+author: Derek Sollberger
+date: '2022-07-17'
+slug: return-to-mermaid-diagrams
+categories:
+  - workflow
+tags:
+  - diagrammer
+---
+
+<script src="{{< blogdown/postref >}}index.en_files/htmlwidgets/htmlwidgets.js"></script>
+<script src="{{< blogdown/postref >}}index.en_files/d3/d3.min.js"></script>
+<script src="{{< blogdown/postref >}}index.en_files/dagre/dagre-d3.min.js"></script>
+<link href="{{< blogdown/postref >}}index.en_files/mermaid/dist/mermaid.css" rel="stylesheet" />
+<script src="{{< blogdown/postref >}}index.en_files/mermaid/dist/mermaid.slim.min.js"></script>
+<link href="{{< blogdown/postref >}}index.en_files/DiagrammeR-styles/styles.css" rel="stylesheet" />
+<script src="{{< blogdown/postref >}}index.en_files/chromatography/chromatography.js"></script>
+<script src="{{< blogdown/postref >}}index.en_files/DiagrammeR-binding/DiagrammeR.js"></script>
+
+
+<p>I have been meaning to get back into making flow charts for a while. Over the years, I have tried different code packages, but I think that <code>mermaid</code> graphs make the most sense for my simple goals.</p>
+<pre class="r"><code>library(&quot;DiagrammeR&quot;)</code></pre>
+<p>For today’s practice, let us try to make a 2-by-2 decision tree.</p>
+<pre class="r"><code>DiagrammeR::mermaid(&quot;
+  graph LR
+  node1(start)
+  node2{A}
+  node3{not A}
+  node4[B given A]
+  node5[not B given A]
+  node6[B given not A]
+  node7[not B given not A]
+  
+  node1 --&gt; node2
+  node1 --&gt; node3
+  node2 --&gt; node4
+  node2 --&gt; node5
+  node3 --&gt; node6
+  node3 --&gt; node7
+&quot;)</code></pre>
+<div id="htmlwidget-1" style="width:672px;height:480px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"diagram":"\n  graph LR\n  node1(start)\n  node2{A}\n  node3{not A}\n  node4[B given A]\n  node5[not B given A]\n  node6[B given not A]\n  node7[not B given not A]\n  \n  node1 --> node2\n  node1 --> node3\n  node2 --> node4\n  node2 --> node5\n  node3 --> node6\n  node3 --> node7\n"},"evals":[],"jsHooks":[]}</script>

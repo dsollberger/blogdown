@@ -6,13 +6,49 @@
     <description>Recent content in Categories on The Median Data Scientist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>math</title>
       <link>https://dsollberger2022.netlify.app/categories/math/</link>
-      <pubDate>Wed, 06 Jul 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://dsollberger2022.netlify.app/categories/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data visualization</title>
+      <link>https://dsollberger2022.netlify.app/categories/data-visualization/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/categories/data-visualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>workflow</title>
+      <link>https://dsollberger2022.netlify.app/categories/workflow/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/categories/workflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data mining</title>
+      <link>https://dsollberger2022.netlify.app/categories/data-mining/</link>
+      <pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/categories/data-mining/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>publishing</title>
+      <link>https://dsollberger2022.netlify.app/categories/publishing/</link>
+      <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/categories/publishing/</guid>
       <description></description>
     </item>
     
@@ -35,29 +71,11 @@
     </item>
     
     <item>
-      <title>data visualization</title>
-      <link>https://dsollberger2022.netlify.app/categories/data-visualization/</link>
-      <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://dsollberger2022.netlify.app/categories/data-visualization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>TidyTuesday</title>
       <link>https://dsollberger2022.netlify.app/categories/tidytuesday/</link>
       <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://dsollberger2022.netlify.app/categories/tidytuesday/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>publishing</title>
-      <link>https://dsollberger2022.netlify.app/categories/publishing/</link>
-      <pubDate>Sun, 12 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://dsollberger2022.netlify.app/categories/publishing/</guid>
       <description></description>
     </item>
     

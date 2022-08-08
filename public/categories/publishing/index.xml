@@ -6,7 +6,18 @@
     <description>Recent content in publishing on The Median Data Scientist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/categories/publishing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/categories/publishing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Making Flash Cards</title>
+      <link>https://dsollberger2022.netlify.app/blog/2022/07/07/2022-07-07-making-flash-cards/</link>
+      <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/blog/2022/07/07/2022-07-07-making-flash-cards/</guid>
+      <description>Today I wanted to try out the flashr package for making flash cards (i.e. see if this is something I want to pursue further).
+Someone (I am assuming his name is Jeffrey Stevens) over in the R4DS Slack channel mentioned a blog post using the flashr package.
+#devtools::install_github(&amp;quot;JeffreyRStevens/flashr&amp;quot;)library(flashr)From one of my 30 Day Map Challenge adventures, I had a data frame about availability of therapy in the United States.</description>
+    </item>
+    
     <item>
       <title>Bookdown and GitHub Pages</title>
       <link>https://dsollberger2022.netlify.app/blog/2022/06/12/2022-06-12-bookdown-and-github-pages/</link>

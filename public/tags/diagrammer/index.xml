@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>diagrammer on The Median Data Scientist</title>
+    <link>https://dsollberger2022.netlify.app/tags/diagrammer/</link>
+    <description>Recent content in diagrammer on The Median Data Scientist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/tags/diagrammer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Return to Mermaid Diagrams</title>
+      <link>https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-return-to-mermaid-diagrams/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-return-to-mermaid-diagrams/</guid>
+      <description>I have been meaning to get back into making flow charts for a while. Over the years, I have tried different code packages, but I think that mermaid graphs make the most sense for my simple goals.
+library(&amp;quot;DiagrammeR&amp;quot;)For today’s practice, let us try to make a 2-by-2 decision tree.
+DiagrammeR::mermaid(&amp;quot;graph LRnode1(start)node2{A}node3{not A}node4[B given A]node5[not B given A]node6[B given not A]node7[not B given not A]node1 --&amp;gt; node2node1 --&amp;gt; node3node2 --&amp;gt; node4node2 --&amp;gt; node5node3 --&amp;gt; node6node3 --&amp;gt; node7&amp;quot;){&#34;</description>
+    </item>
+    
+    <item>
+      <title>Stardew Valley Expanded</title>
+      <link>https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-stardew-valley-expanded/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-stardew-valley-expanded/</guid>
+      <description>Now that I finally have some free time, I want to play the Stardew Valley Expanded mod. But first, let us make a flow chart of the mods and their dependencies.
+library(&amp;quot;DiagrammeR&amp;quot;)my_plot &amp;lt;- DiagrammeR::mermaid(&amp;quot;graph LRSMAPI[SMAPI]Content_Patcher[Content Patcher]Custom_NPC_Exclusions[Custom NPC Exclusions]Expanded_Preconditions_Utility[Expanded Preconditions Utility]Extra_Map_Layers[Extra Map Layers]Farm_Type_Manager[Farm Type Manager]JSON_Assets[JSON Assets]SAAT[SAAT]Shop_Tile_Framework[Shop Tile Framework]Spacecore[Spacecore]Stardew_Valley_Expanded{Stardew Valley Expanded}SMAPI --&amp;gt; Content_PatcherSMAPI --&amp;gt; Custom_NPC_ExclusionsSMAPI --&amp;gt; Expanded_Preconditions_UtilitySMAPI --&amp;gt; Extra_Map_LayersSMAPI --&amp;gt; Farm_Type_ManagerSMAPI --&amp;gt; JSON_AssetsSMAPI --&amp;gt; Shop_Tile_FrameworkSMAPI --&amp;gt; SpacecoreContent_Patcher --&amp;gt; Farm_Type_ManagerExpanded_Preconditions_Utility --&amp;gt; JSON_AssetsExpanded_Preconditions_Utility --&amp;gt; Shop_Tile_FrameworkSpacecore --&amp;gt; JSON_AssetsSMAPI --&amp;gt; Stardew_Valley_ExpandedContent_Patcher --&amp;gt; Stardew_Valley_ExpandedCustom_NPC_Exclusions --&amp;gt; Stardew_Valley_ExpandedExpanded_Preconditions_Utility --&amp;gt; Stardew_Valley_ExpandedExtra_Map_Layers --&amp;gt; Stardew_Valley_ExpandedFarm_Type_Manager --&amp;gt; Stardew_Valley_ExpandedJSON_Assets --&amp;gt; Stardew_Valley_ExpandedSAAT --&amp;gt; Stardew_Valley_ExpandedShop_Tile_Framework --&amp;gt; Stardew_Valley_ExpandedSpacecore --&amp;gt; Stardew_Valley_Expanded&amp;quot;)</description>
+    </item>
+    
+  </channel>
+</rss>

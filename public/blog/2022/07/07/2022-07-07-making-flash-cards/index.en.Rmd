@@ -1,0 +1,51 @@
+---
+title: Making Flash Cards
+author: Derek Sollberger
+date: '2022-07-07'
+banner: "img/Day11b.jpg"
+slug: making-flash-cards
+categories:
+  - publishing
+tags: []
+---
+
+Today I wanted to try out the `flashr` package for making flash cards (i.e. see if this is something I want to pursue further).
+
+Someone (I am assuming his name is Jeffrey Stevens) over in the R4DS Slack channel mentioned a [blog post](https://jeffreyrstevens.github.io/flashr/) using the `flashr` package.
+
+
+```{r}
+# https://jeffreyrstevens.github.io/flashr/
+#devtools::install_github("JeffreyRStevens/flashr")
+library("dplyr")
+library("flashr")
+```
+
+From one of my `30 Day Map Challenge` adventures, I had a data frame about availability of therapy in the United States.  
+
+```{r}
+df <- readxl::read_xlsx("counseling_ranks.xlsx")
+```
+
+Today, I am going to make myself a quiz on states and their abbreviations.
+
+```{r}
+df_info <- df |>
+  select(region, id) |>
+  
+  #to fit the flashr mechanisms
+  rename(term = region, description = id) |>
+  mutate(package = "")
+```
+
+```{r}
+readr::write_csv(df_info, "my_deck.csv")
+```
+
+Finally, let's see if this works!
+
+```{r}
+flashr::flashcard("my_deck.csv")
+```
+
+Neat!  Hopefully, the `flashr` package has more features in the future.

@@ -6,13 +6,40 @@
     <description>Recent content in Tags on The Median Data Scientist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tidyverse</title>
+      <link>https://dsollberger2022.netlify.app/tags/tidyverse/</link>
+      <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/tags/tidyverse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>diagrammer</title>
+      <link>https://dsollberger2022.netlify.app/tags/diagrammer/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/tags/diagrammer/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>ggplot</title>
       <link>https://dsollberger2022.netlify.app/tags/ggplot/</link>
-      <pubDate>Wed, 06 Jul 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://dsollberger2022.netlify.app/tags/ggplot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tabulizer</title>
+      <link>https://dsollberger2022.netlify.app/tags/tabulizer/</link>
+      <pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/tags/tabulizer/</guid>
       <description></description>
     </item>
     

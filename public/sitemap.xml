@@ -3,30 +3,72 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dsollberger2022.netlify.app/blog/</loc>
-    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
+    <lastmod>2022-08-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsollberger2022.netlify.app/categories/</loc>
-    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
+    <lastmod>2022-08-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsollberger2022.netlify.app/tags/ggplot/</loc>
-    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsollberger2022.netlify.app/tags/latex/</loc>
-    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
+    <loc>https://dsollberger2022.netlify.app/blog/2022/08/08/2022-08-08-deck-of-cards/</loc>
+    <lastmod>2022-08-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsollberger2022.netlify.app/categories/math/</loc>
+    <lastmod>2022-08-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/tags/</loc>
+    <lastmod>2022-08-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/</loc>
+    <lastmod>2022-08-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/tags/tidyverse/</loc>
+    <lastmod>2022-08-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/categories/data-visualization/</loc>
+    <lastmod>2022-07-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/tags/diagrammer/</loc>
+    <lastmod>2022-07-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-return-to-mermaid-diagrams/</loc>
+    <lastmod>2022-07-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-stardew-valley-expanded/</loc>
+    <lastmod>2022-07-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/categories/workflow/</loc>
+    <lastmod>2022-07-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/categories/data-mining/</loc>
+    <lastmod>2022-07-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/blog/2022/07/16/2022-07-16-extracting-tables-from-a-pdf/</loc>
+    <lastmod>2022-07-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/tags/ggplot/</loc>
+    <lastmod>2022-07-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/blog/2022/07/16/2022-07-16-ridge-plots/</loc>
+    <lastmod>2022-07-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/tags/tabulizer/</loc>
+    <lastmod>2022-07-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/blog/2022/07/08/2022-07-08-pascal-s-triangle/</loc>
+    <lastmod>2022-07-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/blog/2022/07/07/2022-07-07-making-flash-cards/</loc>
+    <lastmod>2022-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/categories/publishing/</loc>
+    <lastmod>2022-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsollberger2022.netlify.app/tags/latex/</loc>
     <lastmod>2022-07-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsollberger2022.netlify.app/categories/r-markdown/</loc>
     <lastmod>2022-07-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-radically-infinite/</loc>
-    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsollberger2022.netlify.app/tags/</loc>
-    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsollberger2022.netlify.app/</loc>
     <lastmod>2022-07-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-trying-out-the-flow-package/</loc>
@@ -40,9 +82,6 @@
   </url><url>
     <loc>https://dsollberger2022.netlify.app/categories/politics/</loc>
     <lastmod>2022-06-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsollberger2022.netlify.app/categories/data-visualization/</loc>
-    <lastmod>2022-06-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsollberger2022.netlify.app/blog/2022/06/15/2022-06-15-gauges/</loc>
     <lastmod>2022-06-15T00:00:00+00:00</lastmod>
@@ -60,9 +99,6 @@
     <lastmod>2022-06-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsollberger2022.netlify.app/blog/2022/06/12/2022-06-12-bookdown-and-github-pages/</loc>
-    <lastmod>2022-06-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsollberger2022.netlify.app/categories/publishing/</loc>
     <lastmod>2022-06-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsollberger2022.netlify.app/blog/2022/06/07/2022-06-07-tidytuesday-20220607/</loc>

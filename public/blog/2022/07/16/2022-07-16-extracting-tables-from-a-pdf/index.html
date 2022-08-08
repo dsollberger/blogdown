@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Extracting Tables from a PDF</title>
+<meta name="author" content="Derek Sollberger" />
+
+
+
+
+<meta name="keywords" content="devcows, hugo, go, tabulizer">
+
+
+<meta name="description" content="Site template made by Devcows using Hugo">
+
+<meta name="generator" content="Hugo 0.92.2" />
+
+
+<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.11.2/css/all.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link href="/css/animate.css" rel="stylesheet">
+
+
+
+  <link href="/css/style.derek.css" rel="stylesheet" id="theme-stylesheet">
+
+
+
+<link href="/css/custom.css?1659993098" rel="stylesheet">
+
+
+
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+
+
+<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+
+<link href="/css/owl.carousel.css" rel="stylesheet">
+<link href="/css/owl.theme.css" rel="stylesheet">
+
+
+<link rel="alternate" href="https://dsollberger2022.netlify.app/index.xml" type="application/rss+xml" title="The Median Data Scientist">
+
+
+
+
+
+
+
+
+<meta property="og:locale" content="en_us">
+<meta property="og:site_name" content="The Median Data Scientist">
+<meta property="og:title" content="Extracting Tables from a PDF">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dsollberger2022.netlify.app/blog/2022/07/16/2022-07-16-extracting-tables-from-a-pdf/" />
+<meta property="og:description" content="Site template made by Devcows using Hugo">
+<meta property="og:image" content="https://dsollberger2022.netlify.app/img/sharing-default.png">
+<meta property="og:image:type" content="image/png">
+
+
+
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="420">
+
+
+<meta property="og:updated_time" content="2022-07-16T00:00:00Z">
+
+  
+  
+  <meta property="article:section" content="data mining">
+  <meta property="article:tag" content="tabulizer">
+  
+  
+  <meta property="article:published_time" content="2022-07-16T00:00:00Z">
+  <meta property="article:modified_time" content="2022-07-16T00:00:00Z">
+
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@DerekSollberger">
+<meta name="twitter:title" content="Extracting Tables from a PDF">
+
+<meta name="twitter:image" content="https://dsollberger2022.netlify.app/img/sharing-default.png">
+
+<meta name="twitter:description" content="Site template made by Devcows using Hugo">
+
+
+    
+  </head>
+
+  <body>
+
+    <div id="all">
+
+        
+<header>
+  <div id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-5">
+          <p class="hidden-sm hidden-xs">The Median Data Scientist</p>
+        </div>
+        <div class="col-xs-7">
+          <div class="social">
+            
+            <a href="https://github.com/dsollberger" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-github'></i></a>
+            
+            <a href="https://twitter.com/DerekSollberger" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-twitter'></i></a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+        <header class="navbar-affixed-top" data-spy="affix" data-offset-top="62">
+    <div class="navbar navbar-default yamm " role="navigation" id="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="/">
+                    
+                      <img src="/img/logo.png" alt="Extracting Tables from a PDF logo" class="hidden-xs hidden-sm" />
+                      <img src="/img/logo-small.png" alt="Extracting Tables from a PDF logo" class="visible-xs visible-sm" />
+                    
+                    <span class="sr-only">Extracting Tables from a PDF - go to homepage</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">Toggle Navigation</span>
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+
+                  
+                  
+                  
+
+                  
+
+                  
+                    
+                  
+
+                  
+
+                  
+                  <li class="dropdown active">
+                    <a href="/blog/">Blog</a>
+                  </li>
+                  
+                  
+                  
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="dropdown ">
+                    <a href="/contact/">Contact</a>
+                  </li>
+                  
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+                </span>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</header>
+
+
+
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Extracting Tables from a PDF</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-9" id="blog-post">
+
+                        
+                          <p class="text-muted text-uppercase mb-small text-right">
+                            
+                             | 
+                            
+                              
+                              
+                                  
+                              
+                                  
+                              
+                                  
+                              
+                                  
+                              
+                                  
+                              
+                                  
+                              
+                                  
+                              
+                                  
+                              
+                                  
+                              
+                                  
+                              
+                                  
+                              
+                                  
+                              
+                              July 16, 2022
+                            
+                          </p>
+                        
+
+                        <div id="post-content">
+                          
+
+
+<p>Today I finally find myself needing to extract information from files delivered in the PDF format. I have heard good things about the <code>tabulizer</code> package, so we will try that out today.</p>
+<p>Whelp, it turned out that I needed to ensure a 64-bit installation of <code>Java</code> before I could install <code>tabulizer</code>. Also, I used <code>remotes::install_github(...)</code> command from [the package’s GitHub page[(<a href="https://github.com/ropensci/tabulizer" class="uri">https://github.com/ropensci/tabulizer</a>)] to force the installation (as there appears to be issues with installing a package through CRAN where there are concerns of Java dependency).</p>
+<pre class="r"><code># load packages
+library(&quot;tabulizer&quot;)
+library(&quot;tidyverse&quot;)</code></pre>
+<p>Now let’s try to load the data. Today, I am using anonymized aggregate data from my classroom, but I am still not going to provide a public version of the data file for the blog post.</p>
+<pre class="r"><code># https://cran.r-hub.io/web/packages/tabulizer/vignettes/tabulizer.html
+raw_data &lt;- tabulizer::extract_tables(&quot;report-UCMerc-Fall2021Pre-2022-02-07.pdf&quot;)</code></pre>
+<p>So far, the algorithm (subroutine: <code>Tabula</code>) is finding some of the information, but perhaps we need to be more specific. It looks like I will need to tell the algorithm where on the pages the tables are. Fortunately, the <code>locate_areas()</code> function in the <code>tabulizer</code> package runs an interactive app inside RStudio to quickly extract the bounding-box pixel values that we need.</p>
+<pre class="r"><code># https://medium.com/@ketanrd.009/how-to-extract-pdf-tables-in-r-e994c0fe4e28
+
+areas_list &lt;- list(
+  c(597, 139, 658, 477),
+  c(616, 76, 735, 539),
+  c(67, 76, 127, 539),
+  c(170, 73, 301, 542),
+  c(414, 73, 588, 539)
+)
+
+raw_data &lt;- tabulizer::extract_tables(
+  &quot;report-UCMerc-Fall2021Pre-2022-02-07.pdf&quot;,
+  pages = c(1, 2, 3, 4, 4), #there were two tables on page 4
+  area = areas_list, guess = FALSE,
+  output = &quot;data.frame&quot;)</code></pre>
+<p>Success! Now the tables I want are in the following variables</p>
+<ul>
+<li><code>raw_data[[1]]</code></li>
+<li><code>raw_data[[2]]</code></li>
+<li><code>raw_data[[3]]</code></li>
+<li><code>raw_data[[4]]</code></li>
+<li><code>raw_data[[5]]</code></li>
+</ul>
+<p>and are in the <code>data.frame</code> format that I like.</p>
+<p>In my next blog post, I shall recombine the data and start performing some calculations.</p>
+
+                        </div>
+                        
+                        
+
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="https://dsollberger2022.netlify.app/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Categories</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            
+            <li>
+                <a href="/categories/data-mining">DATA-MINING (1)</a>
+            </li>
+            
+            <li>
+                <a href="/categories/data-visualization">DATA-VISUALIZATION (6)</a>
+            </li>
+            
+            <li>
+                <a href="/categories/math">MATH (2)</a>
+            </li>
+            
+            <li>
+                <a href="/categories/politics">POLITICS (1)</a>
+            </li>
+            
+            <li>
+                <a href="/categories/publishing">PUBLISHING (2)</a>
+            </li>
+            
+            <li>
+                <a href="/categories/r-markdown">R-MARKDOWN (2)</a>
+            </li>
+            
+            <li>
+                <a href="/categories/tidytuesday">TIDYTUESDAY (2)</a>
+            </li>
+            
+            <li>
+                <a href="/categories/web-development">WEB-DEVELOPMENT (1)</a>
+            </li>
+            
+            <li>
+                <a href="/categories/workflow">WORKFLOW (1)</a>
+            </li>
+            
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            
+            <li >
+                <a href="/tags/blastula"><i class="fas fa-tags"></i> blastula</a>
+            </li>
+            
+            <li >
+                <a href="/tags/bookdown"><i class="fas fa-tags"></i> bookdown</a>
+            </li>
+            
+            <li >
+                <a href="/tags/diagrammer"><i class="fas fa-tags"></i> diagrammer</a>
+            </li>
+            
+            <li >
+                <a href="/tags/geospatial"><i class="fas fa-tags"></i> geospatial</a>
+            </li>
+            
+            <li >
+                <a href="/tags/ggplot"><i class="fas fa-tags"></i> ggplot</a>
+            </li>
+            
+            <li >
+                <a href="/tags/hugo"><i class="fas fa-tags"></i> hugo</a>
+            </li>
+            
+            <li >
+                <a href="/tags/latex"><i class="fas fa-tags"></i> latex</a>
+            </li>
+            
+            <li >
+                <a href="/tags/plotly"><i class="fas fa-tags"></i> plotly</a>
+            </li>
+            
+            <li >
+                <a href="/tags/tabulizer"><i class="fas fa-tags"></i> tabulizer</a>
+            </li>
+            
+            <li >
+                <a href="/tags/tidyverse"><i class="fas fa-tags"></i> tidyverse</a>
+            </li>
+            
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+
+        <footer id="footer">
+    <div class="container">
+
+        
+        <div class="col-md-4 col-sm-6">
+            <h4>About us</h4>
+
+            <p>Derek is a person who can somewhat customize a Hugo theme.</p>
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+        <div class="col-md-4 col-sm-6">
+
+            
+            <h4>Recent posts</h4>
+
+            <div class="blog-entries">
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="https://dsollberger2022.netlify.app/blog/2022/08/08/2022-08-08-deck-of-cards/">
+                          
+                            <img src="/img/placeholder.png" class="img-responsive" alt="Deck of Cards">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="https://dsollberger2022.netlify.app/blog/2022/08/08/2022-08-08-deck-of-cards/">Deck of Cards</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-return-to-mermaid-diagrams/">
+                          
+                            <img src="/img/placeholder.png" class="img-responsive" alt="Return to Mermaid Diagrams">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-return-to-mermaid-diagrams/">Return to Mermaid Diagrams</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-stardew-valley-expanded/">
+                          
+                            <img src="/img/Stardew_Valley_Expanded.png" class="img-responsive" alt="Stardew Valley Expanded">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-stardew-valley-expanded/">Stardew Valley Expanded</a></h5>
+                    </div>
+                </div>
+                
+            </div>
+
+            <hr class="hidden-md hidden-lg">
+            
+
+        </div>
+        
+
+        
+        <div class="col-md-4 col-sm-6">
+
+          <h4>Contact</h4>
+
+            <p class="text-uppercase"><strong>Derek Sollberger</strong>
+	    <br>UCM SNS Applied Mathematics Dept
+        <br>5200 North Lake Rd
+        <br>Merced, CA 95343
+        <strong>United States</strong>
+      </p>
+      
+
+            <a href="/contact" class="btn btn-small btn-template-main">Go to contact page</a>
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+    </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            
+            <p class="pull-left">Copyright (c) 2022, Derek Sollberger; GNU Public License.</p>
+            
+            <p class="pull-right">
+              Template by <a href="https://bootstrapious.com/p/universal-business-e-commerce-template">Bootstrapious</a>.
+              
+
+              Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    </div>
+    
+
+    
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+
+<script src="/js/front.js"></script>
+
+
+<script src="/js/owl.carousel.min.js"></script>
+
+
+
+  </body>
+</html>

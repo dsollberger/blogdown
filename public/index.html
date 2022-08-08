@@ -36,7 +36,7 @@
 
 
 
-<link href="/css/custom.css?1657149338" rel="stylesheet">
+<link href="/css/custom.css?1659993098" rel="stylesheet">
 
 
 
@@ -79,7 +79,7 @@
   <meta property="og:image:height" content="420">
 
 
-<meta property="og:updated_time" content="2022-07-06T00:00:00Z">
+<meta property="og:updated_time" content="2022-08-08T00:00:00Z">
 
 
 
@@ -242,19 +242,19 @@
                         <div class="top">
                             <div class="image" style="overflow:hidden">
                                 
-                                <img src="/img/radically_infinite.png" class="img-responsive" alt="" >
+                                <img src="/img/placeholder.png" class="img-responsive" alt="">
                                 
                             </div>
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-radically-infinite/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> Read more</a>
+                                    <a href="https://dsollberger2022.netlify.app/blog/2022/08/08/2022-08-08-deck-of-cards/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> Read more</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-radically-infinite/">Radically Infinite</a></h4>
+                            <h4><a href="https://dsollberger2022.netlify.app/blog/2022/08/08/2022-08-08-deck-of-cards/">Deck of Cards</a></h4>
                             <p class="author-category">
 			    
                             
@@ -284,16 +284,14 @@
                                 
                                     
                                 
-                                on July 6, 2022
+                                on August 8, 2022
                             
                             </p>
                             
-                            <p class="intro">In today’s procrastination effort, I want to generate the LaTeX code to produce an infinite radical expansion for the number 3, and generate the code using R.
-… inspired by math teacher Chris Smith
-tweetFirst, let me see if I can simply generate the pattern of integers. I will use the letter capital “S” and later replace it with the square root symbol.
-stem &lt;- &quot;S 1 + &quot;print(paste(stem, &quot;8&quot;))## [1] &quot;S 1 + 8&quot;for(a in 2:5){b &lt;- (a+1)^2-1print(paste(stem, a, &quot;*&quot;, b/a))print(paste(stem, a, &quot;S&quot;, (b/a)^2))print(paste(stem, a, &quot;S&quot;, 1, &quot;+&quot;, (b/a)^2- 1))stem &lt;- paste(stem, a, &quot;S&quot;, 1, &quot;+&quot;)}## [1] &quot;S 1 + 2 * 4&quot;## [1] &quot;S 1 + 2 S 16&quot;## [1] &quot;S 1 + 2 S 1 + 15&quot;## [1] &quot;S 1 + 2 S 1 + 3 * 5&quot;## [1] &quot;S 1 + 2 S 1 + 3 S 25&quot;## [1] &quot;S 1 + 2 S 1 + 3 S 1 + 24&quot;## [1] &quot;S 1 + 2 S 1 + 3 S 1 + 4 * 6&quot;## [1] &quot;S 1 + 2 S 1 + 3 S 1 + 4 S 36&quot;## [1] &quot;S 1 + 2 S 1 + 3 S 1 + 4 S 1 + 35&quot;## [1] &quot;S 1 + 2 S 1 + 3 S 1 + 4 S 1 + 5 * 7&quot;## [1] &quot;S 1 + 2 S 1 + 3 S 1 + 4 S 1 + 5 S 49&quot;## [1] &quot;S 1 + 2 S 1 + 3 S 1 + 4 S 1 + 5 S 1 + 48&quot;Not only do I need to now insert the square root symbol, but I would also need to close the parentheses.</p>
+                            <p class="intro">Years ago, I had to simulate a deck of playing cards in a Python course. Oddly enough, I don’t recall ever carrying out this task in R. Today, I saw a neat code snippet about the crossing() command in tidyr by Tan Ho in the R4DS Slack channel, so let us give it a try.
+library(&quot;tidyverse&quot;)suit &lt;- c(&quot;D&quot;, &quot;H&quot;, &quot;C&quot;, &quot;S&quot;)rank &lt;- c(2:10, &quot;J&quot;, &quot;Q&quot;, &quot;K&quot;, &quot;A&quot;)deck &lt;- tidyr::crossing(rank, suit) |&gt; dplyr::mutate(card = paste0(rank, suit))This yields a data frame with 3 columns: rank, suit, card.</p>
                             <p class="read-more">
-                              <a href="https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-radically-infinite/" class="btn btn-template-main">Continue reading</a>
+                              <a href="https://dsollberger2022.netlify.app/blog/2022/08/08/2022-08-08-deck-of-cards/" class="btn btn-template-main">Continue reading</a>
                             </p>
                             
                         </div>
@@ -307,19 +305,19 @@ stem &lt;- &quot;S 1 + &quot;print(paste(stem, &quot;8&quot;))## [1] &quot;S 1
                         <div class="top">
                             <div class="image" style="overflow:hidden">
                                 
-                                <img src="/img/20220706.png" class="img-responsive" alt="" >
+                                <img src="/img/placeholder.png" class="img-responsive" alt="">
                                 
                             </div>
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-trying-out-the-flow-package/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> Read more</a>
+                                    <a href="https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-return-to-mermaid-diagrams/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> Read more</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-trying-out-the-flow-package/">Trying out the Flow package</a></h4>
+                            <h4><a href="https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-return-to-mermaid-diagrams/">Return to Mermaid Diagrams</a></h4>
                             <p class="author-category">
 			    
                             
@@ -349,15 +347,15 @@ stem &lt;- &quot;S 1 + &quot;print(paste(stem, &quot;8&quot;))## [1] &quot;S 1
                                 
                                     
                                 
-                                on July 6, 2022
+                                on July 17, 2022
                             
                             </p>
                             
-                            <p class="intro">I have been meaning to try out the flow package as it appears to help people visualize loops and conditional statements.
-Here is some code that I made to help someone over in the R4DS Slack channel. The task was to check if the change in temperature was over 0.5, and then to set the next 30 days of data to NA.
-temp_data &lt;- rnorm(100, 20, 1) #fake data about temperaturesN &lt;- length(temp_data)#initializationbuffer &lt;- 0day &lt;- 2previous_temp &lt;- temp_data[1]# loopwhile(day &lt;= N){current_temp &lt;- temp_data[day]if(buffer == 0){if(!</p>
+                            <p class="intro">I have been meaning to get back into making flow charts for a while. Over the years, I have tried different code packages, but I think that mermaid graphs make the most sense for my simple goals.
+library(&quot;DiagrammeR&quot;)For today’s practice, let us try to make a 2-by-2 decision tree.
+DiagrammeR::mermaid(&quot;graph LRnode1(start)node2{A}node3{not A}node4[B given A]node5[not B given A]node6[B given not A]node7[not B given not A]node1 --&gt; node2node1 --&gt; node3node2 --&gt; node4node2 --&gt; node5node3 --&gt; node6node3 --&gt; node7&quot;){"</p>
                             <p class="read-more">
-                              <a href="https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-trying-out-the-flow-package/" class="btn btn-template-main">Continue reading</a>
+                              <a href="https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-return-to-mermaid-diagrams/" class="btn btn-template-main">Continue reading</a>
                             </p>
                             
                         </div>
@@ -371,19 +369,19 @@ temp_data &lt;- rnorm(100, 20, 1) #fake data about temperaturesN &lt;- length(t
                         <div class="top">
                             <div class="image" style="overflow:hidden">
                                 
-                                <img src="/img/20220626.png" class="img-responsive" alt="" >
+                                <img src="/img/Stardew_Valley_Expanded.png" class="img-responsive" alt="" >
                                 
                             </div>
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="https://dsollberger2022.netlify.app/blog/2022/06/26/2022-06-26-abortion-trigger-bans/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> Read more</a>
+                                    <a href="https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-stardew-valley-expanded/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> Read more</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="https://dsollberger2022.netlify.app/blog/2022/06/26/2022-06-26-abortion-trigger-bans/">Abortion Trigger Bans</a></h4>
+                            <h4><a href="https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-stardew-valley-expanded/">Stardew Valley Expanded</a></h4>
                             <p class="author-category">
 			    
                             
@@ -413,14 +411,14 @@ temp_data &lt;- rnorm(100, 20, 1) #fake data about temperaturesN &lt;- length(t
                                 
                                     
                                 
-                                on June 26, 2022
+                                on July 17, 2022
                             
                             </p>
                             
-                            <p class="intro">A colleague asked me about making an overlay map, and we discussed staring with the following information:
-US states where conference funding may be inhibited by AB 1887US states where trigger bans took (or are in process) effect when Roe v Wade was overturned# load shape filesstates_shp &lt;- st_read(&quot;cb_2018_us_state_5m/cb_2018_us_state_5m.shp&quot;)## Reading layer `cb_2018_us_state_5m&#39; from data source ## `C:\Users\freex\Documents\GitHub\blogdown\content\blog\2022-06-26-abortion-trigger-bans\cb_2018_us_state_5m\cb_2018_us_state_5m.shp&#39; ## using driver `ESRI Shapefile&#39;## Simple feature collection with 56 features and 9 fields## Geometry type: MULTIPOLYGON## Dimension: XY## Bounding box: xmin: -179.</p>
+                            <p class="intro">Now that I finally have some free time, I want to play the Stardew Valley Expanded mod. But first, let us make a flow chart of the mods and their dependencies.
+library(&quot;DiagrammeR&quot;)my_plot &lt;- DiagrammeR::mermaid(&quot;graph LRSMAPI[SMAPI]Content_Patcher[Content Patcher]Custom_NPC_Exclusions[Custom NPC Exclusions]Expanded_Preconditions_Utility[Expanded Preconditions Utility]Extra_Map_Layers[Extra Map Layers]Farm_Type_Manager[Farm Type Manager]JSON_Assets[JSON Assets]SAAT[SAAT]Shop_Tile_Framework[Shop Tile Framework]Spacecore[Spacecore]Stardew_Valley_Expanded{Stardew Valley Expanded}SMAPI --&gt; Content_PatcherSMAPI --&gt; Custom_NPC_ExclusionsSMAPI --&gt; Expanded_Preconditions_UtilitySMAPI --&gt; Extra_Map_LayersSMAPI --&gt; Farm_Type_ManagerSMAPI --&gt; JSON_AssetsSMAPI --&gt; Shop_Tile_FrameworkSMAPI --&gt; SpacecoreContent_Patcher --&gt; Farm_Type_ManagerExpanded_Preconditions_Utility --&gt; JSON_AssetsExpanded_Preconditions_Utility --&gt; Shop_Tile_FrameworkSpacecore --&gt; JSON_AssetsSMAPI --&gt; Stardew_Valley_ExpandedContent_Patcher --&gt; Stardew_Valley_ExpandedCustom_NPC_Exclusions --&gt; Stardew_Valley_ExpandedExpanded_Preconditions_Utility --&gt; Stardew_Valley_ExpandedExtra_Map_Layers --&gt; Stardew_Valley_ExpandedFarm_Type_Manager --&gt; Stardew_Valley_ExpandedJSON_Assets --&gt; Stardew_Valley_ExpandedSAAT --&gt; Stardew_Valley_ExpandedShop_Tile_Framework --&gt; Stardew_Valley_ExpandedSpacecore --&gt; Stardew_Valley_Expanded&quot;)</p>
                             <p class="read-more">
-                              <a href="https://dsollberger2022.netlify.app/blog/2022/06/26/2022-06-26-abortion-trigger-bans/" class="btn btn-template-main">Continue reading</a>
+                              <a href="https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-stardew-valley-expanded/" class="btn btn-template-main">Continue reading</a>
                             </p>
                             
                         </div>
@@ -434,19 +432,19 @@ temp_data &lt;- rnorm(100, 20, 1) #fake data about temperaturesN &lt;- length(t
                         <div class="top">
                             <div class="image" style="overflow:hidden">
                                 
-                                <img src="/img/gauge_practice.png" class="img-responsive" alt="" >
+                                <img src="/img/placeholder.png" class="img-responsive" alt="">
                                 
                             </div>
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="https://dsollberger2022.netlify.app/blog/2022/06/15/2022-06-15-gauges/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> Read more</a>
+                                    <a href="https://dsollberger2022.netlify.app/blog/2022/07/16/2022-07-16-extracting-tables-from-a-pdf/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> Read more</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="https://dsollberger2022.netlify.app/blog/2022/06/15/2022-06-15-gauges/">Gauges</a></h4>
+                            <h4><a href="https://dsollberger2022.netlify.app/blog/2022/07/16/2022-07-16-extracting-tables-from-a-pdf/">Extracting Tables from a PDF</a></h4>
                             <p class="author-category">
 			    
                             
@@ -476,14 +474,14 @@ temp_data &lt;- rnorm(100, 20, 1) #fake data about temperaturesN &lt;- length(t
                                 
                                     
                                 
-                                on June 15, 2022
+                                on July 16, 2022
                             
                             </p>
                             
-                            <p class="intro">Gauges are useful when wanting to display a quantity along with its range (minimum and maximum). Here, we will try out the plotly package’s functionality to build a gauge plot.
-library(&quot;plotly&quot;)library(&quot;tidyverse&quot;)# https://plotly.com/r/gauge-charts/# https://marketing.ucmerced.edu/resources/brand-guidelines/colorsmy_gauge &lt;- plot_ly(domain = list(x = c(0, 1), y = c(0, 1)),value = 6.35,title = list(text = &quot;Overall Teaching Evaluation Score&quot;,color = &quot;#002856&quot;,font = list(size = 24)),type = &quot;indicator&quot;,mode = &quot;gauge+number&quot;,gauge = list(axis = list(range = list(NULL, 7.</p>
+                            <p class="intro">Today I finally find myself needing to extract information from files delivered in the PDF format. I have heard good things about the tabulizer package, so we will try that out today.
+Whelp, it turned out that I needed to ensure a 64-bit installation of Java before I could install tabulizer. Also, I used remotes::install_github(...) command from [the package’s GitHub page[(https://github.com/ropensci/tabulizer)] to force the installation (as there appears to be issues with installing a package through CRAN where there are concerns of Java dependency).</p>
                             <p class="read-more">
-                              <a href="https://dsollberger2022.netlify.app/blog/2022/06/15/2022-06-15-gauges/" class="btn btn-template-main">Continue reading</a>
+                              <a href="https://dsollberger2022.netlify.app/blog/2022/07/16/2022-07-16-extracting-tables-from-a-pdf/" class="btn btn-template-main">Continue reading</a>
                             </p>
                             
                         </div>
@@ -536,40 +534,40 @@ library(&quot;plotly&quot;)library(&quot;tidyverse&quot;)# https://plotly.com/
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <a href="https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-radically-infinite/">
+                        <a href="https://dsollberger2022.netlify.app/blog/2022/08/08/2022-08-08-deck-of-cards/">
                           
-                            <img src="/img/radically_infinite.png" class="img-responsive" alt="Radically Infinite">
+                            <img src="/img/placeholder.png" class="img-responsive" alt="Deck of Cards">
                           
                         </a>
                     </div>
                     <div class="name same-height-always">
-                        <h5><a href="https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-radically-infinite/">Radically Infinite</a></h5>
+                        <h5><a href="https://dsollberger2022.netlify.app/blog/2022/08/08/2022-08-08-deck-of-cards/">Deck of Cards</a></h5>
                     </div>
                 </div>
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <a href="https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-trying-out-the-flow-package/">
+                        <a href="https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-return-to-mermaid-diagrams/">
                           
-                            <img src="/img/20220706.png" class="img-responsive" alt="Trying out the Flow package">
+                            <img src="/img/placeholder.png" class="img-responsive" alt="Return to Mermaid Diagrams">
                           
                         </a>
                     </div>
                     <div class="name same-height-always">
-                        <h5><a href="https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-trying-out-the-flow-package/">Trying out the Flow package</a></h5>
+                        <h5><a href="https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-return-to-mermaid-diagrams/">Return to Mermaid Diagrams</a></h5>
                     </div>
                 </div>
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <a href="https://dsollberger2022.netlify.app/blog/2022/06/26/2022-06-26-abortion-trigger-bans/">
+                        <a href="https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-stardew-valley-expanded/">
                           
-                            <img src="/img/20220626.png" class="img-responsive" alt="Abortion Trigger Bans">
+                            <img src="/img/Stardew_Valley_Expanded.png" class="img-responsive" alt="Stardew Valley Expanded">
                           
                         </a>
                     </div>
                     <div class="name same-height-always">
-                        <h5><a href="https://dsollberger2022.netlify.app/blog/2022/06/26/2022-06-26-abortion-trigger-bans/">Abortion Trigger Bans</a></h5>
+                        <h5><a href="https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-stardew-valley-expanded/">Stardew Valley Expanded</a></h5>
                     </div>
                 </div>
                 

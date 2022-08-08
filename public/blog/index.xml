@@ -6,7 +6,78 @@
     <description>Recent content in Blog on The Median Data Scientist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deck of Cards</title>
+      <link>https://dsollberger2022.netlify.app/blog/2022/08/08/2022-08-08-deck-of-cards/</link>
+      <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/blog/2022/08/08/2022-08-08-deck-of-cards/</guid>
+      <description>Years ago, I had to simulate a deck of playing cards in a Python course. Oddly enough, I don’t recall ever carrying out this task in R. Today, I saw a neat code snippet about the crossing() command in tidyr by Tan Ho in the R4DS Slack channel, so let us give it a try.
+library(&amp;quot;tidyverse&amp;quot;)suit &amp;lt;- c(&amp;quot;D&amp;quot;, &amp;quot;H&amp;quot;, &amp;quot;C&amp;quot;, &amp;quot;S&amp;quot;)rank &amp;lt;- c(2:10, &amp;quot;J&amp;quot;, &amp;quot;Q&amp;quot;, &amp;quot;K&amp;quot;, &amp;quot;A&amp;quot;)deck &amp;lt;- tidyr::crossing(rank, suit) |&amp;gt; dplyr::mutate(card = paste0(rank, suit))This yields a data frame with 3 columns: rank, suit, card.</description>
+    </item>
+    
+    <item>
+      <title>Return to Mermaid Diagrams</title>
+      <link>https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-return-to-mermaid-diagrams/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-return-to-mermaid-diagrams/</guid>
+      <description>I have been meaning to get back into making flow charts for a while. Over the years, I have tried different code packages, but I think that mermaid graphs make the most sense for my simple goals.
+library(&amp;quot;DiagrammeR&amp;quot;)For today’s practice, let us try to make a 2-by-2 decision tree.
+DiagrammeR::mermaid(&amp;quot;graph LRnode1(start)node2{A}node3{not A}node4[B given A]node5[not B given A]node6[B given not A]node7[not B given not A]node1 --&amp;gt; node2node1 --&amp;gt; node3node2 --&amp;gt; node4node2 --&amp;gt; node5node3 --&amp;gt; node6node3 --&amp;gt; node7&amp;quot;){&#34;</description>
+    </item>
+    
+    <item>
+      <title>Stardew Valley Expanded</title>
+      <link>https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-stardew-valley-expanded/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-stardew-valley-expanded/</guid>
+      <description>Now that I finally have some free time, I want to play the Stardew Valley Expanded mod. But first, let us make a flow chart of the mods and their dependencies.
+library(&amp;quot;DiagrammeR&amp;quot;)my_plot &amp;lt;- DiagrammeR::mermaid(&amp;quot;graph LRSMAPI[SMAPI]Content_Patcher[Content Patcher]Custom_NPC_Exclusions[Custom NPC Exclusions]Expanded_Preconditions_Utility[Expanded Preconditions Utility]Extra_Map_Layers[Extra Map Layers]Farm_Type_Manager[Farm Type Manager]JSON_Assets[JSON Assets]SAAT[SAAT]Shop_Tile_Framework[Shop Tile Framework]Spacecore[Spacecore]Stardew_Valley_Expanded{Stardew Valley Expanded}SMAPI --&amp;gt; Content_PatcherSMAPI --&amp;gt; Custom_NPC_ExclusionsSMAPI --&amp;gt; Expanded_Preconditions_UtilitySMAPI --&amp;gt; Extra_Map_LayersSMAPI --&amp;gt; Farm_Type_ManagerSMAPI --&amp;gt; JSON_AssetsSMAPI --&amp;gt; Shop_Tile_FrameworkSMAPI --&amp;gt; SpacecoreContent_Patcher --&amp;gt; Farm_Type_ManagerExpanded_Preconditions_Utility --&amp;gt; JSON_AssetsExpanded_Preconditions_Utility --&amp;gt; Shop_Tile_FrameworkSpacecore --&amp;gt; JSON_AssetsSMAPI --&amp;gt; Stardew_Valley_ExpandedContent_Patcher --&amp;gt; Stardew_Valley_ExpandedCustom_NPC_Exclusions --&amp;gt; Stardew_Valley_ExpandedExpanded_Preconditions_Utility --&amp;gt; Stardew_Valley_ExpandedExtra_Map_Layers --&amp;gt; Stardew_Valley_ExpandedFarm_Type_Manager --&amp;gt; Stardew_Valley_ExpandedJSON_Assets --&amp;gt; Stardew_Valley_ExpandedSAAT --&amp;gt; Stardew_Valley_ExpandedShop_Tile_Framework --&amp;gt; Stardew_Valley_ExpandedSpacecore --&amp;gt; Stardew_Valley_Expanded&amp;quot;)</description>
+    </item>
+    
+    <item>
+      <title>Extracting Tables from a PDF</title>
+      <link>https://dsollberger2022.netlify.app/blog/2022/07/16/2022-07-16-extracting-tables-from-a-pdf/</link>
+      <pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/blog/2022/07/16/2022-07-16-extracting-tables-from-a-pdf/</guid>
+      <description>Today I finally find myself needing to extract information from files delivered in the PDF format. I have heard good things about the tabulizer package, so we will try that out today.
+Whelp, it turned out that I needed to ensure a 64-bit installation of Java before I could install tabulizer. Also, I used remotes::install_github(...) command from [the package’s GitHub page[(https://github.com/ropensci/tabulizer)] to force the installation (as there appears to be issues with installing a package through CRAN where there are concerns of Java dependency).</description>
+    </item>
+    
+    <item>
+      <title>Ridge Plots</title>
+      <link>https://dsollberger2022.netlify.app/blog/2022/07/16/2022-07-16-ridge-plots/</link>
+      <pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/blog/2022/07/16/2022-07-16-ridge-plots/</guid>
+      <description>library(&amp;quot;ggridges&amp;quot;)library(&amp;quot;patchwork&amp;quot;)library(&amp;quot;tidyverse&amp;quot;)# load datadf &amp;lt;- readr::read_csv(&amp;quot;BioSQuaRE_data.csv&amp;quot;)# wranglingdf$term &amp;lt;- factor(df$term,levels = c(&amp;quot;Summer 2020&amp;quot;,&amp;quot;Fall 2020&amp;quot;,&amp;quot;Spring 2021&amp;quot;, &amp;quot;Fall 2021&amp;quot;))df_pre &amp;lt;- df |&amp;gt; filter(iter == &amp;quot;pre-test&amp;quot;)df_post &amp;lt;- df |&amp;gt; filter(iter == &amp;quot;post-test&amp;quot;)plot_pre &amp;lt;- df_pre |&amp;gt;ggplot(aes(x = Item, y = term, height = UCMer, group = term)) +geom_ridgeline(color = &amp;quot;#DAA900&amp;quot;, fill = &amp;quot;#002856&amp;quot;) +labs(title = &amp;quot;BioSQuaRE Results&amp;quot;,subtitle = &amp;quot;pre-test&amp;quot;,caption = &amp;quot;&amp;quot;,x = &amp;quot;Test Question&amp;quot;,y = &amp;quot;&amp;quot;) +theme(axis.</description>
+    </item>
+    
+    <item>
+      <title>Pascal&#39;s Triangle</title>
+      <link>https://dsollberger2022.netlify.app/blog/2022/07/08/2022-07-08-pascal-s-triangle/</link>
+      <pubDate>Fri, 08 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/blog/2022/07/08/2022-07-08-pascal-s-triangle/</guid>
+      <description>Once again, I find that I have been nerd sniped (inspired by Mathigon). Today, I want to plot (and make an animation) for Pascal’s Triangle mod n. What I am thinking is
+store Pascal Triangle numbers along with row and column numbers in a data framethen assign x and y valuesrescale the x and y values to make an equilateral triangle# load package(s)library(&amp;quot;tidyverse&amp;quot;)# allocate data spaceN &amp;lt;- 50 #number of rows of wanted Pascal&amp;#39;s Triangle# EDIT: my computer or software did not seem to handle larger numbers wellrow_total &amp;lt;- N*(N+1) / 2 #sum of 1 + 2 + .</description>
+    </item>
+    
+    <item>
+      <title>Making Flash Cards</title>
+      <link>https://dsollberger2022.netlify.app/blog/2022/07/07/2022-07-07-making-flash-cards/</link>
+      <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/blog/2022/07/07/2022-07-07-making-flash-cards/</guid>
+      <description>Today I wanted to try out the flashr package for making flash cards (i.e. see if this is something I want to pursue further).
+Someone (I am assuming his name is Jeffrey Stevens) over in the R4DS Slack channel mentioned a blog post using the flashr package.
+#devtools::install_github(&amp;quot;JeffreyRStevens/flashr&amp;quot;)library(flashr)From one of my 30 Day Map Challenge adventures, I had a data frame about availability of therapy in the United States.</description>
+    </item>
+    
     <item>
       <title>Radically Infinite</title>
       <link>https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-radically-infinite/</link>

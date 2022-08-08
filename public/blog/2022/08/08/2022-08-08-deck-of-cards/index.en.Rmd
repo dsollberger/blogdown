@@ -1,0 +1,31 @@
+---
+title: Deck of Cards
+author: Derek Sollberger
+date: '2022-08-08'
+slug: deck-of-cards
+categories:
+  - math
+tags:
+  - tidyverse
+---
+
+Years ago, I had to simulate a deck of playing cards in a Python course.  Oddly enough, I don't recall ever carrying out this task in R.  Today, I saw a neat code snippet about the `crossing()` command in `tidyr` by Tan Ho in the `R4DS` Slack channel, so let us give it a try.
+
+```{r, message = FALSE, warning = FALSE}
+library("tidyverse")
+```
+
+
+```{r}
+suit <- c("D", "H", "C", "S")
+rank <- c(2:10, "J", "Q", "K", "A")
+deck <- tidyr::crossing(rank, suit) |> 
+  dplyr::mutate(card = paste0(rank, suit))
+```
+
+This yields a data frame with 3 columns: `rank`, `suit`, `card`.
+
+```{r}
+deck |> as_tibble() |> print(n = Inf)
+```
+

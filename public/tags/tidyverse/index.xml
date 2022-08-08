@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tidyverse on The Median Data Scientist</title>
+    <link>https://dsollberger2022.netlify.app/tags/tidyverse/</link>
+    <description>Recent content in tidyverse on The Median Data Scientist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/tags/tidyverse/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deck of Cards</title>
+      <link>https://dsollberger2022.netlify.app/blog/2022/08/08/2022-08-08-deck-of-cards/</link>
+      <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/blog/2022/08/08/2022-08-08-deck-of-cards/</guid>
+      <description>Years ago, I had to simulate a deck of playing cards in a Python course. Oddly enough, I don’t recall ever carrying out this task in R. Today, I saw a neat code snippet about the crossing() command in tidyr by Tan Ho in the R4DS Slack channel, so let us give it a try.
+library(&amp;quot;tidyverse&amp;quot;)suit &amp;lt;- c(&amp;quot;D&amp;quot;, &amp;quot;H&amp;quot;, &amp;quot;C&amp;quot;, &amp;quot;S&amp;quot;)rank &amp;lt;- c(2:10, &amp;quot;J&amp;quot;, &amp;quot;Q&amp;quot;, &amp;quot;K&amp;quot;, &amp;quot;A&amp;quot;)deck &amp;lt;- tidyr::crossing(rank, suit) |&amp;gt; dplyr::mutate(card = paste0(rank, suit))This yields a data frame with 3 columns: rank, suit, card.</description>
+    </item>
+    
+  </channel>
+</rss>

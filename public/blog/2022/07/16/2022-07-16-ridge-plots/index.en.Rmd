@@ -1,0 +1,95 @@
+---
+title: Ridge Plots
+author: Derek Sollberger
+date: '2022-07-16'
+banner: 'img/ridges_post.png'
+slug: ridge-plots
+categories:
+  - data visualization
+tags:
+  - ggplot
+---
+
+```{r, eval = TRUE, message = FALSE, warning = FALSE}
+library("ggridges")
+library("patchwork")
+library("tidyverse")
+```
+
+```{r, eval = TRUE, message = FALSE, warning = FALSE}
+# load data
+df <- readr::read_csv("BioSQuaRE_data.csv")
+```
+
+```{r, eval = TRUE}
+# wrangling
+df$term <- factor(df$term,
+                  levels = c("Summer 2020","Fall 2020",
+                             "Spring 2021", "Fall 2021"))
+
+df_pre <- df |> filter(iter == "pre-test")
+df_post <- df |> filter(iter == "post-test")
+```
+
+```{r, eval = TRUE}
+plot_pre <- df_pre |>
+  ggplot(aes(x = Item, y = term, height = UCMer, group = term)) +
+  geom_ridgeline(color = "#DAA900", fill = "#002856") +
+  labs(title = "BioSQuaRE Results",
+       subtitle = "pre-test",
+       caption = "",
+       x = "Test Question",
+       y = "") +
+  theme(
+    axis.title.x = element_text(size = 20, color = "#DAA900",
+                               vjust = -1.25),
+    axis.text.x = element_blank(),
+    axis.text.y = element_text(size = 20, color = "#DAA900",
+                               vjust = -1.25),
+    axis.ticks = element_blank(),
+    panel.background = element_rect(fill = "#002856"),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    plot.background = element_rect(fill = "#002856"),
+    plot.title = element_text(face = "bold", size = 30,
+                              color = "#DAA900", hjust = 0.5),
+    plot.subtitle = element_text(size = 20,
+                              color = "#DAA900", hjust = 0.5)
+  )
+```
+
+```{r, eval = TRUE}
+plot_post <- df_post |>
+  ggplot(aes(x = Item, y = term, height = UCMer, group = term)) +
+  geom_ridgeline(color = "#DAA900", fill = "#002856") +
+  labs(title = "",
+       subtitle = "post-test",
+       caption = "UC Merced",
+       x = "Test Question",
+       y = "") +
+  scale_y_discrete(position = "right") +
+  theme(
+    axis.title.x = element_text(size = 20, color = "#DAA900",
+                               vjust = -1.25),
+    axis.text.x = element_blank(),
+    axis.text.y = element_text(size = 20, color = "#DAA900",
+                               vjust = -1.25),
+    axis.ticks = element_blank(),
+    panel.background = element_rect(fill = "#002856"),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    plot.background = element_rect(fill = "#002856"),
+    plot.title = element_text(face = "bold", size = 30,
+                              color = "#DAA900", hjust = 0.5),
+    plot.subtitle = element_text(size = 20,
+                              color = "#DAA900", hjust = 0.5),
+    plot.caption = element_text(size = 15,
+                              color = "#DAA900", hjust = 1.0)
+  )
+```
+
+```{r}
+# patchwork
+plot_pre + plot_post
+```
+

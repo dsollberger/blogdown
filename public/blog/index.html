@@ -36,7 +36,7 @@
 
 
 
-<link href="/css/custom.css?1657149338" rel="stylesheet">
+<link href="/css/custom.css?1659993098" rel="stylesheet">
 
 
 
@@ -79,7 +79,7 @@
   <meta property="og:image:height" content="420">
 
 
-<meta property="og:updated_time" content="2022-07-06T00:00:00Z">
+<meta property="og:updated_time" content="2022-08-08T00:00:00Z">
 
 
 
@@ -223,6 +223,490 @@
                     <div class="col-md-9" id="blog-listing-medium">
 
                         
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="https://dsollberger2022.netlify.app/blog/2022/08/08/2022-08-08-deck-of-cards/">
+                                          
+                                          <img src="/img/placeholder.png" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="https://dsollberger2022.netlify.app/blog/2022/08/08/2022-08-08-deck-of-cards/">Deck of Cards</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in 
+                                          
+                                              <a href="/categories/math">math</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+
+                                        
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+
+                                        <p class="date-comments">
+                                            <a href="https://dsollberger2022.netlify.app/blog/2022/08/08/2022-08-08-deck-of-cards/"><i class="far fa-calendar"></i> August 8, 2022</a>
+                                        </p>
+                                        
+                                    </div>
+                                    
+                                    <p class="intro">Years ago, I had to simulate a deck of playing cards in a Python course. Oddly enough, I don’t recall ever carrying out this task in R. Today, I saw a neat code snippet about the crossing() command in tidyr by Tan Ho in the R4DS Slack channel, so let us give it a try.
+library(&quot;tidyverse&quot;)suit &lt;- c(&quot;D&quot;, &quot;H&quot;, &quot;C&quot;, &quot;S&quot;)rank &lt;- c(2:10, &quot;J&quot;, &quot;Q&quot;, &quot;K&quot;, &quot;A&quot;)deck &lt;- tidyr::crossing(rank, suit) |&gt; dplyr::mutate(card = paste0(rank, suit))This yields a data frame with 3 columns: rank, suit, card.</p>
+                                    <p class="read-more"><a href="https://dsollberger2022.netlify.app/blog/2022/08/08/2022-08-08-deck-of-cards/" class="btn btn-template-main">Continue reading</a>
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-return-to-mermaid-diagrams/">
+                                          
+                                          <img src="/img/placeholder.png" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-return-to-mermaid-diagrams/">Return to Mermaid Diagrams</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in 
+                                          
+                                              <a href="/categories/workflow">workflow</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+
+                                        
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+
+                                        <p class="date-comments">
+                                            <a href="https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-return-to-mermaid-diagrams/"><i class="far fa-calendar"></i> July 17, 2022</a>
+                                        </p>
+                                        
+                                    </div>
+                                    
+                                    <p class="intro">I have been meaning to get back into making flow charts for a while. Over the years, I have tried different code packages, but I think that mermaid graphs make the most sense for my simple goals.
+library(&quot;DiagrammeR&quot;)For today’s practice, let us try to make a 2-by-2 decision tree.
+DiagrammeR::mermaid(&quot;graph LRnode1(start)node2{A}node3{not A}node4[B given A]node5[not B given A]node6[B given not A]node7[not B given not A]node1 --&gt; node2node1 --&gt; node3node2 --&gt; node4node2 --&gt; node5node3 --&gt; node6node3 --&gt; node7&quot;){"</p>
+                                    <p class="read-more"><a href="https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-return-to-mermaid-diagrams/" class="btn btn-template-main">Continue reading</a>
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-stardew-valley-expanded/">
+                                          
+                                          <img src="/img/Stardew_Valley_Expanded.png" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-stardew-valley-expanded/">Stardew Valley Expanded</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in 
+                                          
+                                              <a href="/categories/data-visualization">data visualization</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+
+                                        
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+
+                                        <p class="date-comments">
+                                            <a href="https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-stardew-valley-expanded/"><i class="far fa-calendar"></i> July 17, 2022</a>
+                                        </p>
+                                        
+                                    </div>
+                                    
+                                    <p class="intro">Now that I finally have some free time, I want to play the Stardew Valley Expanded mod. But first, let us make a flow chart of the mods and their dependencies.
+library(&quot;DiagrammeR&quot;)my_plot &lt;- DiagrammeR::mermaid(&quot;graph LRSMAPI[SMAPI]Content_Patcher[Content Patcher]Custom_NPC_Exclusions[Custom NPC Exclusions]Expanded_Preconditions_Utility[Expanded Preconditions Utility]Extra_Map_Layers[Extra Map Layers]Farm_Type_Manager[Farm Type Manager]JSON_Assets[JSON Assets]SAAT[SAAT]Shop_Tile_Framework[Shop Tile Framework]Spacecore[Spacecore]Stardew_Valley_Expanded{Stardew Valley Expanded}SMAPI --&gt; Content_PatcherSMAPI --&gt; Custom_NPC_ExclusionsSMAPI --&gt; Expanded_Preconditions_UtilitySMAPI --&gt; Extra_Map_LayersSMAPI --&gt; Farm_Type_ManagerSMAPI --&gt; JSON_AssetsSMAPI --&gt; Shop_Tile_FrameworkSMAPI --&gt; SpacecoreContent_Patcher --&gt; Farm_Type_ManagerExpanded_Preconditions_Utility --&gt; JSON_AssetsExpanded_Preconditions_Utility --&gt; Shop_Tile_FrameworkSpacecore --&gt; JSON_AssetsSMAPI --&gt; Stardew_Valley_ExpandedContent_Patcher --&gt; Stardew_Valley_ExpandedCustom_NPC_Exclusions --&gt; Stardew_Valley_ExpandedExpanded_Preconditions_Utility --&gt; Stardew_Valley_ExpandedExtra_Map_Layers --&gt; Stardew_Valley_ExpandedFarm_Type_Manager --&gt; Stardew_Valley_ExpandedJSON_Assets --&gt; Stardew_Valley_ExpandedSAAT --&gt; Stardew_Valley_ExpandedShop_Tile_Framework --&gt; Stardew_Valley_ExpandedSpacecore --&gt; Stardew_Valley_Expanded&quot;)</p>
+                                    <p class="read-more"><a href="https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-stardew-valley-expanded/" class="btn btn-template-main">Continue reading</a>
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="https://dsollberger2022.netlify.app/blog/2022/07/16/2022-07-16-extracting-tables-from-a-pdf/">
+                                          
+                                          <img src="/img/placeholder.png" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="https://dsollberger2022.netlify.app/blog/2022/07/16/2022-07-16-extracting-tables-from-a-pdf/">Extracting Tables from a PDF</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in 
+                                          
+                                              <a href="/categories/data-mining">data mining</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+
+                                        
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+
+                                        <p class="date-comments">
+                                            <a href="https://dsollberger2022.netlify.app/blog/2022/07/16/2022-07-16-extracting-tables-from-a-pdf/"><i class="far fa-calendar"></i> July 16, 2022</a>
+                                        </p>
+                                        
+                                    </div>
+                                    
+                                    <p class="intro">Today I finally find myself needing to extract information from files delivered in the PDF format. I have heard good things about the tabulizer package, so we will try that out today.
+Whelp, it turned out that I needed to ensure a 64-bit installation of Java before I could install tabulizer. Also, I used remotes::install_github(...) command from [the package’s GitHub page[(https://github.com/ropensci/tabulizer)] to force the installation (as there appears to be issues with installing a package through CRAN where there are concerns of Java dependency).</p>
+                                    <p class="read-more"><a href="https://dsollberger2022.netlify.app/blog/2022/07/16/2022-07-16-extracting-tables-from-a-pdf/" class="btn btn-template-main">Continue reading</a>
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="https://dsollberger2022.netlify.app/blog/2022/07/16/2022-07-16-ridge-plots/">
+                                          
+                                          <img src="/img/ridges_post.png" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="https://dsollberger2022.netlify.app/blog/2022/07/16/2022-07-16-ridge-plots/">Ridge Plots</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in 
+                                          
+                                              <a href="/categories/data-visualization">data visualization</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+
+                                        
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+
+                                        <p class="date-comments">
+                                            <a href="https://dsollberger2022.netlify.app/blog/2022/07/16/2022-07-16-ridge-plots/"><i class="far fa-calendar"></i> July 16, 2022</a>
+                                        </p>
+                                        
+                                    </div>
+                                    
+                                    <p class="intro">library(&quot;ggridges&quot;)library(&quot;patchwork&quot;)library(&quot;tidyverse&quot;)# load datadf &lt;- readr::read_csv(&quot;BioSQuaRE_data.csv&quot;)# wranglingdf$term &lt;- factor(df$term,levels = c(&quot;Summer 2020&quot;,&quot;Fall 2020&quot;,&quot;Spring 2021&quot;, &quot;Fall 2021&quot;))df_pre &lt;- df |&gt; filter(iter == &quot;pre-test&quot;)df_post &lt;- df |&gt; filter(iter == &quot;post-test&quot;)plot_pre &lt;- df_pre |&gt;ggplot(aes(x = Item, y = term, height = UCMer, group = term)) +geom_ridgeline(color = &quot;#DAA900&quot;, fill = &quot;#002856&quot;) +labs(title = &quot;BioSQuaRE Results&quot;,subtitle = &quot;pre-test&quot;,caption = &quot;&quot;,x = &quot;Test Question&quot;,y = &quot;&quot;) +theme(axis.</p>
+                                    <p class="read-more"><a href="https://dsollberger2022.netlify.app/blog/2022/07/16/2022-07-16-ridge-plots/" class="btn btn-template-main">Continue reading</a>
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="https://dsollberger2022.netlify.app/blog/2022/07/08/2022-07-08-pascal-s-triangle/">
+                                          
+                                          <img src="/pascal_plot.gif" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="https://dsollberger2022.netlify.app/blog/2022/07/08/2022-07-08-pascal-s-triangle/">Pascal&#39;s Triangle</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in 
+                                          
+                                              <a href="/categories/data-visualization">data visualization</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+
+                                        
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+
+                                        <p class="date-comments">
+                                            <a href="https://dsollberger2022.netlify.app/blog/2022/07/08/2022-07-08-pascal-s-triangle/"><i class="far fa-calendar"></i> July 8, 2022</a>
+                                        </p>
+                                        
+                                    </div>
+                                    
+                                    <p class="intro">Once again, I find that I have been nerd sniped (inspired by Mathigon). Today, I want to plot (and make an animation) for Pascal’s Triangle mod n. What I am thinking is
+store Pascal Triangle numbers along with row and column numbers in a data framethen assign x and y valuesrescale the x and y values to make an equilateral triangle# load package(s)library(&quot;tidyverse&quot;)# allocate data spaceN &lt;- 50 #number of rows of wanted Pascal&#39;s Triangle# EDIT: my computer or software did not seem to handle larger numbers wellrow_total &lt;- N*(N+1) / 2 #sum of 1 + 2 + .</p>
+                                    <p class="read-more"><a href="https://dsollberger2022.netlify.app/blog/2022/07/08/2022-07-08-pascal-s-triangle/" class="btn btn-template-main">Continue reading</a>
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="https://dsollberger2022.netlify.app/blog/2022/07/07/2022-07-07-making-flash-cards/">
+                                          
+                                          <img src="/Day11b.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="https://dsollberger2022.netlify.app/blog/2022/07/07/2022-07-07-making-flash-cards/">Making Flash Cards</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in 
+                                          
+                                              <a href="/categories/publishing">publishing</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+
+                                        
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+
+                                        <p class="date-comments">
+                                            <a href="https://dsollberger2022.netlify.app/blog/2022/07/07/2022-07-07-making-flash-cards/"><i class="far fa-calendar"></i> July 7, 2022</a>
+                                        </p>
+                                        
+                                    </div>
+                                    
+                                    <p class="intro">Today I wanted to try out the flashr package for making flash cards (i.e. see if this is something I want to pursue further).
+Someone (I am assuming his name is Jeffrey Stevens) over in the R4DS Slack channel mentioned a blog post using the flashr package.
+#devtools::install_github(&quot;JeffreyRStevens/flashr&quot;)library(flashr)From one of my 30 Day Map Challenge adventures, I had a data frame about availability of therapy in the United States.</p>
+                                    <p class="read-more"><a href="https://dsollberger2022.netlify.app/blog/2022/07/07/2022-07-07-making-flash-cards/" class="btn btn-template-main">Continue reading</a>
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </section>
                         
                         <section class="post">
                             <div class="row">
@@ -434,489 +918,6 @@ temp_data &lt;- rnorm(100, 20, 1) #fake data about temperaturesN &lt;- length(t
                             </div>
                         </section>
                         
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="https://dsollberger2022.netlify.app/blog/2022/06/15/2022-06-15-gauges/">
-                                          
-                                          <img src="/img/gauge_practice.png" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="https://dsollberger2022.netlify.app/blog/2022/06/15/2022-06-15-gauges/">Gauges</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in 
-                                          
-                                              <a href="/categories/data-visualization">data visualization</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-
-                                        
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-
-                                        <p class="date-comments">
-                                            <a href="https://dsollberger2022.netlify.app/blog/2022/06/15/2022-06-15-gauges/"><i class="far fa-calendar"></i> June 15, 2022</a>
-                                        </p>
-                                        
-                                    </div>
-                                    
-                                    <p class="intro">Gauges are useful when wanting to display a quantity along with its range (minimum and maximum). Here, we will try out the plotly package’s functionality to build a gauge plot.
-library(&quot;plotly&quot;)library(&quot;tidyverse&quot;)# https://plotly.com/r/gauge-charts/# https://marketing.ucmerced.edu/resources/brand-guidelines/colorsmy_gauge &lt;- plot_ly(domain = list(x = c(0, 1), y = c(0, 1)),value = 6.35,title = list(text = &quot;Overall Teaching Evaluation Score&quot;,color = &quot;#002856&quot;,font = list(size = 24)),type = &quot;indicator&quot;,mode = &quot;gauge+number&quot;,gauge = list(axis = list(range = list(NULL, 7.</p>
-                                    <p class="read-more"><a href="https://dsollberger2022.netlify.app/blog/2022/06/15/2022-06-15-gauges/" class="btn btn-template-main">Continue reading</a>
-                                    </p>
-                                    
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="https://dsollberger2022.netlify.app/blog/2022/06/14/2022-06-14-drought-conditions/">
-                                          
-                                          <img src="/img/TidyTuesday_-_20220614.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="https://dsollberger2022.netlify.app/blog/2022/06/14/2022-06-14-drought-conditions/">Drought Conditions</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in 
-                                          
-                                              <a href="/categories/tidytuesday">TidyTuesday</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-
-                                        
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-
-                                        <p class="date-comments">
-                                            <a href="https://dsollberger2022.netlify.app/blog/2022/06/14/2022-06-14-drought-conditions/"><i class="far fa-calendar"></i> June 14, 2022</a>
-                                        </p>
-                                        
-                                    </div>
-                                    
-                                    <p class="intro">“The data this week comes from the National Integrated Drought Information System.”
-# load raw data# drought &lt;- readr::read_csv(&#39;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-06-14/drought.csv&#39;)# drought_fips &lt;- readr::read_csv(&#39;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-06-14/drought-fips.csv&#39;)# focus on subset of data# https://www.weather.gov/hnx/cafips# merced_df &lt;- drought_fips |&gt;# filter(FIPS == &quot;06047&quot;)# since original data was a fairly large data file, let&#39;s# save a copy here to ease work# write_csv(merced_df, &quot;merced_drought.csv&quot;)df_raw &lt;- read_csv(&quot;merced_drought.csv&quot;)## Rows: 1171 Columns: 4## ── Column specification ────────────────────────────────────────────────────────## Delimiter: &quot;,&quot;## chr (2): State, FIPS## dbl (1): DSCI## date (1): date## ## ℹ Use `spec()` to retrieve the full column specification for this data.</p>
-                                    <p class="read-more"><a href="https://dsollberger2022.netlify.app/blog/2022/06/14/2022-06-14-drought-conditions/" class="btn btn-template-main">Continue reading</a>
-                                    </p>
-                                    
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="https://dsollberger2022.netlify.app/blog/2022/06/12/2022-06-12-bookdown-and-github-pages/">
-                                          
-                                          <img src="/img/placeholder.png" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="https://dsollberger2022.netlify.app/blog/2022/06/12/2022-06-12-bookdown-and-github-pages/">Bookdown and GitHub Pages</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in 
-                                          
-                                              <a href="/categories/publishing">publishing</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-
-                                        
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-
-                                        <p class="date-comments">
-                                            <a href="https://dsollberger2022.netlify.app/blog/2022/06/12/2022-06-12-bookdown-and-github-pages/"><i class="far fa-calendar"></i> June 12, 2022</a>
-                                        </p>
-                                        
-                                    </div>
-                                    
-                                    <p class="intro">Today I finally got a bookdown book to appear properly in GitHub pages (well, perhaps I did this in the past, but I do not recall).
-The main gap was that I needed to add the following line
-output_dir: docsto the _bookdown.yml file. Of course, the GitHub repository and Pages needed to be set up as well to point to the docs subdirectory.
-Here were the helpful websites</p>
-                                    <p class="read-more"><a href="https://dsollberger2022.netlify.app/blog/2022/06/12/2022-06-12-bookdown-and-github-pages/" class="btn btn-template-main">Continue reading</a>
-                                    </p>
-                                    
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="https://dsollberger2022.netlify.app/blog/2022/06/07/2022-06-07-tidytuesday-20220607/">
-                                          
-                                          <img src="/img/TidyTuesday20220607.jpeg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="https://dsollberger2022.netlify.app/blog/2022/06/07/2022-06-07-tidytuesday-20220607/">TidyTuesday 20220607</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in 
-                                          
-                                              <a href="/categories/tidytuesday">TidyTuesday</a>, 
-                                              <a href="/categories/data-visualization">data visualization</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-
-                                        
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-
-                                        <p class="date-comments">
-                                            <a href="https://dsollberger2022.netlify.app/blog/2022/06/07/2022-06-07-tidytuesday-20220607/"><i class="far fa-calendar"></i> June 7, 2022</a>
-                                        </p>
-                                        
-                                    </div>
-                                    
-                                    <p class="intro">“The data this week comes from Data For Progress.
-“Each year, hundreds of corporations around the country participate in Pride, an annual celebration of the LGBTQ+ community’s history and progress. They present themselves as LGBTQ+ allies, but new research from Data for Progress finds that in between their yearly parade appearances, dozens of these corporations are giving to state politicians behind some of the most bigoted and harmful policies in over a decade.</p>
-                                    <p class="read-more"><a href="https://dsollberger2022.netlify.app/blog/2022/06/07/2022-06-07-tidytuesday-20220607/" class="btn btn-template-main">Continue reading</a>
-                                    </p>
-                                    
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="https://dsollberger2022.netlify.app/blog/2022/06/04/2022-06-04-counting-political-mail/">
-                                          
-                                          <img src="/img/placeholder.png" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="https://dsollberger2022.netlify.app/blog/2022/06/04/2022-06-04-counting-political-mail/">Counting Political Mail</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in 
-                                          
-                                              <a href="/categories/data-visualization">data visualization</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-
-                                        
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-
-                                        <p class="date-comments">
-                                            <a href="https://dsollberger2022.netlify.app/blog/2022/06/04/2022-06-04-counting-political-mail/"><i class="far fa-calendar"></i> June 4, 2022</a>
-                                        </p>
-                                        
-                                    </div>
-                                    
-                                    <p class="intro">sender &lt;- c(&quot;Steve Glaser&quot;, &quot;Anna Caballero&quot;, &quot;Esmeralda Soria&quot;, &quot;Mike Karbassi&quot;, &quot;Adam Gray&quot;, &quot;CA Real Estate&quot;, &quot;CFT&quot;, &quot;misc&quot;)counts &lt;- c(3, 3, 10, 6, 4, 4, 3, 1)df &lt;- data.frame(sender, counts)df &lt;- df |&gt;mutate(for_label = paste0(sender, &quot;: &quot;, counts)) |&gt;mutate(sender_ranked = forcats::fct_reorder(sender, counts))df |&gt;ggplot() +geom_bar(aes(x = counts, y = sender_ranked, fill = sender_ranked),stat = &quot;identity&quot;) +geom_text(aes(x = counts, y = sender_ranked, label = for_label),hjust = &quot;right&quot;, nudge_x = -0.</p>
-                                    <p class="read-more"><a href="https://dsollberger2022.netlify.app/blog/2022/06/04/2022-06-04-counting-political-mail/" class="btn btn-template-main">Continue reading</a>
-                                    </p>
-                                    
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="https://dsollberger2022.netlify.app/blog/2022/05/22/2022-05-22-trying-out-blastula/">
-                                          
-                                          <img src="/img/20220402_160706.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="https://dsollberger2022.netlify.app/blog/2022/05/22/2022-05-22-trying-out-blastula/">Trying out blastula</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in 
-                                          
-                                              <a href="/categories/r-markdown">R Markdown</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-
-                                        
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-
-                                        <p class="date-comments">
-                                            <a href="https://dsollberger2022.netlify.app/blog/2022/05/22/2022-05-22-trying-out-blastula/"><i class="far fa-calendar"></i> May 22, 2022</a>
-                                        </p>
-                                        
-                                    </div>
-                                    
-                                    <p class="intro"># vignette: https://github.com/rstudio/blastula# Get a nicely formatted date/time stringcurrent_date_time &lt;- add_readable_time()image_string &lt;- blastula::add_image(&quot;20220402_160706.jpg&quot;)newsletter &lt;- blastula::compose_email(body = md(glue::glue(&quot;Good Afternoon,This is a very early draft of a newsletter format that has been created with the R programming language using the `blastula` package.For now, here is a picture from my garden:{image_string}&quot;)),footer = md(glue::glue(&quot;Newsletter compiled on {current_date_time}&quot;)))#print(newsletter)</p>
-                                    <p class="read-more"><a href="https://dsollberger2022.netlify.app/blog/2022/05/22/2022-05-22-trying-out-blastula/" class="btn btn-template-main">Continue reading</a>
-                                    </p>
-                                    
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="https://dsollberger2022.netlify.app/blog/2022/05/20/2022-05-20-another-restart/">
-                                          
-                                          <img src="/img/banners/banner-2.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="https://dsollberger2022.netlify.app/blog/2022/05/20/2022-05-20-another-restart/">Another Restart</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in 
-                                          
-                                              <a href="/categories/web-development">web development</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-
-                                        
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-
-                                        <p class="date-comments">
-                                            <a href="https://dsollberger2022.netlify.app/blog/2022/05/20/2022-05-20-another-restart/"><i class="far fa-calendar"></i> May 20, 2022</a>
-                                        </p>
-                                        
-                                    </div>
-                                    
-                                    <p class="intro">Today I finally got around to trying to make another blogdown site. In the web searches, I found that I was not alone in having trouble using the academic theme, so I switched over to universal. I still wanted a complex theme where I could customize colors and widgets.</p>
-                                    <p class="read-more"><a href="https://dsollberger2022.netlify.app/blog/2022/05/20/2022-05-20-another-restart/" class="btn btn-template-main">Continue reading</a>
-                                    </p>
-                                    
-                                </div>
-                            </div>
-                        </section>
-                        
 
                         <ul class="pager">
                             
@@ -924,7 +925,7 @@ Here were the helpful websites</p>
                             
 
                             
-                            <li class="next disabled"><a href="#">Older &rarr;</a></li>
+                            <li class="next"><a href="/blog/page/2/">Older &rarr;</a></li>
                             
                         </ul>
                     </div>
@@ -976,11 +977,15 @@ Here were the helpful websites</p>
             
             
             <li>
-                <a href="/categories/data-visualization">DATA-VISUALIZATION (3)</a>
+                <a href="/categories/data-mining">DATA-MINING (1)</a>
             </li>
             
             <li>
-                <a href="/categories/math">MATH (1)</a>
+                <a href="/categories/data-visualization">DATA-VISUALIZATION (6)</a>
+            </li>
+            
+            <li>
+                <a href="/categories/math">MATH (2)</a>
             </li>
             
             <li>
@@ -988,7 +993,7 @@ Here were the helpful websites</p>
             </li>
             
             <li>
-                <a href="/categories/publishing">PUBLISHING (1)</a>
+                <a href="/categories/publishing">PUBLISHING (2)</a>
             </li>
             
             <li>
@@ -1001,6 +1006,10 @@ Here were the helpful websites</p>
             
             <li>
                 <a href="/categories/web-development">WEB-DEVELOPMENT (1)</a>
+            </li>
+            
+            <li>
+                <a href="/categories/workflow">WORKFLOW (1)</a>
             </li>
             
         </ul>
@@ -1034,6 +1043,10 @@ Here were the helpful websites</p>
             </li>
             
             <li >
+                <a href="/tags/diagrammer"><i class="fas fa-tags"></i> diagrammer</a>
+            </li>
+            
+            <li >
                 <a href="/tags/geospatial"><i class="fas fa-tags"></i> geospatial</a>
             </li>
             
@@ -1051,6 +1064,14 @@ Here were the helpful websites</p>
             
             <li >
                 <a href="/tags/plotly"><i class="fas fa-tags"></i> plotly</a>
+            </li>
+            
+            <li >
+                <a href="/tags/tabulizer"><i class="fas fa-tags"></i> tabulizer</a>
+            </li>
+            
+            <li >
+                <a href="/tags/tidyverse"><i class="fas fa-tags"></i> tidyverse</a>
             </li>
             
         </ul>
@@ -1101,40 +1122,40 @@ Here were the helpful websites</p>
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <a href="https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-radically-infinite/">
+                        <a href="https://dsollberger2022.netlify.app/blog/2022/08/08/2022-08-08-deck-of-cards/">
                           
-                            <img src="/img/radically_infinite.png" class="img-responsive" alt="Radically Infinite">
+                            <img src="/img/placeholder.png" class="img-responsive" alt="Deck of Cards">
                           
                         </a>
                     </div>
                     <div class="name same-height-always">
-                        <h5><a href="https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-radically-infinite/">Radically Infinite</a></h5>
+                        <h5><a href="https://dsollberger2022.netlify.app/blog/2022/08/08/2022-08-08-deck-of-cards/">Deck of Cards</a></h5>
                     </div>
                 </div>
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <a href="https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-trying-out-the-flow-package/">
+                        <a href="https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-return-to-mermaid-diagrams/">
                           
-                            <img src="/img/20220706.png" class="img-responsive" alt="Trying out the Flow package">
+                            <img src="/img/placeholder.png" class="img-responsive" alt="Return to Mermaid Diagrams">
                           
                         </a>
                     </div>
                     <div class="name same-height-always">
-                        <h5><a href="https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-trying-out-the-flow-package/">Trying out the Flow package</a></h5>
+                        <h5><a href="https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-return-to-mermaid-diagrams/">Return to Mermaid Diagrams</a></h5>
                     </div>
                 </div>
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <a href="https://dsollberger2022.netlify.app/blog/2022/06/26/2022-06-26-abortion-trigger-bans/">
+                        <a href="https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-stardew-valley-expanded/">
                           
-                            <img src="/img/20220626.png" class="img-responsive" alt="Abortion Trigger Bans">
+                            <img src="/img/Stardew_Valley_Expanded.png" class="img-responsive" alt="Stardew Valley Expanded">
                           
                         </a>
                     </div>
                     <div class="name same-height-always">
-                        <h5><a href="https://dsollberger2022.netlify.app/blog/2022/06/26/2022-06-26-abortion-trigger-bans/">Abortion Trigger Bans</a></h5>
+                        <h5><a href="https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-stardew-valley-expanded/">Stardew Valley Expanded</a></h5>
                     </div>
                 </div>
                 

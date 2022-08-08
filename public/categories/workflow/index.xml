@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>workflow on The Median Data Scientist</title>
+    <link>https://dsollberger2022.netlify.app/categories/workflow/</link>
+    <description>Recent content in workflow on The Median Data Scientist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/categories/workflow/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Return to Mermaid Diagrams</title>
+      <link>https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-return-to-mermaid-diagrams/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/blog/2022/07/17/2022-07-17-return-to-mermaid-diagrams/</guid>
+      <description>I have been meaning to get back into making flow charts for a while. Over the years, I have tried different code packages, but I think that mermaid graphs make the most sense for my simple goals.
+library(&amp;quot;DiagrammeR&amp;quot;)For today’s practice, let us try to make a 2-by-2 decision tree.
+DiagrammeR::mermaid(&amp;quot;graph LRnode1(start)node2{A}node3{not A}node4[B given A]node5[not B given A]node6[B given not A]node7[not B given not A]node1 --&amp;gt; node2node1 --&amp;gt; node3node2 --&amp;gt; node4node2 --&amp;gt; node5node3 --&amp;gt; node6node3 --&amp;gt; node7&amp;quot;){&#34;</description>
+    </item>
+    
+  </channel>
+</rss>

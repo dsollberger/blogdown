@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>data mining on The Median Data Scientist</title>
+    <link>https://dsollberger2022.netlify.app/categories/data-mining/</link>
+    <description>Recent content in data mining on The Median Data Scientist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/categories/data-mining/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Extracting Tables from a PDF</title>
+      <link>https://dsollberger2022.netlify.app/blog/2022/07/16/2022-07-16-extracting-tables-from-a-pdf/</link>
+      <pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/blog/2022/07/16/2022-07-16-extracting-tables-from-a-pdf/</guid>
+      <description>Today I finally find myself needing to extract information from files delivered in the PDF format. I have heard good things about the tabulizer package, so we will try that out today.
+Whelp, it turned out that I needed to ensure a 64-bit installation of Java before I could install tabulizer. Also, I used remotes::install_github(...) command from [the package’s GitHub page[(https://github.com/ropensci/tabulizer)] to force the installation (as there appears to be issues with installing a package through CRAN where there are concerns of Java dependency).</description>
+    </item>
+    
+  </channel>
+</rss>

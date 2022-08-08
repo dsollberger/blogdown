@@ -6,7 +6,26 @@
     <description>Recent content in ggplot on The Median Data Scientist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/tags/ggplot/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dsollberger2022.netlify.app/tags/ggplot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ridge Plots</title>
+      <link>https://dsollberger2022.netlify.app/blog/2022/07/16/2022-07-16-ridge-plots/</link>
+      <pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/blog/2022/07/16/2022-07-16-ridge-plots/</guid>
+      <description>library(&amp;quot;ggridges&amp;quot;)library(&amp;quot;patchwork&amp;quot;)library(&amp;quot;tidyverse&amp;quot;)# load datadf &amp;lt;- readr::read_csv(&amp;quot;BioSQuaRE_data.csv&amp;quot;)# wranglingdf$term &amp;lt;- factor(df$term,levels = c(&amp;quot;Summer 2020&amp;quot;,&amp;quot;Fall 2020&amp;quot;,&amp;quot;Spring 2021&amp;quot;, &amp;quot;Fall 2021&amp;quot;))df_pre &amp;lt;- df |&amp;gt; filter(iter == &amp;quot;pre-test&amp;quot;)df_post &amp;lt;- df |&amp;gt; filter(iter == &amp;quot;post-test&amp;quot;)plot_pre &amp;lt;- df_pre |&amp;gt;ggplot(aes(x = Item, y = term, height = UCMer, group = term)) +geom_ridgeline(color = &amp;quot;#DAA900&amp;quot;, fill = &amp;quot;#002856&amp;quot;) +labs(title = &amp;quot;BioSQuaRE Results&amp;quot;,subtitle = &amp;quot;pre-test&amp;quot;,caption = &amp;quot;&amp;quot;,x = &amp;quot;Test Question&amp;quot;,y = &amp;quot;&amp;quot;) +theme(axis.</description>
+    </item>
+    
+    <item>
+      <title>Pascal&#39;s Triangle</title>
+      <link>https://dsollberger2022.netlify.app/blog/2022/07/08/2022-07-08-pascal-s-triangle/</link>
+      <pubDate>Fri, 08 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsollberger2022.netlify.app/blog/2022/07/08/2022-07-08-pascal-s-triangle/</guid>
+      <description>Once again, I find that I have been nerd sniped (inspired by Mathigon). Today, I want to plot (and make an animation) for Pascal’s Triangle mod n. What I am thinking is
+store Pascal Triangle numbers along with row and column numbers in a data framethen assign x and y valuesrescale the x and y values to make an equilateral triangle# load package(s)library(&amp;quot;tidyverse&amp;quot;)# allocate data spaceN &amp;lt;- 50 #number of rows of wanted Pascal&amp;#39;s Triangle# EDIT: my computer or software did not seem to handle larger numbers wellrow_total &amp;lt;- N*(N+1) / 2 #sum of 1 + 2 + .</description>
+    </item>
+    
     <item>
       <title>Trying out the Flow package</title>
       <link>https://dsollberger2022.netlify.app/blog/2022/07/06/2022-07-06-trying-out-the-flow-package/</link>

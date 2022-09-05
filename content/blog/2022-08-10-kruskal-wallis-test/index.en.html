@@ -1,0 +1,62 @@
+---
+title: Kruskal-Wallis Test
+author: Derek Sollberger
+date: '2022-08-10'
+slug: kruskal-wallis-test
+categories:
+  - inference
+tags:
+  - ggplot
+---
+
+
+
+<p>I want to mentally prepare for the upcoming semester. Today, let me do a warm-up exercise of computing a <code>Kruskal-Wallis test</code>.</p>
+<pre class="r"><code>library(&quot;palmerpenguins&quot;)
+library(&quot;tidyverse&quot;)</code></pre>
+<p>You can see that I will use the ubiquitous <code>Palmer Penguins</code> data set</p>
+<pre class="r"><code>str(penguins)</code></pre>
+<pre><code>## tibble [344 × 8] (S3: tbl_df/tbl/data.frame)
+##  $ species          : Factor w/ 3 levels &quot;Adelie&quot;,&quot;Chinstrap&quot;,..: 1 1 1 1 1 1 1 1 1 1 ...
+##  $ island           : Factor w/ 3 levels &quot;Biscoe&quot;,&quot;Dream&quot;,..: 3 3 3 3 3 3 3 3 3 3 ...
+##  $ bill_length_mm   : num [1:344] 39.1 39.5 40.3 NA 36.7 39.3 38.9 39.2 34.1 42 ...
+##  $ bill_depth_mm    : num [1:344] 18.7 17.4 18 NA 19.3 20.6 17.8 19.6 18.1 20.2 ...
+##  $ flipper_length_mm: int [1:344] 181 186 195 NA 193 190 181 195 193 190 ...
+##  $ body_mass_g      : int [1:344] 3750 3800 3250 NA 3450 3650 3625 4675 3475 4250 ...
+##  $ sex              : Factor w/ 2 levels &quot;female&quot;,&quot;male&quot;: 2 1 1 NA 1 2 1 2 NA NA ...
+##  $ year             : int [1:344] 2007 2007 2007 2007 2007 2007 2007 2007 2007 2007 ...</code></pre>
+<p>Our null hypothesis will be that the three species of penguins have the <em>same</em> bill length. Let us first get a visual.</p>
+<pre class="r"><code>penguins |&gt;
+  ggplot() +
+  geom_boxplot(aes(x = species, y = bill_length_mm,
+                   fill = species)) +
+  labs(title = &quot;Palmer Penguins&quot;,
+       subtitle = &quot;null hypothesis: the three species of penguins have the *same* bill length&quot;,
+       caption = &quot;Derek Sollberger&quot;) +
+  theme_minimal()</code></pre>
+<pre><code>## Warning: Removed 2 rows containing non-finite values (stat_boxplot).</code></pre>
+<p><img src="{{< blogdown/postref >}}index.en_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>Visually, it appears that the penguins tend to have different bill lengths. To be more scientifically sound, let us now run the <code>Kruskal-Wallis</code> test.</p>
+<pre class="r"><code># https://datasciencetut.com/how-to-perform-the-kruskal-wallis-test-in-r/
+kruskal.test(bill_length_mm ~ species, data = penguins)</code></pre>
+<pre><code>## 
+##  Kruskal-Wallis rank sum test
+## 
+## data:  bill_length_mm by species
+## Kruskal-Wallis chi-squared = 244.14, df = 2, p-value &lt; 2.2e-16</code></pre>
+<p>Since the p-value is less than 0.05, let us reject the null hypothesis of equal bill lengths.</p>
+<p>===</p>
+<p>The blog post mentioned above also told of a way to do pairwise comparisons in this setting (i.e. more than 2 labels)</p>
+<pre class="r"><code>pairwise.wilcox.test(penguins$bill_length_mm, penguins$species,
+                     p.adjust.method = &quot;BH&quot;)</code></pre>
+<pre><code>## 
+##  Pairwise comparisons using Wilcoxon rank sum test with continuity correction 
+## 
+## data:  penguins$bill_length_mm and penguins$species 
+## 
+##           Adelie Chinstrap
+## Chinstrap &lt;2e-16 -        
+## Gentoo    &lt;2e-16 0.0018   
+## 
+## P value adjustment method: BH</code></pre>
+<p>In this quick example, it appears that, pairwise, each species bill length is significally different than the other species.</p>

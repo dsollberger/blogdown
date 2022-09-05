@@ -2,7 +2,7 @@
 title: Deck of Cards
 author: Derek Sollberger
 date: '2022-08-08'
-banner: 'img/deck_of_cards.png'
+banner: "img/deck_of_cards.png"
 slug: deck-of-cards
 categories:
   - math

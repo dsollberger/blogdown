@@ -1,0 +1,55 @@
+---
+title: Kruskal-Wallis Test
+author: Derek Sollberger
+date: '2022-08-10'
+slug: kruskal-wallis-test
+categories:
+  - inference
+tags:
+  - ggplot
+---
+
+I want to mentally prepare for the upcoming semester.  Today, let me do a warm-up exercise of computing a `Kruskal-Wallis test`.
+
+```{r, message = FALSE, warning = FALSE}
+library("palmerpenguins")
+library("tidyverse")
+```
+
+You can see that I will use the ubiquitous `Palmer Penguins` data set
+
+```{r}
+str(penguins)
+```
+
+Our null hypothesis will be that the three species of penguins have the *same* bill length.  Let us first get a visual.
+
+```{r}
+penguins |>
+  ggplot() +
+  geom_boxplot(aes(x = species, y = bill_length_mm,
+                   fill = species)) +
+  labs(title = "Palmer Penguins",
+       subtitle = "null hypothesis: the three species of penguins have the *same* bill length",
+       caption = "Derek Sollberger") +
+  theme_minimal()
+```
+
+Visually, it appears that the penguins tend to have different bill lengths.  To be more scientifically sound, let us now run the `Kruskal-Wallis` test.
+
+```{r}
+# https://datasciencetut.com/how-to-perform-the-kruskal-wallis-test-in-r/
+kruskal.test(bill_length_mm ~ species, data = penguins)
+```
+
+Since the p-value is less than 0.05, let us reject the null hypothesis of equal bill lengths.
+
+===
+
+The blog post mentioned above also told of a way to do pairwise comparisons in this setting (i.e. more than 2 labels)
+
+```{r}
+pairwise.wilcox.test(penguins$bill_length_mm, penguins$species,
+                     p.adjust.method = "BH")
+```
+In this quick example, it appears that, pairwise, each species bill length is significally different than the other species.
